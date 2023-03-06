@@ -1,5 +1,5 @@
-describe('test', () => {
-    it('line machine error', () => {
+describe('Stub', () => {
+    it('Stub', () => {
         cy.visit(Cypress.env('FRONT_URL'));
     })
 })
