@@ -1,0 +1,26 @@
+{
+  "name": "testcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testCypress": "npx cypress run --record --key f4ddd220-cadb-4f61-b664-0e72cf37ddd7",
+    "test": "npx cypress open",
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d <your-cypress-specs-folder> -a '\"<your-cypress-cmd-args>\"'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cy-verify-downloads": "^0.1.11",
+    "cypress": "^12.5.1",
+    "cypress-delete-downloads-folder": "^0.0.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-nhover": "^1.0.1"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.12.0",
+    "cypress-real-events": "^1.7.6",
+    "fs": "^0.0.1-security"
+  }
+}
