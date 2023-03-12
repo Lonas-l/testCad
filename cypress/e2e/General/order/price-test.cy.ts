@@ -1,10 +1,9 @@
-describe('Stub', () => {
-    it('Stub', () => {
-        cy.visit(Cypress.env('FRONT_URL'));
-    })
-})
+// describe('test', () => {
+//     it('line machine error', () => {
+//         cy.visit(Cypress.env('FRONT_URL'));
+//     })
+// })
 
-/*
 describe('Calculate price with order', () => {
 
     it('test simple rectangle', () => {
@@ -13,16 +12,16 @@ describe('Calculate price with order', () => {
         cy.processOrder();
     })
 
-    it('test', () => {
+    it('test complex design', () => {
         cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/sInT08nuMuMcYgfXB8i6wjkpQ0Rm4Edj0AmbZtuP`)
         cy.login()
         cy.processOrder();
     })
 
-    it('test', () => {
+    it('test simple circle', () => {
         cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/J6XXT1mbP1fy3F5V0TVqYlt6ym1SEkIrJAFbKjhY`)
         cy.login()
         cy.processOrder();
     })
 
-})*/
+})

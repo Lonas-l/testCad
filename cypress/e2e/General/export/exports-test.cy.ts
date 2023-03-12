@@ -5,12 +5,12 @@ describe('Export file', () => {
     })
     
     it('Export to DXF', () => {
-        cy.export('dxf')
+        cy.exportFile('dxf')
         cy.verifyDownload('Untitled.dxf');
     })
 
     it('Export to STL', () => {
-        cy.export('stl');
+        cy.exportFile('stl');
         cy.verifyDownload('Untitled.stl');
     })
 })

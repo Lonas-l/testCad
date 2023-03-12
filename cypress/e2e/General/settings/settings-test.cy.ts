@@ -88,7 +88,7 @@ describe('Test Address', () => {
         cy.openSettings();
         cy.get('.settingTab').contains('Address').click();
         
-        cy.get(':nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').clear().type(Math.random());
+        cy.get(':nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').clear().type(String(Math.random()));
         
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/me`).as('meResponse')
         
