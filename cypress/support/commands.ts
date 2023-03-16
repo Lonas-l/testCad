@@ -1,5 +1,5 @@
 import * as corner from './command/cornerCommand'
-import {confirmValue, negativeValue, positiveValue, symbolValue} from "./command/cornerCommand";
+import 'cypress-file-upload';
 
 require('cypress-delete-downloads-folder').addCustomCommand();
 
@@ -16,6 +16,7 @@ declare global {
             sendFeedback: (email : string, description : string) => void,
             processOrder: () => void,
             isPreviewOpened: () => void,
+            openFile: (path: string) => void,
 
             //Corner
             cornerMath: (expression: string, result: string) => void,
@@ -132,6 +133,12 @@ export function viewCompare(fileUrl1 : string, fileUrl2 : string) : void {
     })
 }
 
+export function openFile(path: string) : void {
+    cy.get('canvas').attachFile(path, { subjectType: 'drag-n-drop' });
+}
+
+
+
 Cypress.Commands.add('selectAll', selectAll)
 Cypress.Commands.add('openSettings', openSettings)
 Cypress.Commands.add('login', login)
@@ -142,6 +149,7 @@ Cypress.Commands.add('toSharedDesign', toSharedDesign)
 Cypress.Commands.add('isPreviewOpened', isPreviewOpened)
 Cypress.Commands.add('processOrder', processOrder)
 Cypress.Commands.add('viewCompare', viewCompare)
+Cypress.Commands.add('openFile', openFile)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

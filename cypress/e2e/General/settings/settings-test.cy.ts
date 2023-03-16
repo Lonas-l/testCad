@@ -20,7 +20,7 @@ describe('Test Specification', () => {
     })
 
     it('Test custom specification', () => {
-        cy.get(':nth-child(2) > select').select('Unspecified');
+        cy.get(':nth-child(2) > select').select('0.254');
         cy.get(':nth-child(1) > select').should('have.value','Custom');
     })
 

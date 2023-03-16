@@ -13,8 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "cy-verify-downloads": "^0.1.11",
-    "cypress": "^12.5.1",
+    "cypress": "^12.8.1",
     "cypress-delete-downloads-folder": "^0.0.2",
+    "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-nhover": "^1.0.1",
     "typescript": "^4.9.5"

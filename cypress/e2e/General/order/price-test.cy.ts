@@ -1,25 +1,21 @@
-// describe('test', () => {
-//     it('line machine error', () => {
-//         cy.visit(Cypress.env('FRONT_URL'));
-//     })
-// })
-
 describe('Calculate price with order', () => {
-
+    beforeEach(() => {
+        cy.visit(Cypress.env('FRONT_URL'));
+    })
     it('test simple rectangle', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/ECXDZqqai20KaDRWfh3LZjzCeFpYqRRkC8iS2ET0`)
+        cy.openFile('simpleRectangle.emsx');
         cy.login()
         cy.processOrder();
     })
 
     it('test complex design', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/sInT08nuMuMcYgfXB8i6wjkpQ0Rm4Edj0AmbZtuP`)
+        cy.openFile('./price/complexDesign.emsx');
         cy.login()
         cy.processOrder();
     })
 
     it('test simple circle', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/J6XXT1mbP1fy3F5V0TVqYlt6ym1SEkIrJAFbKjhY`)
+        cy.openFile('./price/simpleCircle.emsx');
         cy.login()
         cy.processOrder();
     })

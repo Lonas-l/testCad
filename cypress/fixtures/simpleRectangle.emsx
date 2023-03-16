@@ -2,21 +2,17 @@
 <eMachineShop3DObjects VersionId="1.8">
 	<Creator Name="Web CAD" Version="1.20.9-c"/>
 	<View Type="Top">
-		<Region Id="108" 
+		<Region Id="104" 
                                 BaseHeight="0" 
                                 Z="254"
                                 
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="100" P1="0,228.6" P2="0,25.4"/>
-				<Straight Id="101" P1="0,25.4" P2="25.4,0"/>
-				<Straight Id="102" P1="25.4,0" P2="228.6,0"/>
-				<Straight Id="103" P1="228.6,0" P2="254,25.4"/>
-				<Straight Id="104" P1="254,25.4" P2="254,228.6"/>
-				<Straight Id="105" P1="254,228.6" P2="228.6,254"/>
-				<Straight Id="106" P1="228.6,254" P2="25.4,254"/>
-				<Straight Id="107" P1="25.4,254" P2="0,228.6"/>
+				<Straight Id="100" P1="0,254" P2="254,254"/>
+				<Straight Id="101" P1="254,254" P2="254,0"/>
+				<Straight Id="102" P1="254,0" P2="0,0"/>
+				<Straight Id="103" P1="0,0" P2="0,254"/>
 			</Contour>
 		</Region>
 	</View>

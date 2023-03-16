@@ -1,8 +1,7 @@
-import {confirmValue, negativeValue} from "../../../support/command/cornerCommand";
-
 describe('Corner Round', () => {
     beforeEach(() => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/DptrHnZj0VRWC2ptSjPs2R1yZ4XfAefAvRPvNtGl`)
+        cy.visit(Cypress.env('FRONT_URL'));
+        cy.openFile('simpleRectangle.emsx');
     })
 
     it('test corner round positive', () => {
@@ -47,12 +46,13 @@ describe('Corner Round', () => {
 
 describe('Corner Chamfer', () => {
     beforeEach(() => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/DptrHnZj0VRWC2ptSjPs2R1yZ4XfAefAvRPvNtGl`)
+        cy.visit(Cypress.env('FRONT_URL'));
+        cy.openFile('simpleRectangle.emsx');
     })
 
     it('test chamfer round positive', () => {
         cy.deleteDownloadsFolder();
-        cy.cornerPositiveValue('chamfer')
+        cy.cornerPositiveValue('chamfer');
     })
 
     it('test negative corner value ', () => {

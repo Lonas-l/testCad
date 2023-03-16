@@ -44,7 +44,7 @@ export function positiveValue(mode: string) : void {
     cy.wait('@cornerResponse')
     cy.get('.sprite-Download').click();
     let fileName = mode == 'round' ? 'cypress/designs/CornerRoundPositive.emsx' : 'cypress/designs/CornerChamferPositive.emsx';
-    cy.viewCompare('cypress/downloads/Untitled.emsx', fileName)
+    cy.viewCompare('cypress/downloads/simpleRectangle.emsx', fileName)
 }
 
 export function symbolValue(mode? : string) : void {

@@ -1,15 +1,18 @@
 describe('3D preview load designs', () => {
+    beforeEach(() => {
+        cy.visit(`${Cypress.env('FRONT_URL')}`);
+    })
 
     it('test 3D preview', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/5fHtHXntDzFoC5edWxHYOWKUs6PlqfxuiumKB0C3`)
+        cy.openFile('./preview/preview.emsx');
         cy.isPreviewOpened();
     })
     it('test 3D preview', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/pxX48hxJOmlR74idBR1IoUTSCNKezPtQmsLEvVYH`)
+        cy.openFile('./preview/preview2.emsx');
         cy.isPreviewOpened();
     })
     it('test 3D preview', () => {
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/z69sI7Z1jSxyQr54Y6h1U7XAVmuM9YpZvKEPkcDq`)
+        cy.openFile('./preview/preview3.emsx');
         cy.isPreviewOpened();
     })
 })

@@ -1,8 +1,12 @@
 describe('Auto correct solution', () => {
 
+    beforeEach(() => {
+        cy.visit(`${Cypress.env('FRONT_URL')}`);
+    })
+
     it('Simple remove highlighted line', () => {
 
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/ihUDqYnZ0YdVXyZBjcTWC9OoX1hnFhkpvaKwWLbf`)
+        cy.openFile('./solutions/removeHighlighted.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
         cy.get('.sprite-3dPreview').click();

@@ -4,9 +4,8 @@ describe('Login', () => {
         cy.visit(Cypress.env('FRONT_URL'));
     })
     
-    it('line machine error', () => {
+    it('line machine is opened without errors', () => {
         cy.get('.sprite-LineMachine').click();
-        // cy.get('span[class=MuiButton-label]').contains('OK').click();
     })
 
 })

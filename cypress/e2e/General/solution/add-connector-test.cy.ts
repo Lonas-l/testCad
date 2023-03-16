@@ -1,8 +1,12 @@
 describe('Auto correct solution', () => {
 
+    beforeEach(() => {
+        cy.visit(`${Cypress.env('FRONT_URL')}`);
+    })
+
     it('Simple add connector', () => {
 
-        cy.toSharedDesign(`${Cypress.env('FRONT_URL')}/#/share/gDlh0jSOFbtdsq7CAnNBjoudwzHbLcdx5q1yG9us`)
+        cy.openFile('./solutions/addConnector.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
         cy.get('.sprite-3dPreview').click();
