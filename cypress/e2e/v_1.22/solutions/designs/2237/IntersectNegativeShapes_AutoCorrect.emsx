@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.21.87-c"/>
+	<View Type="Top">
+		<Region Id="104" 
+                                BaseHeight="0" 
+                                Z="1.5900000010000002"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="0,100.2043956" P2="131.46593407,100.2043956"/>
+				<Straight Id="101" P1="131.46593407,100.2043956" P2="131.46593407,0"/>
+				<Straight Id="102" P1="131.46593407,0" P2="0,0"/>
+				<Straight Id="103" P1="0,0" P2="0,100.2043956"/>
+			</Contour>
+		</Region>
+		<Region Id="109" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="105" P1="20.65494505,82.34065934" P2="72.57142857,82.34065934"/>
+				<Straight Id="106" P1="72.57142857,82.34065934" P2="72.57142857,38.23956044"/>
+				<Straight Id="107" P1="72.57142857,38.23956044" P2="20.65494505,38.23956044"/>
+				<Straight Id="108" P1="20.65494505,38.23956044" P2="20.65494505,82.34065934"/>
+			</Contour>
+		</Region>
+		<Region Id="114" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="110" P1="51.07912088,55.54505495" P2="93.50549451,55.54505495"/>
+				<Straight Id="111" P1="93.50549451,55.54505495" P2="93.50549451,24.28351648"/>
+				<Straight Id="112" P1="93.50549451,24.28351648" P2="51.07912088,24.28351648"/>
+				<Straight Id="113" P1="51.07912088,24.28351648" P2="51.07912088,55.54505495"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

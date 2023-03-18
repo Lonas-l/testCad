@@ -4,6 +4,12 @@ import 'cypress-file-upload';
 require('cypress-delete-downloads-folder').addCustomCommand();
 
 declare global {
+    interface Window {
+        app: any;
+    }
+}
+
+declare global {
     namespace Cypress {
         interface Chainable {
             viewCompare: (fileUrl1 : string, fileUrl2 : string) => void,
@@ -17,6 +23,7 @@ declare global {
             processOrder: () => void,
             isPreviewOpened: () => void,
             openFile: (path: string) => void,
+            openFileAndUseSolution: (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) => void,
 
             //Corner
             cornerMath: (expression: string, result: string) => void,
@@ -25,8 +32,24 @@ declare global {
             cornerNegativeValue: (value: string, mode?: string) => void,
             cornerPositiveValue: (mode: string) => void,
             cornerSymbolValue: (mode?: string) => void,
+            getProjection: (correctPoint : string) => void;
         }
     }
+}
+
+export function getProjection(correctPoint : string) : void {
+    cy.wait(100);
+    cy.window().then( async win => {
+        const workspace = await win.app.workspace.projections;
+        const arrProjection = [];
+        for (let key in workspace) {
+            const extremes = workspace[key].shape.extremum;
+            arrProjection.push(extremes.maxX.toFixed(5), extremes.maxY.toFixed(5), extremes.minX.toFixed(5), extremes.minY.toFixed(5));
+        }
+        const stringProjection = arrProjection.join('');
+        expect(correctPoint).to.eq(stringProjection);
+    })
+
 }
 
 export function selectAll() : void {
@@ -137,7 +160,15 @@ export function openFile(path: string) : void {
     cy.get('canvas').attachFile(path, { subjectType: 'drag-n-drop' });
 }
 
-
+export function openFileAndUseSolution (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) : void {
+    openFile(initialDesignUrl)
+    cy.wait(10);
+    cy.get('.sprite-3dPreview').click();
+    cy.get(`${solution}`).click();
+    cy.get('span[class=MuiButton-label]').contains('OK').click();
+    cy.get('.sprite-Download').click();
+    cy.viewCompare(downloadedDesignUrl, fixedDesignUrl);
+}
 
 Cypress.Commands.add('selectAll', selectAll)
 Cypress.Commands.add('openSettings', openSettings)
@@ -150,6 +181,8 @@ Cypress.Commands.add('isPreviewOpened', isPreviewOpened)
 Cypress.Commands.add('processOrder', processOrder)
 Cypress.Commands.add('viewCompare', viewCompare)
 Cypress.Commands.add('openFile', openFile)
+Cypress.Commands.add('openFileAndUseSolution', openFileAndUseSolution)
+Cypress.Commands.add('getProjection', getProjection)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

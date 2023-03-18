@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="eMachineShop" Version="1.21.87-c"/>
+	<View Type="Top">
+		<Region Id="108" 
+                                BaseHeight="0" 
+                                Z="38.1"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="-40.09990593,157.82393411" P2="-40.09990593,196.05495808"/>
+				<Straight Id="101" P1="-92.33247769,157.82393411" P2="-40.09990593,157.82393411"/>
+				<Straight Id="102" P1="-92.33247769,55.76946077" P2="-92.33247769,157.82393411"/>
+				<Straight Id="103" P1="12.13266582,55.76946077" P2="-92.33247769,55.76946077"/>
+				<Straight Id="104" P1="12.13266582,106.79669744" P2="12.13266582,55.76946077"/>
+				<Straight Id="105" P1="53.21328332,106.79669744" P2="12.13266582,106.79669744"/>
+				<Straight Id="106" P1="53.21328332,196.05495808" P2="53.21328332,106.79669744"/>
+				<Straight Id="107" P1="-40.09990593,196.05495808" P2="53.21328332,196.05495808"/>
+			</Contour>
+		</Region>
+		<Region Id="109" 
+                                BaseHeight="0" 
+                                Z="38.1"
+                                
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="109" P1="-92.33247769,55.84599824" P2="34.28479729,196.05495808"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>
