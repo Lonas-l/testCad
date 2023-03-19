@@ -24,7 +24,11 @@ declare global {
             isPreviewOpened: () => void,
             openFile: (path: string) => void,
             openFileAndUseSolution: (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) => void,
-
+            goToView: (view : string) => void,
+            openSimplifyModal: () => void,
+            openConvertSplineToArcModal: () => void,
+            openGrooveModal: () => void,
+            addGroove: (topDepth : string, width: string, horizontalDepth: string) => void
             //Corner
             cornerMath: (expression: string, result: string) => void,
             cornerCancelValue: () => void,
@@ -46,6 +50,7 @@ export function getProjection(correctPoint : string) : void {
             const extremes = workspace[key].shape.extremum;
             arrProjection.push(extremes.maxX.toFixed(5), extremes.maxY.toFixed(5), extremes.minX.toFixed(5), extremes.minY.toFixed(5));
         }
+
         const stringProjection = arrProjection.join('');
         expect(correctPoint).to.eq(stringProjection);
     })
@@ -61,6 +66,29 @@ export function openSettings() : void {
     cy.get('.btn').contains('Job').click();
     cy.get('.sprite-settings').click();
 }
+
+export function openSimplifyModal() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Simplify...').click();
+}
+
+export function openConvertSplineToArcModal() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Convert Splines to Arcs').click();
+}
+
+export function openGrooveModal() : void {
+    cy.get('.sprite-LineMachine').click();
+    cy.get('span[class=MuiButton-label]').contains('Detailed').click();
+}
+
+export function addGroove(topDepth : string, width: string, horizontalDepth: string) : void {
+    cy.get('.groove_data-inputs > :nth-child(1) > input').clear().type(topDepth);
+    cy.get('.groove_data-inputs > :nth-child(2) > input').clear().type(width);
+    cy.get('.groove_data-inputs > :nth-child(3) > input').clear().type(horizontalDepth);
+    cy.get('.groove_control-panel > :nth-child(1)').click();
+}
+
 
 export function openPrice() {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse')
@@ -110,7 +138,7 @@ export function login(email : string = Cypress.env('USER_EMAIL') , password : st
 export function isPreviewOpened() : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
     cy.get('.sprite-3dPreview').click();
-    cy.wait('@previewResponse')
+    cy.wait('@previewResponse', {timeout: 60000});
     cy.get('.popup-container').should('be.visible');
 }
 
@@ -170,6 +198,10 @@ export function openFileAndUseSolution (solution: string, initialDesignUrl: stri
     cy.viewCompare(downloadedDesignUrl, fixedDesignUrl);
 }
 
+export function goToView(view: string) : void {
+    cy.get(view).click();
+}
+
 Cypress.Commands.add('selectAll', selectAll)
 Cypress.Commands.add('openSettings', openSettings)
 Cypress.Commands.add('login', login)
@@ -183,6 +215,11 @@ Cypress.Commands.add('viewCompare', viewCompare)
 Cypress.Commands.add('openFile', openFile)
 Cypress.Commands.add('openFileAndUseSolution', openFileAndUseSolution)
 Cypress.Commands.add('getProjection', getProjection)
+Cypress.Commands.add('goToView', goToView)
+Cypress.Commands.add('openConvertSplineToArcModal', openConvertSplineToArcModal)
+Cypress.Commands.add('openSimplifyModal', openSimplifyModal)
+Cypress.Commands.add('openGrooveModal', openGrooveModal)
+Cypress.Commands.add('addGroove', addGroove)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

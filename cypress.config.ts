@@ -9,6 +9,9 @@ module.exports = defineConfig({
         on('task', verifyDownloadTasks)
         on('task', { removeDirectory })
     },
+    video: false,
+    screenshot: true,
+    "screenshotsFolder": "cypress/screenshots",
     experimentalRunAllSpecs: true,
   },
 });

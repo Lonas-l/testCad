@@ -6,8 +6,7 @@
   "scripts": {
     "testCypress": "npx cypress run --record --key f4ddd220-cadb-4f61-b664-0e72cf37ddd7",
     "test": "npx cypress open",
-    "testConsole": "cypress run",
-    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d <your-cypress-specs-folder> -a '\"<your-cypress-cmd-args>\"'"
+    "testConsole": "cypress run --headless --browser chrome"
   },
   "author": "",
   "license": "ISC",
@@ -17,12 +16,13 @@
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "cypress-nhover": "^1.0.1",
+    "cypress-parallel": "^0.12.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "cypress": "^12.8.1",
-    "cypress-parallel": "^0.12.0",
     "cypress-real-events": "^1.7.6",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "mochawesome": "^7.1.3"
   }
 }
