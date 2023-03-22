@@ -52,6 +52,8 @@ export function getProjection(correctPoint : string) : void {
         }
 
         const stringProjection = arrProjection.join('');
+
+        console.log(stringProjection)
         expect(correctPoint).to.eq(stringProjection);
     })
 
@@ -138,7 +140,7 @@ export function login(email : string = Cypress.env('USER_EMAIL') , password : st
 export function isPreviewOpened() : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
     cy.get('.sprite-3dPreview').click();
-    cy.wait('@previewResponse', {timeout: 60000});
+    cy.wait('@previewResponse');
     cy.get('.popup-container').should('be.visible');
 }
 
