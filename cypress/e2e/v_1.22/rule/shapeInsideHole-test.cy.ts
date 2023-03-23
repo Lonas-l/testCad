@@ -7,8 +7,8 @@ describe('TR #200751 | BCAD | Error | 3D Preview', () => {
 
     it('Main case', () => {
         cy.openFileAndUseSolution(':nth-child(2) > .MuiTypography-root > span',
-            '../e2e/v_1.22/solutions/designs/TR200751/shapeInsideHole_Remove.emsx',
-            'cypress/e2e/v_1.22/solutions/designs/TR200751/shapeInsideHole_Remove_Fixed.emsx',
+            '../e2e/v_1.22/rule/designs/TR200751/shapeInsideHole_Remove.emsx',
+            'cypress/e2e/v_1.22/rule/designs/TR200751/shapeInsideHole_Remove_Fixed.emsx',
             'cypress/downloads/shapeInsideHole_Remove.emsx');
     })
 })

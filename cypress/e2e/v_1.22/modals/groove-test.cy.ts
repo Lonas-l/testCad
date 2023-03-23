@@ -1,5 +1,5 @@
 
-describe('TR #201221 | Bug | Line | Machine | Groove | Enter key', () => {
+describe('TR #201221 | Bug | Line | Machine | groove | Enter key', () => {
 
     beforeEach(() => {
          cy.visit(`${Cypress.env('FRONT_URL')}`);

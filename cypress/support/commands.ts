@@ -24,11 +24,18 @@ declare global {
             isPreviewOpened: () => void,
             openFile: (path: string) => void,
             openFileAndUseSolution: (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) => void,
-            goToView: (view : string) => void,
+            changeView: (view : string) => void,
             openSimplifyModal: () => void,
             openConvertSplineToArcModal: () => void,
             openGrooveModal: () => void,
             addGroove: (topDepth : string, width: string, horizontalDepth: string) => void
+            scaleElement: (horizontally: string, vertically: string, isProportional? : boolean, isPreserveArcs? : boolean) => void
+            confirmationModal: (isConfirm: boolean) => void
+            findSimilar: () => void
+            checkProjectionFromAllView: (correctPoints : Array<string>) => void
+            openFeedbackModal: () => void
+            changeZ: (zValue : string) => void
+            selectConnected: () => void
             //Corner
             cornerMath: (expression: string, result: string) => void,
             cornerCancelValue: () => void,
@@ -36,32 +43,82 @@ declare global {
             cornerNegativeValue: (value: string, mode?: string) => void,
             cornerPositiveValue: (mode: string) => void,
             cornerSymbolValue: (mode?: string) => void,
-            getProjection: (correctPoint : string) => void;
+            checkProjection: (correctPoint : string) => void;
         }
     }
 }
 
-export function getProjection(correctPoint : string) : void {
-    cy.wait(100);
+export function scaleElement(horizontally: string, vertically: string, isProportional? : boolean, isPreserveArcs? : boolean) : void {
+    cy.get(':nth-child(4) > .btn').click();
+    cy.get('ul > :nth-child(8)').click();
+
+    if(isProportional == false) {
+        cy.get('span').contains('Proportional scaling').click();
+    }
+    if (isPreserveArcs) {
+        cy.get('span').contains('Preserve arcs').click();
+    }
+
+    cy.get(':nth-child(1) > .makeStyles-input-10 > input').clear().type(horizontally);
+    cy.get(':nth-child(2) > .makeStyles-input-10 > input').clear().type(vertically);
+
+
+    cy.get('.makeStyles-actions-13 > :nth-child(1)').click();
+}
+
+export function confirmationModal(isConfirm: boolean) : void {
+    if (isConfirm) {
+        cy.get('[style="background-color: rgb(221, 218, 218); box-shadow: rgb(0, 0, 0) 2px 2px 1px; margin: 0px 5px 0px auto;"]').click();
+    }
+}
+
+export function checkProjection(correctPoint : string) : void {
+    cy.wait(50);
     cy.window().then( async win => {
         const workspace = await win.app.workspace.projections;
-        const arrProjection = [];
+        const arrProjection: Array<string> = [];
         for (let key in workspace) {
             const extremes = workspace[key].shape.extremum;
             arrProjection.push(extremes.maxX.toFixed(5), extremes.maxY.toFixed(5), extremes.minX.toFixed(5), extremes.minY.toFixed(5));
         }
 
-        const stringProjection = arrProjection.join('');
-
-        console.log(stringProjection)
+        const stringProjection: string = arrProjection.join('');
         expect(correctPoint).to.eq(stringProjection);
     })
+}
 
+export function checkProjectionFromAllView(correctPoints : Array<string> ) : void {
+    const views: Array<string> = [
+        '.leftData > :nth-child(2)',
+        '.leftData > :nth-child(3)',
+        '.leftData > :nth-child(4)',
+        '.leftData > :nth-child(5)',
+        '.leftData > :nth-child(6)',
+        '.leftData > :nth-child(7)'
+    ];
+    for (let i = 0; i <= correctPoints.length; i++) {
+        changeView(views[i]);
+        checkProjection(correctPoints[i]);
+    }
+}
+
+export function changeZ(zValue : string) : void {
+    cy.get('#app > div > div.ToolsPanel > div.Left-Tools > div:nth-child(3) > div > input[type=text]').clear().type(zValue);
 }
 
 export function selectAll() : void {
     cy.get('.btn').contains('Edit').click();
     cy.get('.sprite-selectAll').click();
+}
+
+export function selectConnected() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Select Connected').click();
+}
+
+export function findSimilar() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Find Similar').click();
 }
 
 export function openSettings() : void {
@@ -113,10 +170,14 @@ export function exportFile(fileExtension : string) : void {
     cy.wait('@exportResponse');
 }
 
-export function sendFeedback(email : string, description : string) : void {
+export function openFeedbackModal() : void {
     cy.get('.btn').contains('Help').click();
     cy.get('a').contains('Feedback').click();
 
+}
+
+export function sendFeedback(email : string, description : string) : void {
+    cy.openFeedbackModal()
     cy.get('#undefined-dialog-content > div > form > div.Email > div > div > input').type(email);
     cy.get('#undefined-dialog-content > div > form > div.Textarea > div > div > textarea:nth-child(1)').type(description);
 
@@ -200,11 +261,13 @@ export function openFileAndUseSolution (solution: string, initialDesignUrl: stri
     cy.viewCompare(downloadedDesignUrl, fixedDesignUrl);
 }
 
-export function goToView(view: string) : void {
+export function changeView(view: string) : void {
+    cy.wait(100)
     cy.get(view).click();
 }
 
 Cypress.Commands.add('selectAll', selectAll)
+Cypress.Commands.add('findSimilar', findSimilar)
 Cypress.Commands.add('openSettings', openSettings)
 Cypress.Commands.add('login', login)
 Cypress.Commands.add('openPrice', openPrice)
@@ -216,12 +279,18 @@ Cypress.Commands.add('processOrder', processOrder)
 Cypress.Commands.add('viewCompare', viewCompare)
 Cypress.Commands.add('openFile', openFile)
 Cypress.Commands.add('openFileAndUseSolution', openFileAndUseSolution)
-Cypress.Commands.add('getProjection', getProjection)
-Cypress.Commands.add('goToView', goToView)
+Cypress.Commands.add('checkProjection', checkProjection)
+Cypress.Commands.add('changeView', changeView)
 Cypress.Commands.add('openConvertSplineToArcModal', openConvertSplineToArcModal)
 Cypress.Commands.add('openSimplifyModal', openSimplifyModal)
 Cypress.Commands.add('openGrooveModal', openGrooveModal)
 Cypress.Commands.add('addGroove', addGroove)
+Cypress.Commands.add('scaleElement', scaleElement)
+Cypress.Commands.add('confirmationModal', confirmationModal)
+Cypress.Commands.add('checkProjectionFromAllView', checkProjectionFromAllView)
+Cypress.Commands.add('openFeedbackModal', openFeedbackModal)
+Cypress.Commands.add('selectConnected', selectConnected)
+Cypress.Commands.add('changeZ', changeZ)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

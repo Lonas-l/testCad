@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="eMachineShop" Version="1.21.100-c"/>
+	<View Type="Top">
+		<Region Id="104" 
+                                BaseHeight="0" 
+                                Z="20"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="-146.40071512,36.45629176" P2="-42.19001919,36.45629176"/>
+				<Straight Id="101" P1="-42.19001919,36.45629176" P2="-42.19001919,-13.90390101"/>
+				<Straight Id="102" P1="-42.19001919,-13.90390101" P2="-146.40071512,-13.90390101"/>
+				<Straight Id="103" P1="-146.40071512,-13.90390101" P2="-146.40071512,36.45629176"/>
+			</Contour>
+		</Region>
+		<Region Id="109" 
+                                BaseHeight="10" 
+                                Z="-10" WallAngle="60"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Processing>
+				<NearEdge Type="Rounding" Radius="0.51"/>
+				<FarEdge Type="Rounding" Radius="0.51"/>
+			</Processing>
+			<Contour>
+				<Straight Id="105" P1="-99.29536715,16.27619538" P2="-89.29536715,16.27619538"/>
+				<Straight Id="106" P1="-89.29536715,16.27619538" P2="-89.29536715,6.27619537"/>
+				<Straight Id="107" P1="-89.29536715,6.27619537" P2="-99.29536715,6.27619537"/>
+				<Straight Id="108" P1="-99.29536715,6.27619537" P2="-99.29536715,16.27619538"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

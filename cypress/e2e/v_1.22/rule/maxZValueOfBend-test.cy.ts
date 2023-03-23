@@ -7,8 +7,8 @@ describe('TR #200221 | Bug | 3D Preview', () => {
 
     it('Test changing Z', () => {
         cy.openFileAndUseSolution(':nth-child(2) > .MuiTypography-root > span',
-            '../e2e/v_1.22/solutions/designs/TR200221/maxZValueOfBend_ChangeZ.emsx',
-            'cypress/e2e/v_1.22/solutions/designs/TR200221/maxZValueOfBend_ChangeZ_Fixed.emsx',
+            '../e2e/v_1.22/rule/designs/TR200221/maxZValueOfBend_ChangeZ.emsx',
+            'cypress/e2e/v_1.22/rule/designs/TR200221/maxZValueOfBend_ChangeZ_Fixed.emsx',
             'cypress/downloads/maxZValueOfBend_ChangeZ.emsx');
     })
 })
