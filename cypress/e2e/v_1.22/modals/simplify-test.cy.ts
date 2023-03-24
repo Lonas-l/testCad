@@ -5,7 +5,7 @@ describe('TR #198449 | Bug | Modals Described In The Description', () => {
      })
 
      it('Test modal open message during request ', () => {
-         cy.openFile('./simpleSpline.emsx');
+         cy.openFile('./SimpleSpline.emsx');
          cy.selectAll();
          cy.openSimplifyModal();
          cy.get(':nth-child(9) > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > .Yes-No-buttons > :nth-child(1) > .MuiButton-label').click();

@@ -5,7 +5,7 @@ describe('Groove modal tests', () => {
     })
     
     it('After click on the Esc button 2 times, I get an error', () => {
-        cy.openFile('./simpleRectangle.emsx');
+        cy.openFile('./SimpleRectangle.emsx');
         cy.selectAll();
         cy.openGrooveModal();
 

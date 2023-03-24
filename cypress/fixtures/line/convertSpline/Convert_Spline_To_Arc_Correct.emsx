@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.21.105-c"/>
+	<View Type="Top">
+		<Region Id="115" 
+                                BaseHeight="0" 
+                                Z="1.59"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Arc Id="100" Center="77.73067633,20.64093259" Radius="43.12996938" StartAngle="313.0843675352" IncAngle="13.51060469289"/>
+				<Arc Id="101" Center="36.00487923,-23.74537702" Radius="43.12996937" StartAngle="133.08436754242" IncAngle="13.51060469362"/>
+				<Arc Id="102" Center="24.46006311,-11.45966246" Radius="26.27117416" StartAngle="115.10535726439" IncAngle="17.89246541728"/>
+				<Arc Id="103" Center="22.21831247,-7.15865221" Radius="21.4263268" StartAngle="95.19858230089" IncAngle="19.3582579221"/>
+				<Arc Id="104" Center="22.36242641,-11.01515401" Radius="25.28086184" StartAngle="78.50254281183" IncAngle="16.22936945877"/>
+				<Arc Id="105" Center="19.65172844,-24.23456231" Radius="38.77531782" StartAngle="67.23621903119" IncAngle="11.23477232237"/>
+				<Arc Id="106" Center="8.56416654,-51.0467053" Radius="67.78931571" StartAngle="60.44134774599" IncAngle="6.92213180831"/>
+				<Arc Id="107" Center="-24.14938392,-109.22286147" Radius="134.53219341" StartAngle="56.848307396" IncAngle="3.69661995437"/>
+				<Straight Id="108" P1="49.42055956,3.41094554" P2="64.31499599,-6.51538998"/>
+				<Arc Id="109" Center="137.88493946,106.11841701" Radius="134.53219339" StartAngle="236.84830739685" IncAngle="3.69661995509"/>
+				<Arc Id="110" Center="105.17138901,47.94226087" Radius="67.78931571" StartAngle="240.4413477476" IncAngle="6.9221318087"/>
+				<Arc Id="111" Center="94.08382712,21.13011787" Radius="38.77531783" StartAngle="247.23621903328" IncAngle="11.23477232184"/>
+				<Arc Id="112" Center="91.37312915,7.91070957" Radius="25.28086185" StartAngle="258.50254281346" IncAngle="16.22936945651"/>
+				<Arc Id="113" Center="91.51724308,4.05420778" Radius="21.42632681" StartAngle="275.19858230004" IncAngle="19.35825791853"/>
+				<Arc Id="114" Center="89.27549245,8.35521803" Radius="26.27117416" StartAngle="295.10535725971" IncAngle="17.89246541468"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

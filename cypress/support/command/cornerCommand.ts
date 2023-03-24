@@ -42,9 +42,9 @@ export function positiveValue(mode: string) : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/corner`).as('cornerResponse')
     cy.get('span[class=MuiButton-label]').contains('OK').click();
     cy.wait('@cornerResponse')
-    cy.get('.sprite-Download').click();
+    cy.downloadDesign();
     let fileName = mode == 'round' ? 'cypress/designs/CornerRoundPositive.emsx' : 'cypress/designs/CornerChamferPositive.emsx';
-    cy.viewCompare('cypress/downloads/simpleRectangle.emsx', fileName)
+    cy.viewCompare('cypress/downloads/SimpleRectangle.emsx', fileName)
 }
 
 export function symbolValue(mode? : string) : void {

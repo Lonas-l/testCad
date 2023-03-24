@@ -8,6 +8,7 @@ describe('Test Specification', () => {
     it('Test change and save specification', () => {
         cy.get('#undefined-dialog-content > div > div.Content > div > fieldset:nth-child(1) > select').select('Precision 2D');
         cy.get('span[class=MuiButton-label]').contains('OK').click();
+        cy.downloadDesign();
         cy.openSettings();
         cy.get('#undefined-dialog-content > div > div.Content > div > fieldset:nth-child(1) > select').should('have.value','Precision 2D');
     })

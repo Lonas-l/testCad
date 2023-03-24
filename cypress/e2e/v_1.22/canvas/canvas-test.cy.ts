@@ -12,7 +12,7 @@ describe('TR #199900 | Bug | Front View | Workspace', () => {
          cy.get('#app > div > section > div.LeftMenu > button:nth-child(8)').click();
 
          cy.get('canvas').click(483,261 );
-         cy.get('.sprite-Download').click();
+         cy.downloadDesign();
 
          cy.viewCompare(
              'cypress/e2e/v_1.22/canvas/designs/TR199900/revolveErasing_Fixed.emsx',
@@ -36,6 +36,6 @@ describe('TR #199824 | Bug | Revolve Projection', () => {
         cy.get('.logoBlock').click();
         cy.get('canvas').click(382,251);
         cy.get('#app > div > div.ToolsPanel > div.Left-Tools > div:nth-child(3) > div > input[type=text]').should('have.value', "1.000\"");
-        cy.get('.sprite-Download').click();
+        cy.downloadDesign();
     })
 })

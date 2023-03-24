@@ -6,7 +6,7 @@ describe('TR #201221 | Bug | Line | Machine | groove | Enter key', () => {
      })
 
      it('Test no errors, when pressed enter in groove modal', () => {
-         cy.openFile('./simpleRectangle.emsx');
+         cy.openFile('./SimpleRectangle.emsx');
          cy.selectAll();
          cy.openGrooveModal();
          cy.realPress('Enter');

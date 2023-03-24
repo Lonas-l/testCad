@@ -2,7 +2,7 @@ describe('Export file', () => {
 
     beforeEach(() => {
         cy.visit(`${Cypress.env('FRONT_URL')}`);
-        cy.openFile('simpleRectangle.emsx');
+        cy.openFile('SimpleRectangle.emsx');
     })
     
     it('Export to DXF', () => {

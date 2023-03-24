@@ -6,7 +6,7 @@ describe('Auto correct solution', () => {
 
     it('Simple auto correct IntersectMainShape', () => {
 
-        cy.openFile('./rule/intersectMainShape.emsx');
+        cy.openFile('./solutions/intersectMainShape.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
         cy.get('.sprite-3dPreview').click();

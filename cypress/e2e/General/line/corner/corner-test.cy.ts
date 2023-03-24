@@ -1,7 +1,7 @@
 describe('Corner Round', () => {
     beforeEach(() => {
         cy.visit(Cypress.env('FRONT_URL'));
-        cy.openFile('simpleRectangle.emsx');
+        cy.openFile('SimpleRectangle.emsx');
     })
 
     it('test corner round positive', () => {
@@ -47,7 +47,7 @@ describe('Corner Round', () => {
 describe('Corner Chamfer', () => {
     beforeEach(() => {
         cy.visit(Cypress.env('FRONT_URL'));
-        cy.openFile('simpleRectangle.emsx');
+        cy.openFile('SimpleRectangle.emsx');
     })
 
     it('test chamfer round positive', () => {

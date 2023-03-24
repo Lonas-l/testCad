@@ -17,8 +17,11 @@ declare global {
             selectAll: () => void,
             openSettings: () => void,
             login: (email? : string, password?: string) => void,
+            registration: (name: string, lastName: string, company: string, email: string, phone : string,
+                           street: string, city: string, zipCode: string, password: string,) => void,
             openPrice: () => void,
             exportFile: (fileExtension : string) => void,
+            downloadDesign: () => void,
             sendFeedback: (email : string, description : string) => void,
             processOrder: () => void,
             isPreviewOpened: () => void,
@@ -27,6 +30,7 @@ declare global {
             changeView: (view : string) => void,
             openSimplifyModal: () => void,
             openConvertSplineToArcModal: () => void,
+            openContourModal: () => void,
             openGrooveModal: () => void,
             addGroove: (topDepth : string, width: string, horizontalDepth: string) => void
             scaleElement: (horizontally: string, vertically: string, isProportional? : boolean, isPreserveArcs? : boolean) => void
@@ -36,6 +40,16 @@ declare global {
             openFeedbackModal: () => void
             changeZ: (zValue : string) => void
             selectConnected: () => void
+            setContourSettings: (value: string, isOutside : boolean, isInside: boolean) => void
+            confirmContour : (isWait: boolean) => void
+            openDivideModal : () => void
+            setDivideSettings : (value : string) => void
+            confirmDivide : () => void
+            cancelDivide : () => void
+            tangent : () => void
+            setConvertSplineToArcSettings : (value: string) => void
+            confirmConvertSplineToArc : () => void
+            mirror : (mode: string) => void
             //Corner
             cornerMath: (expression: string, result: string) => void,
             cornerCancelValue: () => void,
@@ -116,9 +130,40 @@ export function selectConnected() : void {
     cy.get('a').contains('Select Connected').click();
 }
 
+export function tangent() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Tangent').click();
+}
+
 export function findSimilar() : void {
     cy.get('.btn').contains('Edit').click();
     cy.get('a').contains('Find Similar').click();
+}
+
+export function setContourSettings(value: string, isOutside : boolean, isInside: boolean) : void {
+    cy.get('form > :nth-child(1) > input').clear().type(value);
+
+    if (!isInside) {
+        cy.get(':nth-child(2) > .MuiFormControlLabel-root > .MuiTypography-root').click()
+    }
+    if (!isOutside) {
+
+        cy.get(':nth-child(3) > .MuiFormControlLabel-root > .MuiTypography-root').click()
+    }
+}
+
+export function confirmContour(isWait: boolean) : void {
+    if (isWait) {
+        cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/contour`).as('contourResponse')
+        cy.get('.MuiDialogActions-root > :nth-child(1)').click();
+        cy.wait('@contourResponse')
+    } else {
+        cy.get('.MuiDialogActions-root > :nth-child(1)').click();
+    }
+}
+
+export function downloadDesign() : void {
+    cy.get('.sprite-Download').click();
 }
 
 export function openSettings() : void {
@@ -134,6 +179,54 @@ export function openSimplifyModal() : void {
 export function openConvertSplineToArcModal() : void {
     cy.get('.btn').contains('Line').click();
     cy.get('a').contains('Convert Splines to Arcs').click();
+}
+
+export function openDivideModal() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Divide').click();
+}
+
+export function mirror(mode: string) : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Mirror').trigger('mouseover');
+
+    if (mode == 'horizontally') {
+        cy.get('a').contains('Horizontally').click();
+    }
+
+    if (mode == 'vertically') {
+        cy.get('a').contains('Vertically').click();
+    }
+}
+
+
+export function setDivideSettings(value : string) : void {
+    cy.get('.Text > input').clear().type(value);
+}
+
+export function setConvertSplineToArcSettings(value: string) : void {
+    cy.get('.Text > div > input').clear().type(value);
+}
+
+export function confirmConvertSplineToArc() : void {
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/spline-to-arcs`).as('splineToArcResponse')
+    cy.get('.Yes-No-buttons > :nth-child(1)').click();
+    cy.wait('@splineToArcResponse')
+
+}
+
+export function confirmDivide() : void {
+    cy.get('[style="background-color: rgb(221, 218, 218); box-shadow: rgb(0, 0, 0) 2px 2px 1px; margin: 0px 5px 0px auto;"]').click();
+}
+
+export function cancelDivide() : void {
+    cy.get('[style="background-color: rgb(221, 218, 218); box-shadow: rgb(0, 0, 0) 2px 2px 1px; margin: 0px auto;"]').click();
+}
+
+
+export function openContourModal() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Contour').click();
 }
 
 export function openGrooveModal() : void {
@@ -198,6 +291,44 @@ export function login(email : string = Cypress.env('USER_EMAIL') , password : st
     cy.get('span[class=MuiButton-label]').contains('OK').click();
 }
 
+export function registration(
+    name: string,
+    lastName: string,
+    company: string,
+    email: string,
+    phone : string,
+    street: string,
+    city: string,
+    zipCode: string,
+    password: string,
+) : void {
+    cy.get('span[class="MuiButton-label"]').contains('Sign In').click();
+    cy.get(':nth-child(1) > .MuiTypography-subtitle2 > .MuiTypography-root').click();
+
+    cy.get('.leftContent > :nth-child(1) > .MuiInputBase-root > .MuiInputBase-input').focus().type(name);
+    cy.get('.leftContent > :nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').focus().type(lastName);
+    cy.get('.leftContent > :nth-child(3) > .MuiInputBase-root > .MuiInputBase-input').focus().type(company);
+    cy.get('.leftContent > :nth-child(4) > .MuiInputBase-root > .MuiInputBase-input').focus().type(email);
+    cy.get('.leftContent > :nth-child(5) > .MuiInputBase-root > .MuiInputBase-input').focus().type(phone);
+
+    cy.get('.rightContent > :nth-child(1) > .MuiInputBase-root > .MuiInputBase-input').focus().type(street);
+    cy.get('#address-select-country').click();
+    cy.get('#address-select-country-option-0').click();
+
+    cy.get('[style="width: 100%;"] > .MuiFormControl-root > .MuiInputBase-root').click();
+    cy.get('#address-select-country-option-1').click();
+
+    cy.get('.rightContent > :nth-child(4) > .MuiInputBase-root > .MuiInputBase-input').focus().type(city);
+    cy.get('.rightContent > :nth-child(5) > .MuiInputBase-root > .MuiInputBase-input').focus().type(zipCode);
+
+    cy.get('.containerRegister > :nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').focus().type(password);
+    cy.get('.containerRegister > :nth-child(3) > .MuiInputBase-root > .MuiInputBase-input').focus().type(password);
+
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/register`).as('registrationResponse')
+    cy.get('.MuiDialogActions-root > :nth-child(1)').click();
+    cy.wait('@registrationResponse')
+
+}
 export function isPreviewOpened() : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
     cy.get('.sprite-3dPreview').click();
@@ -207,9 +338,9 @@ export function isPreviewOpened() : void {
 
 export function processOrder() : void {
     cy.wait(1000)
-    cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse')
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse');
     cy.get('.sprite-Ok').click();
-    cy.wait('@priceResponse')
+    cy.wait('@priceResponse');
 
     cy.get('.MuiDialogActions-root > :nth-child(1)').click();
     cy.get('.PurchaseOrder').click();
@@ -257,7 +388,7 @@ export function openFileAndUseSolution (solution: string, initialDesignUrl: stri
     cy.get('.sprite-3dPreview').click();
     cy.get(`${solution}`).click();
     cy.get('span[class=MuiButton-label]').contains('OK').click();
-    cy.get('.sprite-Download').click();
+    cy.downloadDesign();
     cy.viewCompare(downloadedDesignUrl, fixedDesignUrl);
 }
 
@@ -270,6 +401,7 @@ Cypress.Commands.add('selectAll', selectAll)
 Cypress.Commands.add('findSimilar', findSimilar)
 Cypress.Commands.add('openSettings', openSettings)
 Cypress.Commands.add('login', login)
+Cypress.Commands.add('registration', registration)
 Cypress.Commands.add('openPrice', openPrice)
 Cypress.Commands.add('exportFile', exportFile)
 Cypress.Commands.add('sendFeedback', sendFeedback)
@@ -283,6 +415,7 @@ Cypress.Commands.add('checkProjection', checkProjection)
 Cypress.Commands.add('changeView', changeView)
 Cypress.Commands.add('openConvertSplineToArcModal', openConvertSplineToArcModal)
 Cypress.Commands.add('openSimplifyModal', openSimplifyModal)
+Cypress.Commands.add('openContourModal', openContourModal)
 Cypress.Commands.add('openGrooveModal', openGrooveModal)
 Cypress.Commands.add('addGroove', addGroove)
 Cypress.Commands.add('scaleElement', scaleElement)
@@ -291,6 +424,17 @@ Cypress.Commands.add('checkProjectionFromAllView', checkProjectionFromAllView)
 Cypress.Commands.add('openFeedbackModal', openFeedbackModal)
 Cypress.Commands.add('selectConnected', selectConnected)
 Cypress.Commands.add('changeZ', changeZ)
+Cypress.Commands.add('setContourSettings', setContourSettings)
+Cypress.Commands.add('confirmContour', confirmContour)
+Cypress.Commands.add('downloadDesign', downloadDesign)
+Cypress.Commands.add('openDivideModal', openDivideModal)
+Cypress.Commands.add('setDivideSettings', setDivideSettings)
+Cypress.Commands.add('confirmDivide', confirmDivide)
+Cypress.Commands.add('cancelDivide', cancelDivide)
+Cypress.Commands.add('tangent', tangent)
+Cypress.Commands.add('setConvertSplineToArcSettings', setConvertSplineToArcSettings)
+Cypress.Commands.add('confirmConvertSplineToArc', confirmConvertSplineToArc)
+Cypress.Commands.add('mirror', mirror)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

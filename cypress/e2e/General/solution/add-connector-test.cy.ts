@@ -6,7 +6,7 @@ describe('Auto correct solution', () => {
 
     it('Simple add connector', () => {
 
-        cy.openFile('./rule/addConnector.emsx');
+        cy.openFile('./solutions/addConnector.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
         cy.get('.sprite-3dPreview').click();

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.21.100-c"/>
+	<View Type="Top">
+		<Region Id="104" 
+                                BaseHeight="0" 
+                                Z="1.5900000010000002"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="0,50.8" P2="127,50.8"/>
+				<Straight Id="101" P1="127,50.8" P2="127,0"/>
+				<Straight Id="102" P1="127,0" P2="0,0"/>
+				<Straight Id="103" P1="0,0" P2="0,50.8"/>
+			</Contour>
+		</Region>
+		<Region Id="105" 
+                                BaseHeight="0" 
+                                Z="1.5900000010000002"
+                                
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="105" P1="63.5,50.8" P2="63.5,0"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

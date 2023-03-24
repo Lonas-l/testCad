@@ -5,7 +5,7 @@ describe('TR #201107 | Critical error | Line | Machine\n', () => {
     })
 
     it('After click on the Esc button 2 times, I get an error', () => {
-        cy.openFile('./simpleRectangle.emsx');
+        cy.openFile('./SimpleRectangle.emsx');
         cy.selectAll();
         cy.get('.sprite-LineMachine').click();
 
@@ -29,6 +29,6 @@ describe('2285 | Critical error | Line | Machine', () => {
         cy.get('.sprite-LineMachine').click();
         cy.get('#undefined-dialog-content > div > div > div.left-side > fieldset > ul > li:nth-child(1)').click();
         cy.get('body > div.MuiDialog-root.lineMachineModal > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.modalFooter.MuiDialogActions-spacing > div.buttonContainer > button:nth-child(1)').click();
-        cy.get('.sprite-Download').click();
+        cy.downloadDesign();
     })
 })

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.21.105-c"/>
+	<View Type="Top">
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="46" Name="Tolerance"/>
+
+			<Processing>
+				<Tolerance Value="0.508"/>
+			</Processing>
+
+			<Contour>
+				<Circle Id="100" Center="0,0" Radius="9.3176084"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="46" Name="Tolerance"/>
+
+			<Processing>
+				<Tolerance Value="0.508"/>
+			</Processing>
+
+			<Contour>
+				<Circle Id="101" Center="114.3,0" Radius="9.3176084"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

@@ -6,7 +6,7 @@ describe('Auto correct solution', () => {
 
     it('Simple remove highlighted line', () => {
 
-        cy.openFile('./rule/removeHighlighted.emsx');
+        cy.openFile('./solutions/removeHighlighted.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
         cy.get('.sprite-3dPreview').click();
