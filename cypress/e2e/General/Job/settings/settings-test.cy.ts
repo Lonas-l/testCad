@@ -1,9 +1,11 @@
 describe('Test Specification', () => {
 
     beforeEach(() => {
+        cy.deleteDownloadsFolder();
         cy.visit(Cypress.env('FRONT_URL'));
         cy.openSettings();
     })
+
 
     it('Test change and save specification', () => {
         cy.get('#undefined-dialog-content > div > div.Content > div > fieldset:nth-child(1) > select').select('Precision 2D');
@@ -71,9 +73,51 @@ describe('Test Specification', () => {
 
 })
 
+describe('Specifications: Bend', () => {
+
+    beforeEach(() => {
+        cy.deleteDownloadsFolder();
+        cy.visit(Cypress.env('FRONT_URL'));
+    })
+
+    it('We can change value in dropdown', () => {
+        cy.openFile('./Simple_Bend_Line.emsx');
+        cy.openSettings();
+        cy.get(':nth-child(1) > .settingTab').click();
+        cy.get('select').select('0.063"')
+        cy.get('select').should('have.value','1.5875');
+    })
+
+    it('Value saved when pressed Ok', () => {
+        cy.openFile('./Simple_Bend_Line.emsx');
+        cy.openSettings();
+        cy.get(':nth-child(1) > .settingTab').click();
+        cy.get('select').select('0.063"');
+        cy.get('span[class=MuiButton-label]').contains('OK').click();
+        cy.downloadDesign();
+        cy.openSettings();
+        cy.get(':nth-child(1) > .settingTab').click();
+        cy.get('select').should('have.value','1.5875');
+    })
+
+    it('Value is not saved when pressed Cancel', () => {
+        cy.openFile('./Simple_Bend_Line.emsx');
+        cy.openSettings();
+        cy.get(':nth-child(1) > .settingTab').click();
+        cy.get('select').select('0.063"');
+        cy.get('span[class=MuiButton-label]').contains('Cancel').click();
+        cy.downloadDesign();
+        cy.openSettings();
+        cy.get(':nth-child(1) > .settingTab').click();
+        cy.get('select').should('have.value','0.79375');
+    })
+})
+
+
 describe('Test Address', () => {
 
     beforeEach(() => {
+        cy.deleteDownloadsFolder();
         cy.visit(Cypress.env('FRONT_URL'));
     })
 
@@ -88,17 +132,17 @@ describe('Test Address', () => {
         cy.login()
         cy.openSettings();
         cy.get('.settingTab').contains('Address').click();
-        
+
         cy.get(':nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').clear().type(String(Math.random()));
-        
+
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/me`).as('meResponse')
-        
+
         cy.get('span[class=MuiButton-label]').contains('OK').click();
 
         cy.wait('@meResponse')
-        
+
         cy.get('.MuiDialogContent-root').contains('Updating successfully completed.').should('be.visible')
- 
+
     })
 
     it('Checking dynamic address change in summary tab', ()=> {
@@ -110,7 +154,7 @@ describe('Test Address', () => {
         cy.get(':nth-child(4) > .MuiInputBase-root > .MuiInputBase-input').type('company');
 
         cy.get(':nth-child(6) > .MuiInputBase-root > .MuiInputBase-input').type('email@qwe.qw');
-        
+
         cy.get('.settingTab').contains('Summary').click();
 
         cy.get('tbody > :nth-child(2) > :nth-child(2)').contains('name lastname company')

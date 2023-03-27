@@ -19,7 +19,7 @@ declare global {
             login: (email? : string, password?: string) => void,
             registration: (name: string, lastName: string, company: string, email: string, phone : string,
                            street: string, city: string, zipCode: string, password: string,) => void,
-            openPrice: () => void,
+            openPrice: (isWait : boolean) => void,
             exportFile: (fileExtension : string) => void,
             downloadDesign: () => void,
             sendFeedback: (email : string, description : string) => void,
@@ -33,11 +33,14 @@ declare global {
             openContourModal: () => void,
             openGrooveModal: () => void,
             addGroove: (topDepth : string, width: string, horizontalDepth: string) => void
+            replaceGroove: (topDepth : string, width: string, horizontalDepth: string) => void
+            removeSelectedGroove: () => void
             scaleElement: (horizontally: string, vertically: string, isProportional? : boolean, isPreserveArcs? : boolean) => void
             confirmationModal: (isConfirm: boolean) => void
             findSimilar: () => void
             checkProjectionFromAllView: (correctPoints : Array<string>) => void
             openFeedbackModal: () => void
+            openTechSupportModal: () => void
             changeZ: (zValue : string) => void
             selectConnected: () => void
             setContourSettings: (value: string, isOutside : boolean, isInside: boolean) => void
@@ -50,6 +53,24 @@ declare global {
             setConvertSplineToArcSettings : (value: string) => void
             confirmConvertSplineToArc : () => void
             mirror : (mode: string) => void
+            deleteSelected : () => void
+            intersectSelected : () => void
+            changeDimension : () => void
+            checkDimensionInTheField : (field: string, dimension: string) => void
+            changeQuantityInPrice: (quantity: string) => void
+            openQuantityModal: () => void
+            changeQuantityInModal: (value: string) => void
+            openMachineModal: () => void
+            machineModalSwitchTab: (tab: string) => void
+            setNearEdgeSettings: (nearEdge? : object) => void
+            redo: () => void
+            cut: () => void
+            undo: () => void
+            copy: () => void
+            paste: () => void
+            openPreferencesModal: () => void
+            openCalibrateModal: () => void
+            openAndConfirmModelBends: () => void
             //Corner
             cornerMath: (expression: string, result: string) => void,
             cornerCancelValue: () => void,
@@ -79,6 +100,24 @@ export function scaleElement(horizontally: string, vertically: string, isProport
 
     cy.get('.makeStyles-actions-13 > :nth-child(1)').click();
 }
+
+export function deleteSelected() : void {
+    cy.get('.sprite-Cancel').click();
+}
+
+export function intersectSelected() : void {
+    cy.get('.sprite-Intersect').click();
+}
+
+export function changeDimension() : void {
+    cy.get('.sprite-inch').click();
+}
+
+export function checkDimensionInTheField(field: string, dimension: string) : void {
+    cy.get(field).invoke('val').then(text => {
+        const res = text.toString().includes(dimension);
+        expect(res).to.be.true;
+    });}
 
 export function confirmationModal(isConfirm: boolean) : void {
     if (isConfirm) {
@@ -140,6 +179,31 @@ export function findSimilar() : void {
     cy.get('a').contains('Find Similar').click();
 }
 
+export function cut() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Cut').click();
+}
+
+export function copy() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Copy').click();
+}
+
+export function paste() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Paste').click();
+}
+
+export function undo() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Undo').click();
+}
+
+export function redo() : void {
+    cy.get('.btn').contains('Edit').click();
+    cy.get('a').contains('Redo').click();
+}
+
 export function setContourSettings(value: string, isOutside : boolean, isInside: boolean) : void {
     cy.get('form > :nth-child(1) > input').clear().type(value);
 
@@ -169,6 +233,15 @@ export function downloadDesign() : void {
 export function openSettings() : void {
     cy.get('.btn').contains('Job').click();
     cy.get('.sprite-settings').click();
+}
+
+export function openQuantityModal() : void {
+    cy.get(':nth-child(4) > .btn-Material').click();
+}
+
+export function changeQuantityInModal(value : string) : void {
+    cy.get('.Text > input').clear().type(value);
+    cy.get('button').contains('Ok').click();
 }
 
 export function openSimplifyModal() : void {
@@ -230,8 +303,35 @@ export function openContourModal() : void {
 }
 
 export function openGrooveModal() : void {
-    cy.get('.sprite-LineMachine').click();
     cy.get('span[class=MuiButton-label]').contains('Detailed').click();
+}
+
+export function openMachineModal() : void {
+    cy.get('.btn').contains('Line').click();
+    cy.get('a').contains('Machine').click();
+}
+
+export function openPreferencesModal() : void {
+    cy.get('#app > div > div.UpMenu > div > div.LeftButtonGroup > div.btn-group-other > button:nth-child(3)').click();
+}
+
+export function machineModalSwitchTab(tab: string) : void {
+    cy.get(tab).click();
+}
+
+interface nearEdge {
+    mode: string
+    input: string
+    inputValue: string
+}
+
+export function setNearEdgeSettings(nearEdge? : nearEdge) : void {
+    if (nearEdge) {
+        cy.get(nearEdge.mode).click();
+        if (nearEdge.input) {
+            cy.get(nearEdge.input).clear().type(nearEdge.inputValue)
+        }
+    }
 }
 
 export function addGroove(topDepth : string, width: string, horizontalDepth: string) : void {
@@ -241,11 +341,34 @@ export function addGroove(topDepth : string, width: string, horizontalDepth: str
     cy.get('.groove_control-panel > :nth-child(1)').click();
 }
 
+export function replaceGroove(topDepth : string, width: string, horizontalDepth: string) : void {
+    cy.get('.groove_data-inputs > :nth-child(1) > input').clear().type(topDepth);
+    cy.get('.groove_data-inputs > :nth-child(2) > input').clear().type(width);
+    cy.get('.groove_data-inputs > :nth-child(3) > input').clear().type(horizontalDepth);
+    cy.get('.groove_control-panel > :nth-child(2)').click();
+}
 
-export function openPrice() {
+export function removeSelectedGroove() : void {
+    cy.get('button').contains('Remove').click();
+}
+
+export function openPrice(isWait = true ) {
+    cy.wait(1000);
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse')
     cy.get('.sprite-Ok').click();
-    cy.wait('@priceResponse')
+    if (isWait) {
+        cy.wait('@priceResponse')
+    }
+}
+
+export function changeQuantityInPrice(quantity: string) {
+    cy.get('.InputNumber > input').clear().type(quantity);
+    if (!Cypress.isBrowser('firefox')) {
+        cy.realPress('Tab');
+    }
+    if (Cypress.isBrowser('firefox')) {
+        cy.wait(3000);
+    }
 }
 
 export function exportFile(fileExtension : string) : void {
@@ -266,11 +389,28 @@ export function exportFile(fileExtension : string) : void {
 export function openFeedbackModal() : void {
     cy.get('.btn').contains('Help').click();
     cy.get('a').contains('Feedback').click();
+}
 
+export function openTechSupportModal() : void {
+    cy.get('.btn').contains('Help').click();
+    cy.get('.sprite-techSupport').click();
+}
+
+export function openCalibrateModal() : void {
+    cy.get('.nav > :nth-child(2)').click();
+    cy.get('form > .MuiButton-root').click();
+}
+
+export function openAndConfirmModelBends() : void {
+    cy.get('.btn').contains('View').click();
+    cy.get('a').contains('Model Bends').click();
+
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/bends`).as('bendResponse')
+    cy.get('.Yes-No-buttons > :nth-child(1) > .MuiButton-label').click();
+    cy.wait('@bendResponse')
 }
 
 export function sendFeedback(email : string, description : string) : void {
-    cy.openFeedbackModal()
     cy.get('#undefined-dialog-content > div > form > div.Email > div > div > input').type(email);
     cy.get('#undefined-dialog-content > div > form > div.Textarea > div > div > textarea:nth-child(1)').type(description);
 
@@ -337,10 +477,8 @@ export function isPreviewOpened() : void {
 }
 
 export function processOrder() : void {
-    cy.wait(1000)
-    cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse');
-    cy.get('.sprite-Ok').click();
-    cy.wait('@priceResponse');
+
+    cy.openPrice(true);
 
     cy.get('.MuiDialogActions-root > :nth-child(1)').click();
     cy.get('.PurchaseOrder').click();
@@ -418,10 +556,12 @@ Cypress.Commands.add('openSimplifyModal', openSimplifyModal)
 Cypress.Commands.add('openContourModal', openContourModal)
 Cypress.Commands.add('openGrooveModal', openGrooveModal)
 Cypress.Commands.add('addGroove', addGroove)
+Cypress.Commands.add('replaceGroove', replaceGroove)
 Cypress.Commands.add('scaleElement', scaleElement)
 Cypress.Commands.add('confirmationModal', confirmationModal)
 Cypress.Commands.add('checkProjectionFromAllView', checkProjectionFromAllView)
 Cypress.Commands.add('openFeedbackModal', openFeedbackModal)
+Cypress.Commands.add('openTechSupportModal', openTechSupportModal)
 Cypress.Commands.add('selectConnected', selectConnected)
 Cypress.Commands.add('changeZ', changeZ)
 Cypress.Commands.add('setContourSettings', setContourSettings)
@@ -435,6 +575,25 @@ Cypress.Commands.add('tangent', tangent)
 Cypress.Commands.add('setConvertSplineToArcSettings', setConvertSplineToArcSettings)
 Cypress.Commands.add('confirmConvertSplineToArc', confirmConvertSplineToArc)
 Cypress.Commands.add('mirror', mirror)
+Cypress.Commands.add('deleteSelected', deleteSelected)
+Cypress.Commands.add('intersectSelected', intersectSelected)
+Cypress.Commands.add('changeDimension', changeDimension)
+Cypress.Commands.add('checkDimensionInTheField', checkDimensionInTheField)
+Cypress.Commands.add('changeQuantityInPrice', changeQuantityInPrice)
+Cypress.Commands.add('openQuantityModal', openQuantityModal)
+Cypress.Commands.add('changeQuantityInModal', changeQuantityInModal)
+Cypress.Commands.add('openMachineModal', openMachineModal)
+Cypress.Commands.add('machineModalSwitchTab', machineModalSwitchTab)
+Cypress.Commands.add('setNearEdgeSettings', setNearEdgeSettings)
+Cypress.Commands.add('removeSelectedGroove', removeSelectedGroove)
+Cypress.Commands.add('paste', paste)
+Cypress.Commands.add('copy', copy)
+Cypress.Commands.add('undo', undo)
+Cypress.Commands.add('redo', redo)
+Cypress.Commands.add('cut', cut)
+Cypress.Commands.add('openPreferencesModal', openPreferencesModal)
+Cypress.Commands.add('openCalibrateModal', openCalibrateModal)
+Cypress.Commands.add('openAndConfirmModelBends', openAndConfirmModelBends)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

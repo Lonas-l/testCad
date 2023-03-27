@@ -35,7 +35,7 @@ describe('Restore password', () => {
         cy.visit(Cypress.env('FRONT_URL'));
     })
 
-    it('Test registration positive', () => {
+    it('Test restore password positive', () => {
         cy.get('span[class="MuiButton-label"]').contains('Sign In').click();
         cy.get(':nth-child(2) > .MuiTypography-subtitle2 > .MuiTypography-root').click();
         cy.get(':nth-child(9) > .MuiDialog-container > .MuiPaper-root > #undefined-dialog-content > :nth-child(1) > form > [style="margin-bottom: 10px; padding: 5px;"] > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').focus().type(Cypress.env('USER_EMAIL'))

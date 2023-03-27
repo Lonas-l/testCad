@@ -1,4 +1,4 @@
-import {cancelDivide} from "../../../support/commands";
+import {cancelDivide} from "../../../../support/commands";
 
 describe('Divide test', () => {
     beforeEach(() => {
