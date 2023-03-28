@@ -10,7 +10,7 @@ describe('2563 | Bug | Select Connected', () => {
          cy.selectAll();
          cy.get('#app > div > div.UpMenu > div > div.LeftButtonGroup > div.btn-group-two > button:nth-child(5)').click();
          cy.selectConnected();
-         cy.get('.dataContainer').should('have.text', '4 lines selected');
+         cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '4 lines selected');
          cy.downloadDesign();
      })
  })

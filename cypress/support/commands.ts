@@ -6,8 +6,11 @@ require('cypress-delete-downloads-folder').addCustomCommand();
 declare global {
     interface Window {
         app: any;
+
     }
 }
+
+type CoordinateType = {x:number, y: number};
 
 declare global {
     namespace Cypress {
@@ -71,6 +74,15 @@ declare global {
             openPreferencesModal: () => void
             openCalibrateModal: () => void
             openAndConfirmModelBends: () => void
+            enableRotateMode: () => void
+            nudgeLeft: () => void
+            nudgeRight: () => void
+            nudgeDown: () => void
+            nudgeUp: () => void
+            rotateRight: () => void
+            rotateLeft: () => void
+            canvasDrawing : (tool: string, coordinates: Array<CoordinateType>) => void
+            saveDesign : () => void
             //Corner
             cornerMath: (expression: string, result: string) => void,
             cornerCancelValue: () => void,
@@ -99,6 +111,15 @@ export function scaleElement(horizontally: string, vertically: string, isProport
 
 
     cy.get('.makeStyles-actions-13 > :nth-child(1)').click();
+}
+
+
+export function canvasDrawing (tool: string, coordinates: Array<CoordinateType>) : void {
+    cy.get(`[data-testId=${tool}]`).click();
+
+    for (const coordinate of coordinates) {
+        cy.get('canvas').click(coordinate.x, coordinate.y)
+    }
 }
 
 export function deleteSelected() : void {
@@ -218,9 +239,9 @@ export function setContourSettings(value: string, isOutside : boolean, isInside:
 
 export function confirmContour(isWait: boolean) : void {
     if (isWait) {
-        cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/contour`).as('contourResponse')
+        cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/contour`).as('contourResponse');
         cy.get('.MuiDialogActions-root > :nth-child(1)').click();
-        cy.wait('@contourResponse')
+        cy.wait('@contourResponse');
     } else {
         cy.get('.MuiDialogActions-root > :nth-child(1)').click();
     }
@@ -401,6 +422,34 @@ export function openCalibrateModal() : void {
     cy.get('form > .MuiButton-root').click();
 }
 
+export function enableRotateMode() : void {
+    cy.get('.btn-Copy').click();
+}
+
+export function nudgeUp() : void {
+    cy.get('.btn-Up').click();
+}
+
+export function nudgeDown() : void {
+    cy.get('.btn-Down').click();
+}
+
+export function nudgeRight() : void {
+    cy.get('.btn-Right').click();
+}
+
+export function rotateLeft() : void {
+    cy.get('.btn-LeftRotate').click();
+}
+
+export function rotateRight() : void {
+    cy.get('.btn-RightRotate').click();
+}
+
+export function nudgeLeft() : void {
+    cy.get('.btn-Left').click();
+}
+
 export function openAndConfirmModelBends() : void {
     cy.get('.btn').contains('View').click();
     cy.get('a').contains('Model Bends').click();
@@ -535,6 +584,12 @@ export function changeView(view: string) : void {
     cy.get(view).click();
 }
 
+export function saveDesign() : void {
+    cy.get('.btn').contains('File').click();
+    cy.get('[data-testId=desktop-menu-item-save]').click();
+}
+
+
 Cypress.Commands.add('selectAll', selectAll)
 Cypress.Commands.add('findSimilar', findSimilar)
 Cypress.Commands.add('openSettings', openSettings)
@@ -594,6 +649,15 @@ Cypress.Commands.add('cut', cut)
 Cypress.Commands.add('openPreferencesModal', openPreferencesModal)
 Cypress.Commands.add('openCalibrateModal', openCalibrateModal)
 Cypress.Commands.add('openAndConfirmModelBends', openAndConfirmModelBends)
+Cypress.Commands.add('enableRotateMode', enableRotateMode)
+Cypress.Commands.add('nudgeUp', nudgeUp)
+Cypress.Commands.add('nudgeDown', nudgeDown)
+Cypress.Commands.add('nudgeRight', nudgeRight)
+Cypress.Commands.add('nudgeLeft', nudgeLeft)
+Cypress.Commands.add('rotateRight', rotateRight)
+Cypress.Commands.add('rotateLeft', rotateLeft)
+Cypress.Commands.add('canvasDrawing', canvasDrawing)
+Cypress.Commands.add('saveDesign', saveDesign)
 
 //Corner
 Cypress.Commands.add('cornerMath', corner.math)

@@ -13,5 +13,6 @@ module.exports = defineConfig({
     screenshot: true,
     "screenshotsFolder": "cypress/screenshots",
     experimentalRunAllSpecs: true,
+    chromeWebSecurity: false
   },
 });

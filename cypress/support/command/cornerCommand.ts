@@ -43,7 +43,7 @@ export function positiveValue(mode: string) : void {
     cy.get('span[class=MuiButton-label]').contains('OK').click();
     cy.wait('@cornerResponse')
     cy.downloadDesign();
-    let fileName = mode == 'round' ? 'cypress/designs/CornerRoundPositive.emsx' : 'cypress/designs/CornerChamferPositive.emsx';
+    let fileName = mode == 'round' ? 'cypress/fixtures/corner/CornerRoundPositive.emsx' : 'cypress/fixtures/corner/CornerChamferPositive.emsx';
     cy.viewCompare('cypress/downloads/SimpleRectangle.emsx', fileName)
 }
 

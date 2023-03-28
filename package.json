@@ -6,7 +6,7 @@
   "scripts": {
     "testCypress": "npx cypress run --record --key f4ddd220-cadb-4f61-b664-0e72cf37ddd7",
     "test": "npx cypress open",
-    "testConsole": "cypress run --headless --browser chrome"
+    "testConsole": "cypress run --headless"
   },
   "author": "",
   "license": "ISC",

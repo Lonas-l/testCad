@@ -10,7 +10,7 @@ describe('Edit', () => {
         cy.openFile('./SimpleRectangle.emsx');
         cy.selectAll();
         cy.cut();
-        cy.get('.dataContainer').should('have.text', '0 lines')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '0 lines')
     })
 
     it('Test Paste', () => {
@@ -18,7 +18,7 @@ describe('Edit', () => {
         cy.selectAll();
         cy.cut();
         cy.paste();
-        cy.get('.dataContainer').should('have.text', '4 lines selected')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '4 lines selected')
     })
 
     it('Test Copy and Paste', () => {
@@ -27,7 +27,7 @@ describe('Edit', () => {
         cy.copy();
         cy.paste();
         cy.selectAll();
-        cy.get('.dataContainer').should('have.text', '8 lines selected')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '8 lines selected')
     })
 
     it('Test undo', () => {
@@ -37,7 +37,7 @@ describe('Edit', () => {
         cy.paste();
         cy.undo();
         selectAll();
-        cy.get('.dataContainer').should('have.text', '4 lines selected')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '4 lines selected')
     })
 
     it('Test redo', () => {
@@ -48,7 +48,7 @@ describe('Edit', () => {
         cy.undo();
         cy.redo();
         selectAll();
-        cy.get('.dataContainer').should('have.text', '8 lines selected')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '8 lines selected')
     })
 
 })

@@ -1,3 +1,5 @@
+import {visitSite} from "../../../../support/commands";
+
 describe('Test Review & Place Order', () => {
 
     beforeEach(() => {

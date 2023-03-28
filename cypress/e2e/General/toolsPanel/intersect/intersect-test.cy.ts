@@ -9,7 +9,7 @@ describe('Intersect test', () => {
         cy.selectAll();
         cy.intersectSelected();
         cy.selectAll();
-        cy.get('.dataContainer').should('have.text', '79 lines selected');
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '79 lines selected');
     });
 
     it('Intersect with zero selected elements', () => {

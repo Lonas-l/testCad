@@ -8,6 +8,6 @@ describe('Delete test', () => {
         cy.openFile('./SimpleRectangle.emsx');
         cy.selectAll();
         cy.deleteSelected();
-        cy.get('.dataContainer').should('have.text', '0 lines');
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '0 lines');
     });
  });

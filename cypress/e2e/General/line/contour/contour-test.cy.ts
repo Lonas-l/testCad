@@ -9,7 +9,7 @@ describe('Contour test', () => {
         cy.selectAll();
         cy.openContourModal();
         cy.setContourSettings('1', true, false);
-        cy.confirmContour(true)
+        cy.confirmContour(true);
         cy.downloadDesign();
         cy.viewCompare('cypress/downloads/All_Line_Types.emsx', 'cypress/fixtures/line/contour/All_Line_Types_Contour_Outside.emsx')
     });

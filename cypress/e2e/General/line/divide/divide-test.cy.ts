@@ -13,7 +13,7 @@ describe('Divide test', () => {
         cy.setDivideSettings('100');
         cy.confirmDivide();
         cy.selectAll();
-        cy.get('.dataContainer').should('have.text', '100 lines selected')
+        cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '100 lines selected')
     });
 
     it("Value is saved, when pressed Ok", () => {
