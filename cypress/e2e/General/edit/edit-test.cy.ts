@@ -1,5 +1,3 @@
-import {selectAll} from "../../../support/commands";
-
 describe('Edit', () => {
 
     beforeEach(() => {
@@ -36,7 +34,7 @@ describe('Edit', () => {
         cy.copy();
         cy.paste();
         cy.undo();
-        selectAll();
+        cy.selectAll();
         cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '4 lines selected')
     })
 
@@ -47,7 +45,7 @@ describe('Edit', () => {
         cy.paste();
         cy.undo();
         cy.redo();
-        selectAll();
+        cy.selectAll();
         cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '8 lines selected')
     })
 

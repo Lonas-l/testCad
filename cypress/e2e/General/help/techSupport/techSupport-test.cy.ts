@@ -13,13 +13,13 @@ describe('Feedback', () => {
     it('test tech support incorrect email', () => {
         cy.openTechSupportModal();
         cy.sendFeedback('qwe', 'description description description')
-        cy.get('body > div.MuiDialog-root.techSupport > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.actions.MuiDialogActions-spacing > button:nth-child(1)').should('be.disabled');
+        cy.get('[data-testid="tech-support-ok"]').should('be.disabled');
     })
 
     it('test tech support incorrect description', () => {
         cy.openTechSupportModal();
         cy.sendFeedback('kobane3467@fgvod.com', ' ')
-        cy.get('body > div.MuiDialog-root.techSupport > div.MuiDialog-container.MuiDialog-scrollPaper > div > div.MuiDialogActions-root.actions.MuiDialogActions-spacing > button:nth-child(1)').should('be.disabled');
+        cy.get('[data-testid="tech-support-ok"]').should('be.disabled');
     })
 
 })

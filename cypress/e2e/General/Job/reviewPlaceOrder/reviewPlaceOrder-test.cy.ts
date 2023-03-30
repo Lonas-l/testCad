@@ -1,5 +1,3 @@
-import {visitSite} from "../../../../support/commands";
-
 describe('Test Review & Place Order', () => {
 
     beforeEach(() => {
@@ -9,7 +7,7 @@ describe('Test Review & Place Order', () => {
     it("price modal is opened",  () => {
         cy.openFile('SimpleRectangle.emsx')
         cy.login();
-        cy.get('.btn').contains('Job').click();
+        cy.get('[data-testid="desktop-show-dropdown-Job"]').contains('Job').click();
         cy.get('ul > :nth-child(4)').click();
         cy.get('body > div.MuiDialog-root > div.MuiDialog-container.MuiDialog-scrollPaper > div').should('be.visible');
     });

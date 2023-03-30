@@ -30,6 +30,6 @@ describe('Contour test', () => {
         cy.openContourModal();
         cy.setContourSettings('1', true, false);
         cy.confirmContour(false);
-        cy.get('p').should('have.text', 'Contour not allowed for bend lines')
+        cy.get('[data-testid="info-message"]').should('have.text', 'Contour not allowed for bend lines')
     });
 })
