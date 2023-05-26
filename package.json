@@ -20,6 +20,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "cloc": "^1.96.0-cloc",
     "cypress": "^12.8.1",
     "cypress-real-events": "^1.7.6",
     "fs": "^0.0.1-security",

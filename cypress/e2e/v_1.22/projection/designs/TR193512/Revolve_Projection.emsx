@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.20.9-c"/>
+	<View Type="Top">
+		<Region Id="100" 
+                                BaseHeight="0" 
+                                Z="179.8642764"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="100" Center="117.49908965,0" Radius="22.67596027"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Front">
+		<Region Id="125" 
+                                BaseHeight="0" 
+                                Z="0"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Processing>
+				<Boundary Type="Revolve"/>
+			</Processing>
+			<Contour>
+				<Spline Id="101" P1="130.08055775,134.61381193" P2="136.25030499,128.1016834" P3="128.11724559,121.36649358" P4="125.00534905,119.26627039"/>
+				<Arc Id="102" Center="117.49908965,134.61381193" Radius="12.5814681" StartAngle="0" IncAngle="90"/>
+				<Straight Id="103" P1="125.00534905,117.57070598" P2="125.00534905,119.26627039"/>
+				<Arc Id="104" Center="126.19610603,113.27335951" Radius="4.45927" StartAngle="257.91978571369" IncAngle="207.56779981964"/>
+				<Arc Id="105" Center="130.23592787,107.85831593" Radius="5.0836365" StartAngle="168.02795039612" IncAngle="27.6873886294"/>
+				<Arc Id="106" Center="125.93756736,104.87877058" Radius="1.7095752" StartAngle="269.99999996674" IncAngle="200.37625238331"/>
+				<Spline Id="107" P1="125.93756736,103.16919538" P2="124.56662379,93.63163684" P3="138.71376344,69.47472857" P4="137.01972831,57.46930616"/>
+				<Spline Id="108" P1="126.73378575,40.97661472" P2="133.48497231,43.29527591" P3="141.81540962,52.31573818" P4="137.01972831,57.46930616"/>
+				<Straight Id="109" P1="126.73378575,40.97661472" P2="126.73378575,39.68041339"/>
+				<Straight Id="110" P1="126.73378575,39.68041339" P2="127.73186979,39.68041339"/>
+				<Arc Id="111" Center="127.73186979,36.96980019" Radius="2.7106132" StartAngle="249.48654121014" IncAngle="200.51345878986"/>
+				<Arc Id="112" Center="128.7557604,33.55683148" Radius="2.1587106" StartAngle="156.11009301504" IncAngle="23.86323166496"/>
+				<Straight Id="113" P1="126.59704991,33.55783652" P2="126.59704991,33.55683148"/>
+				<Spline Id="114" P1="126.5970498,33.55683148" P2="126.89175441,31.64031829" P3="129.93717264,29.33000101" P4="133.34235094,29.49458768"/>
+				<Straight Id="115" P1="133.34235094,27.64926911" P2="133.34235094,29.49458768"/>
+				<Spline Id="116" P1="133.34235094,27.64926911" P2="145.14780911,26.69007563" P3="140.42562584,4.2597051" P4="128.5356846,0"/>
+				<Straight Id="117" P1="128.5356846,-1.94404878" P2="128.5356846,0"/>
+				<Spline Id="118" P1="131.6456847,-10.58363531" P2="126.4829164,-9.66758914" P3="124.68674422,-3.68890175" P4="128.5356846,-1.94404878"/>
+				<Straight Id="119" P1="131.6456847,-12.54595914" P2="131.6456847,-10.58363531"/>
+				<Spline Id="120" P1="131.6456847,-12.54595914" P2="138.49814838,-13.01622625" P3="140.24485481,-18.22275503" P4="138.79181013,-21.34612077"/>
+				<Straight Id="121" P1="139.83078401,-21.34612077" P2="138.79181013,-21.34612077"/>
+				<Straight Id="122" P1="139.83078401,-32.66899637" P2="139.83078401,-21.34612077"/>
+				<Straight Id="123" P1="117.49908965,-32.66899637" P2="139.83078401,-32.66899637"/>
+				<Straight Id="124" P1="117.49908965,147.19528003" P2="117.49908965,-32.66899637"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.21.87-c"/>
+	<View Type="Top">
+		<Region Id="102" 
+                                BaseHeight="0" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="56.055556,-17.49272216" P2="56.055556,-13.38936784"/>
+				<Arc Id="101" Center="57.484059,-15.441045" Radius="2.5" StartAngle="124.84799359912" IncAngle="110.30401240088"/>
+			</Contour>
+		</Region>
+		<Region Id="103" 
+                                BaseHeight="0" 
+                                Z="0"
+                                
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Text Id="103" Position="52.767038,-11.213579" Height="0.782068" FontName="" HFlip="0" VFlip="0" Angle="0">RUDDER BRACKET V2</Text>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="7.619999999999999">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="104" Center="57.859098,-15.437041" Radius="3.556" StartAngle="113.68551374415" IncAngle="102.36449525585"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="7.619999999999999">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Straight Id="105" P1="56.430595,-18.11003537" P2="56.430595,-12.17973436"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="7.619999999999999">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Straight Id="106" P1="54.984059,-18.11003537" P2="54.984059,-17.529716"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="AirInside">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Straight Id="107" P1="56.430595,-18.11003537" P2="54.984059,-18.11003537"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Bottom">
+		<Region Id="112" 
+                                BaseHeight="0" 
+                                Z="17.779999999999998"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="108" P1="56.430595,-17.488718" P2="54.984059,-17.488718"/>
+				<Straight Id="109" P1="54.984059,-17.488718" P2="54.984059,-13.393372"/>
+				<Straight Id="110" P1="54.984059,-13.393372" P2="56.430595,-13.393372"/>
+				<Straight Id="111" P1="56.430595,-13.393372" P2="56.430595,-17.488718"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="76.19999999999999" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

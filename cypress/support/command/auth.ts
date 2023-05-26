@@ -1,6 +1,6 @@
 
 export function openSignInModal() : void {
-    cy.get('[data-testid="Sign In"]').click();
+    cy.get('[data-testid="sign-in"]').click();
 }
 
 export function login(email : string = Cypress.env('USER_EMAIL') , password : string = Cypress.env('USER_PASSWORD')) : void {
