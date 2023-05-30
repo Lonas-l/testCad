@@ -13,7 +13,7 @@ describe('Find Similar With Groove', () => {
 
     it('Find similar select all line elements', () => {
         cy.openFile('./line/machine/groove/FindSimilar_Groove_Case2.emsx');
-        cy.canvasClick([{x: 120, y:30}]);
+        cy.canvasClick([{x: 125, y:55}]);
         cy.findSimilar();
         cy.get('[data-testid="bot-panel-lines-count"]').should('have.text', '10 lines selected')
     })

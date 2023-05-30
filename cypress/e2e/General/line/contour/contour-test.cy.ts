@@ -4,21 +4,21 @@ describe('Contour test', () => {
         cy.deleteDownloadsFolder();
     })
 
-    it("Positive test with all line type outside", () => {
+    it("Positive test with all line type outside round true", () => {
         cy.openFile('All_Line_Types.emsx');
         cy.selectAll();
         cy.openContourModal();
-        cy.setContourSettings('1', true, false);
+        cy.setContourSettings('1', true, false, true);
         cy.confirmContour(true);
         cy.downloadDesign();
         cy.viewCompare('cypress/downloads/All_Line_Types.emsx', 'cypress/fixtures/line/contour/All_Line_Types_Contour_Outside.emsx')
     });
 
-    it("Positive test with all line type inside", () => {
+    it("Positive test with all line type inside, round true", () => {
         cy.openFile('All_Line_Types.emsx');
         cy.selectAll();
         cy.openContourModal();
-        cy.setContourSettings('0.1', false, true);
+        cy.setContourSettings('0.1', false, true, true);
         cy.confirmContour(true)
         cy.downloadDesign();
         cy.viewCompare('cypress/downloads/All_Line_Types.emsx', 'cypress/fixtures/line/contour/All_Line_Types_Contour_Inside.emsx')
@@ -28,7 +28,7 @@ describe('Contour test', () => {
         cy.openFile('Simple_Bend_Line.emsx');
         cy.selectAll();
         cy.openContourModal();
-        cy.setContourSettings('1', true, false);
+        cy.setContourSettings('1', true, false, true);
         cy.confirmContour(false);
         cy.get('[data-testid="info-message"]').should('have.text', 'Contour not allowed for bend lines')
     });

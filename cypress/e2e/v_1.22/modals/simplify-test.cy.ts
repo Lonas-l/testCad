@@ -8,7 +8,7 @@ describe('TR #198449 | Bug | Modals Described In The Description', () => {
          cy.openFile('./SimpleSpline.emsx');
          cy.selectAll();
          cy.openSimplifyModal();
-         cy.get(':nth-child(9) > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > .Yes-No-buttons > :nth-child(1) > .MuiButton-label').click();
+         cy.get(':nth-child(10) > .MuiDialog-container > [data-testid="Tolerance:-dialog"] > .MuiDialogActions-root > .Yes-No-buttons > [data-testid="simplify-ok"]').click();
          cy.openSimplifyModal();
          cy.get('p').should('have.text', 'Please wait until the previous request is completed.')
      })

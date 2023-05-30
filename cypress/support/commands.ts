@@ -55,7 +55,7 @@ declare global {
             openTechSupportModal: () => void
             changeZ: (zValue : string) => void
             selectConnected: () => void
-            setContourSettings: (value: string, isOutside : boolean, isInside: boolean) => void
+            setContourSettings: (value: string, isOutside : boolean, isInside: boolean, isRound: boolean) => void
             confirmContour : (isWait: boolean) => void
             openDivideModal : () => void
             setDivideSettings : (value : string) => void

@@ -4,5 +4,5 @@ export function openPreferencesModal() : void {
 
 export function openCalibrateModal() : void {
     cy.get('.nav > :nth-child(2)').click();
-    cy.get('form > .MuiButton-root').click();
+    cy.get(':nth-child(3) > div > form > .MuiButton-root').click();
 }

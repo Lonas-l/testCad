@@ -20,7 +20,7 @@ describe('2009 | Error | 3D Preview', () => {
 
     it('3D preview is opened without errors in console', () => {
         cy.openFile('../e2e/v_1.22/preview/designs/2009/Preview_Console_Error.emsx');
-        cy.get('.sprite-3dPreview').click();
+        cy.get('[data-testid="desktop-up-menu-3d"]').click();
     })
 })
 

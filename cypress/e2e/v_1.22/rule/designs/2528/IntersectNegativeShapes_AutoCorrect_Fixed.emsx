@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <eMachineShop3DObjects VersionId="1.8">
-	<Creator Name="Web CAD" Version="1.21.100-c"/>
+	<Creator Name="Web CAD" Version="1.23.56-c"/>
 	<View Type="Top">
-		<Region Id="100" 
-                                BaseHeight="0" 
+		<Region Id="100"
+                                BaseHeight="0"
                                 Z="101.25313879"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
 				<Circle Id="100" Center="72.39409023,0" Radius="20"/>
 			</Contour>
 		</Region>
-		<Region Id="105" 
-                                BaseHeight="76.25313879" 
+		<Region Id="105"
+                                BaseHeight="76.25313879"
                                 Z="-25"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
@@ -25,10 +25,10 @@
 				<Straight Id="104" P1="67.4613548,-19.38215987" P2="67.4613548,-15.15019461"/>
 			</Contour>
 		</Region>
-		<Region Id="110" 
-                                BaseHeight="76.25313879" 
+		<Region Id="110"
+                                BaseHeight="76.25313879"
                                 Z="-25"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
@@ -38,10 +38,10 @@
 				<Straight Id="109" P1="91.7762501,-4.93273543" P2="87.54428484,-4.93273543"/>
 			</Contour>
 		</Region>
-		<Region Id="115" 
-                                BaseHeight="76.25313879" 
+		<Region Id="115"
+                                BaseHeight="76.25313879"
                                 Z="-25"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
@@ -51,10 +51,10 @@
 				<Straight Id="114" P1="53.01193036,4.93273543" P2="57.24389562,4.93273543"/>
 			</Contour>
 		</Region>
-		<Region Id="120" 
-                                BaseHeight="76.25313879" 
+		<Region Id="120"
+                                BaseHeight="76.25313879"
                                 Z="-25"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
@@ -66,10 +66,10 @@
 		</Region>
 	</View>
 	<View Type="Front">
-		<Region Id="140" 
-                                BaseHeight="0" 
+		<Region Id="140"
+                                BaseHeight="0"
                                 Z="0"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Processing>
@@ -80,13 +80,13 @@
 				<Straight Id="122" P1="92.39409023,0" P2="92.39409023,4.11937291"/>
 				<Straight Id="123" P1="92.39409023,4.11937291" P2="89.90385504,6.6096081"/>
 				<Arc Id="124" Center="83.34381104,11.03121966" Radius="7.9110572" StartAngle="326.01917765877" IncAngle="108.84889966922"/>
-				<Arc Id="125" Center="83.38156551,20.39645503" Radius="2.6641779" StartAngle="319.55002866239" IncAngle="137.82456816909"/>
-				<Arc Id="126" Center="141.7922138,43.83413864" Radius="62.32532842" StartAngle="183.77518344332" IncAngle="15.71608891413"/>
+				<Arc Id="125" Center="83.38156551,20.39645503" Radius="2.6641779" StartAngle="319.55002866239" IncAngle="137.84620332877"/>
+				<Arc Id="126" Center="141.7922138,43.83413864" Radius="62.32532842" StartAngle="183.77518344332" IncAngle="15.71608890536"/>
 				<Arc Id="127" Center="151.07592649,44.75650354" Radius="71.65029305" StartAngle="172.13917813983" IncAngle="11.88318685756"/>
 				<Arc Id="128" Center="143.67688268,45.91383042" Radius="64.16263307" StartAngle="166.80914437867" IncAngle="5.45014387096"/>
 				<Arc Id="129" Center="124.47522707,50.5693588" Radius="44.40549277" StartAngle="160.71840979472" IncAngle="6.28552002495"/>
 				<Arc Id="130" Center="99.52574731,59.58955019" Radius="17.87905882" StartAngle="150.83702449664" IncAngle="10.76470302987"/>
-				<Straight Id="131" P1="83.91308894,68.30193466" P2="85.01867383,69.47836002"/>
+				<Straight Id="131" P1="83.91308894,68.30193466" P2="85.01767403,69.47836023"/>
 				<Arc Id="132" Center="85.01867383,71.80681332" Radius="2.3284533" StartAngle="269.97539815134" IncAngle="141.44965723159"/>
 				<Straight Id="133" P1="86.47055242,73.62718231" P2="89.75148631,76.9081162"/>
 				<Straight Id="134" P1="89.75148631,76.9081162" P2="89.75148631,99.82873601"/>

@@ -6,7 +6,7 @@ export function openFeedbackModal() : void {
 
 export function openTechSupportModal() : void {
     cy.get('[data-testid="desktop-show-dropdown-Help"]').click();
-    cy.get('[data-testid="desktop-menu-item-techundefinedsupport"]').click();
+    cy.get('[data-testid="desktop-menu-item-tech-support"]').click();
 }
 
 export function sendFeedback(email : string, description : string) : void {

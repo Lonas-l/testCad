@@ -1,4 +1,4 @@
-describe('Feedback', () => {
+describe('Tech support', () => {
 
     beforeEach(() => {
         cy.visit(Cypress.env('FRONT_URL'));

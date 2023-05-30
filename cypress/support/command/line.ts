@@ -35,7 +35,7 @@ export function tangent() : void {
 
 export function selectConnected() : void {
     cy.openLineDropdown();
-    cy.get('[data-testid="desktop-menu-item-selectundefinedconnected"]').click();
+    cy.get('[data-testid="desktop-menu-item-select-connected"]').click();
 }
 
 //Scale
@@ -61,28 +61,30 @@ export function scaleElement(horizontally: string, vertically: string, isProport
 
 export function openContourModal() : void {
     cy.openLineDropdown();
-    cy.get('a').contains('Contour').click();
+    cy.get('[data-testid="desktop-menu-item-contour"]').click();
 }
 
-export function setContourSettings(value: string, isOutside : boolean, isInside: boolean) : void {
-    cy.get('form > :nth-child(1) > input').clear().type(value);
+export function setContourSettings(value: string, isOutside : boolean, isInside: boolean, isRound: boolean) : void {
+    cy.get('[data-testid="contour-window-distance"]').clear().type(value);
 
     if (!isInside) {
-        cy.get(':nth-child(2) > .MuiFormControlLabel-root > .MuiTypography-root').click()
+        cy.get('[data-testid="contour-window-form-control-inside"]').click()
     }
     if (!isOutside) {
-
-        cy.get(':nth-child(3) > .MuiFormControlLabel-root > .MuiTypography-root').click()
+        cy.get('[data-testid="contour-window-form-control-outside"]').click()
+    }
+    if (!isRound) {
+        cy.get('[data-testid="contour-window-form-control-round"]').click()
     }
 }
 
 export function confirmContour(isWait: boolean) : void {
     if (isWait) {
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/contour`).as('contourResponse');
-        cy.get('.MuiDialogActions-root > :nth-child(1)').click();
+        cy.get('[data-testid="contour-window-ok"]').click();
         cy.wait('@contourResponse');
     } else {
-        cy.get('.MuiDialogActions-root > :nth-child(1)').click();
+        cy.get('[data-testid="contour-window-ok"]').click();
     }
 }
 

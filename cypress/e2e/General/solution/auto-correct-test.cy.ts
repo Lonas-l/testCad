@@ -9,7 +9,7 @@ describe('Auto correct solution', () => {
         cy.openFile('./solutions/intersectMainShape.emsx');
 
         cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
-        cy.get('.sprite-3dPreview').click();
+        cy.get('[data-testid="desktop-up-menu-3d"]').click();
         cy.get(':nth-child(3) > .MuiTypography-root > span').click();
         cy.get('span[class=MuiButton-label]').contains('OK').click();
         cy.wait('@previewResponse')

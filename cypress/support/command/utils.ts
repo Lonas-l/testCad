@@ -46,7 +46,7 @@ export function openFile(path: string) : void {
 export function openFileAndUseSolution (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) : void {
     cy.openFile(initialDesignUrl)
     cy.wait(10);
-    cy.get('[data-testid="desktop-up-menu-3d"]');
+    cy.get('[data-testid="desktop-up-menu-3d"]').click();
     cy.get(`${solution}`).click();
     cy.get('span[class=MuiButton-label]').contains('OK').click();
     cy.downloadDesign();

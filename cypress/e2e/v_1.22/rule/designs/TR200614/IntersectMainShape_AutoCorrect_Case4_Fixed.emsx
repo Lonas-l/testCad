@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
 <eMachineShop3DObjects VersionId="1.8">
-	<Creator Name="Web CAD" Version="1.21.87-c"/>
+	<Creator Name="Web CAD" Version="1.23.56-c"/>
 	<View Type="Top">
-		<Region Id="103" 
-                                BaseHeight="0" 
+		<Region Id="103"
+                                BaseHeight="0"
                                 Z="1.5900000010000002"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Arc Id="100" Center="150,25" Radius="25" StartAngle="180" IncAngle="90"/>
-				<Straight Id="101" P1="150,0" P2="100,0"/>
-				<Arc Id="102" Center="100,25" Radius="25" StartAngle="270" IncAngle="90"/>
+				<Straight Id="100" P1="100,50" P2="150,50"/>
+				<Arc Id="101" Center="150,25" Radius="25" StartAngle="90" IncAngle="90"/>
+				<Arc Id="102" Center="100,25" Radius="25" StartAngle="0" IncAngle="90"/>
 			</Contour>
 		</Region>
-		<Region Id="107" 
-                                BaseHeight="0" 
+		<Region Id="107"
+                                BaseHeight="0"
                                 Z="1.5900000010000002"
-                                
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Arc Id="104" Center="150,25" Radius="25" StartAngle="90" IncAngle="90"/>
-				<Straight Id="105" P1="100,50" P2="150,50"/>
-				<Arc Id="106" Center="100,25" Radius="25" StartAngle="0" IncAngle="90"/>
+				<Straight Id="104" P1="150,0" P2="100,0"/>
+				<Arc Id="105" Center="150,25" Radius="25" StartAngle="180" IncAngle="90"/>
+				<Arc Id="106" Center="100,25" Radius="25" StartAngle="270" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="112" 
