@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.23.62-c"/>
+	<View Type="Top">
+		<Region Id="100"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="100" Center="75.1105,24.61" Radius="1.4605"/>
+			</Contour>
+		</Region>
+		<Region Id="101"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="101" Center="185.09238889,24.61" Radius="1.4605"/>
+			</Contour>
+		</Region>
+		<Region Id="102"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="102" Center="75.1105,124.24004245" Radius="1.4605"/>
+			</Contour>
+		</Region>
+		<Region Id="103"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="103" Center="185.09238889,124.24004245" Radius="1.4605"/>
+			</Contour>
+		</Region>
+		<Region Id="104"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="104" Center="11.63547878,25.4" Radius="2.19075"/>
+			</Contour>
+		</Region>
+		<Region Id="105"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="105" Center="49.64452122,25.4" Radius="2.19075"/>
+			</Contour>
+		</Region>
+		<Region Id="106"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="106" Center="11.63547878,170.43004245" Radius="2.19075"/>
+			</Contour>
+		</Region>
+		<Region Id="107"
+                                BaseHeight="-50000000"
+                                Z="AirInside"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="107" Center="49.64452122,170.43004245" Radius="2.19075"/>
+			</Contour>
+		</Region>
+		<Region Id="148"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="108" P1="89.0407181,0" P2="171.16217079,0"/>
+				<Arc Id="109" Center="171.16217079,0.79" Radius="0.79" StartAngle="270" IncAngle="45"/>
+				<Straight Id="110" P1="171.72078514,0.23138564" P2="188.69150325,17.20210375"/>
+				<Arc Id="111" Center="188.13288889,17.7607181" Radius="0.79" StartAngle="315" IncAngle="45"/>
+				<Straight Id="112" P1="188.92288889,17.7607181" P2="188.92288889,35.6395638"/>
+				<Arc Id="113" Center="188.13288889,35.6395638" Radius="0.79" StartAngle="0" IncAngle="45"/>
+				<Straight Id="114" P1="188.69150325,36.19817815" P2="177.28078514,47.60889625"/>
+				<Arc Id="115" Center="177.8393995,48.16751061" Radius="0.79" StartAngle="135" IncAngle="90"/>
+				<Straight Id="116" P1="177.28078514,48.72612497" P2="188.69150325,60.13684307"/>
+				<Arc Id="117" Center="188.13288889,60.69545743" Radius="0.79" StartAngle="315" IncAngle="45"/>
+				<Straight Id="118" P1="188.92288889,60.69545743" P2="188.92288889,88.15458502"/>
+				<Arc Id="119" Center="188.13288889,88.15458502" Radius="0.79" StartAngle="0" IncAngle="45"/>
+				<Straight Id="120" P1="188.69150325,88.71319938" P2="177.28078514,100.12391748"/>
+				<Arc Id="121" Center="177.8393995,100.68253184" Radius="0.79" StartAngle="135" IncAngle="90"/>
+				<Straight Id="122" P1="177.28078514,101.24114619" P2="188.69150325,112.6518643"/>
+				<Arc Id="123" Center="188.13288889,113.21047865" Radius="0.79" StartAngle="315" IncAngle="45"/>
+				<Straight Id="124" P1="188.92288889,113.21047865" P2="188.92288889,131.08932435"/>
+				<Arc Id="125" Center="188.13288889,131.08932435" Radius="0.79" StartAngle="0" IncAngle="45"/>
+				<Straight Id="126" P1="188.69150325,131.6479387" P2="171.72078514,148.61865681"/>
+				<Arc Id="127" Center="171.16217079,148.06004245" Radius="0.79" StartAngle="45" IncAngle="45"/>
+				<Straight Id="128" P1="171.16217079,148.85004245" P2="89.0407181,148.85004245"/>
+				<Arc Id="129" Center="89.0407181,148.06004245" Radius="0.79" StartAngle="90" IncAngle="45"/>
+				<Straight Id="130" P1="88.48210375,148.61865681" P2="71.51138564,131.6479387"/>
+				<Arc Id="131" Center="72.07,131.08932435" Radius="0.79" StartAngle="135" IncAngle="45"/>
+				<Straight Id="132" P1="71.28,131.08932435" P2="71.28,113.21047865"/>
+				<Arc Id="133" Center="72.07,113.21047865" Radius="0.79" StartAngle="180" IncAngle="45"/>
+				<Straight Id="134" P1="71.51138564,112.6518643" P2="82.92210375,101.24114619"/>
+				<Arc Id="135" Center="82.36348939,100.68253184" Radius="0.79" StartAngle="315" IncAngle="90"/>
+				<Straight Id="136" P1="82.92210375,100.12391748" P2="71.51138564,88.71319938"/>
+				<Arc Id="137" Center="72.07,88.15458502" Radius="0.79" StartAngle="135" IncAngle="45"/>
+				<Straight Id="138" P1="71.28,88.15458502" P2="71.28,60.69545743"/>
+				<Arc Id="139" Center="72.07,60.69545743" Radius="0.79" StartAngle="180" IncAngle="45"/>
+				<Straight Id="140" P1="71.51138564,60.13684307" P2="82.92210375,48.72612497"/>
+				<Arc Id="141" Center="82.36348939,48.16751061" Radius="0.79" StartAngle="315" IncAngle="90"/>
+				<Straight Id="142" P1="82.92210375,47.60889625" P2="71.51138564,36.19817815"/>
+				<Arc Id="143" Center="72.07,35.6395638" Radius="0.79" StartAngle="135" IncAngle="45"/>
+				<Straight Id="144" P1="71.28,35.6395638" P2="71.28,17.7607181"/>
+				<Arc Id="145" Center="72.07,17.7607181" Radius="0.79" StartAngle="180" IncAngle="45"/>
+				<Straight Id="146" P1="71.51138564,17.20210375" P2="88.48210375,0.23138564"/>
+				<Arc Id="147" Center="89.0407181,0.79" Radius="0.79" StartAngle="225" IncAngle="45"/>
+			</Contour>
+		</Region>
+		<Region Id="149"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="149" P1="83.15348939,48.16751061" P2="177.0493995,48.16751061"/>
+			</Contour>
+		</Region>
+		<Region Id="150"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="150" P1="83.15348939,100.68253184" P2="177.0493995,100.68253184"/>
+			</Contour>
+		</Region>
+		<Region Id="151"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="151" P1="82.36348939,6.35" P2="82.36348939,47.0502819"/>
+			</Contour>
+		</Region>
+		<Region Id="152"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="152" P1="177.8393995,6.35" P2="177.8393995,47.0502819"/>
+			</Contour>
+		</Region>
+		<Region Id="153"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="153" P1="82.36348939,49.28473933" P2="82.36348939,99.56530312"/>
+			</Contour>
+		</Region>
+		<Region Id="154"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="154" P1="177.8393995,49.28473933" P2="177.8393995,99.56530312"/>
+			</Contour>
+		</Region>
+		<Region Id="155"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="155" P1="82.36348939,101.79976055" P2="82.36348939,142.50004245"/>
+			</Contour>
+		</Region>
+		<Region Id="156"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="156" P1="177.8393995,101.79976055" P2="177.8393995,142.50004245"/>
+			</Contour>
+		</Region>
+		<Region Id="165"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="157" P1="0.79,0" P2="60.49,0"/>
+				<Arc Id="158" Center="60.49,0.79" Radius="0.79" StartAngle="270" IncAngle="90"/>
+				<Straight Id="159" P1="61.28,0.79" P2="61.28,195.04004245"/>
+				<Arc Id="160" Center="60.49,195.04004245" Radius="0.79" StartAngle="0" IncAngle="90"/>
+				<Straight Id="161" P1="60.49,195.83004245" P2="0.79,195.83004245"/>
+				<Arc Id="162" Center="0.79,195.04004245" Radius="0.79" StartAngle="90" IncAngle="90"/>
+				<Straight Id="163" P1="0,195.04004245" P2="0,0.79"/>
+				<Arc Id="164" Center="0.79,0.79" Radius="0.79" StartAngle="180" IncAngle="90"/>
+			</Contour>
+		</Region>
+		<Region Id="166"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="166" P1="0,48.95751061" P2="61.28,48.95751061"/>
+			</Contour>
+		</Region>
+		<Region Id="167"
+                                BaseHeight="0"
+                                Z="0.79"
+
+                      >
+			<Machine Id="6" Name="Bend"/>
+			<Processing>
+				<Bend Angle="-90" Radius="0.79375"/>
+			</Processing>
+			<Contour>
+				<Straight Id="167" P1="0,146.87253184" P2="61.28,146.87253184"/>
+			</Contour>
+		</Region>
+		<Region Id="168"
+                                BaseHeight="0"
+                                Z="0"
+
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Text Id="168" Position="118.92030008,71.44802038" Height="5.20405778" FontName="" HFlip="0" VFlip="0" Angle="0">Bottom</Text>
+			</Contour>
+		</Region>
+		<Region Id="169"
+                                BaseHeight="0"
+                                Z="0"
+
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Text Id="169" Position="24.06789158,97.91502122" Height="6.128" FontName="" HFlip="0" VFlip="0" Angle="0">Top</Text>
+			</Contour>
+		</Region>
+		<Region Id="170"
+                                BaseHeight="0"
+                                Z="0"
+
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Text Id="170" Position="-154.10446643,205.83004245" Height="8" FontName="" HFlip="0" VFlip="0" Angle="0">Box:Standard clam  Width:2.213"  Length:4.000"  Height:2.000" Outer part overhang:0.10" Small hole:0.11"</Text>
+			</Contour>
+		</Region>
+		<Region Id="171"
+                                BaseHeight="0"
+                                Z="0"
+
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Text Id="171" Position="-165.59980456,-10" Height="8" FontName="" HFlip="0" VFlip="0" Angle="0">Notice: box designed ONLY for material thickness 0.031", radius of bend tool 0.250" (do not remove this text).</Text>
+			</Contour>
+		</Region>
+		<Region Id="172"
+                                BaseHeight="0"
+                                Z="0"
+
+                      >
+			<Machine Id="14" Name="Comment to Machinist" CTM="1" LineType="Solid"/>
+			<Contour>
+				<Text Id="172" Position="-117.65187701,-25" Height="8" FontName="" HFlip="0" VFlip="0" Angle="0">Fit clearance: 0.02" Bend angles +/- 2 deg except flanges +0/-3 deg, radius +/- 30%</Text>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

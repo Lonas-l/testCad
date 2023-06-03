@@ -23,20 +23,33 @@ export function changeZ(zValue : string) : void {
     cy.get('[data-testid="numeric-Z"]').clear().type(zValue);
 }
 
+export function confirmRenameFile() : void {
+    cy.get('[data-testid="save-file-ok"]').click();
+}
+
 export function downloadDesign() : void {
     cy.get('[data-testid="desktop-up-menu-download"] > .sprite').click();
 }
 
 export function isPreviewOpened() : void {
+    cy.get('.popup-container').should('be.visible');
+}
+
+export function open3DPreview() : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse')
     cy.get('[data-testid="desktop-up-menu-3d"]').click();
     cy.wait('@previewResponse');
-    cy.get('.popup-container').should('be.visible');
+}
+
+export function open3DPreviewViaShortcut() : void {
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/meshes`).as('previewResponse');
+    cy.realPress(['Meta', 'R']);
+    cy.wait('@previewResponse');
 }
 
 export function changeView(view: string) : void {
     cy.wait(100)
-    cy.get(view).click();
+    cy.get(`[data-testid="${view}"]`).click();
 }
 
 export function openFile(path: string) : void {

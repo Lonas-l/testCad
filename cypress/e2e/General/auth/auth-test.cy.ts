@@ -37,10 +37,10 @@ describe('Restore password', () => {
     it('Test restore password positive', () => {
         cy.openSignInModal();
         cy.get('[data-testid="login-restore-password"]').click();
-        cy.get('[data-testid="restore-email"]').type(Cypress.env('USER_EMAIL'))
-        cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/reset-password`).as('restorePasswordResponse')
+        cy.get('[data-testid="restore-email"]').type(Cypress.env('USER_EMAIL'));
+        cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/reset-password`).as('restorePasswordResponse');
         cy.get('[data-testid="Restore-OK"]').click();
-        cy.wait('@restorePasswordResponse')
+        cy.wait('@restorePasswordResponse');
         cy.get('[data-testid="info-message"]').should('have.text', 'We emailed you a reset password link. Please use that link to login and change your password. If you didn\'t receive an email, please check your spam or ads.')
     })
 

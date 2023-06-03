@@ -8,7 +8,7 @@ describe('TR #199900 | Bug | Front View | Workspace', () => {
 
      it('Incorrect erasing revolve element ', () => {
          cy.openFile('../e2e/v_1.22/canvas/designs/TR199900/revolveErasing.emsx');
-         cy.changeView('.leftData > :nth-child(5)');
+         cy.changeView('bot-panel-Front-view');
          cy.get('#app > div > section > div.LeftMenu > button:nth-child(8)').click();
 
          cy.get('canvas').click(483,261 );

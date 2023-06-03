@@ -33,9 +33,9 @@ describe('Intersect test', () => {
 
     it('Intersect only projection', () => {
         cy.openFile('./SimpleRectangle.emsx');
-        cy.changeView('.leftData > :nth-child(3)')
+        cy.get('[data-testid="bot-panel-Right-view"]');
         cy.selectAll();
         cy.intersectSelected();
-        cy.get('p').should('have.text', 'This action is not permitted for a projection.');
+        cy.get('p').should('have.text', 'Highlighted line doesn\'t intersect other lines.');
     });
  });

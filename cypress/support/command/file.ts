@@ -1,6 +1,5 @@
 export function exportFile(fileExtension : string) : void {
-
-    cy.get('.btn').contains('File').click();
+    cy.openFileDropdown();
     cy.get('span').contains('Export to').trigger('mouseover');
 
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/export/${fileExtension}`).as('exportResponse');
@@ -18,3 +17,8 @@ export function toSharedDesign(designUrl : string) : void {
     cy.visit(designUrl);
     cy.wait('@shareResponse');
 }
+
+export function openFileDropdown() : void {
+    cy.get('[data-testid="desktop-show-dropdown-File"]').click();
+}
+

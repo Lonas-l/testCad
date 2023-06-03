@@ -15,29 +15,23 @@ describe('Line Machine', () => {
         cy.selectAll();
         cy.openMachineModal();
 
-        cy.machineModalSwitchTab('.items-list > :nth-child(1)');
-        cy.get('[data-testid="line-machine-Auto"]').should('have.class', 'active');
+        cy.machineModalSwitchTab('line-machine-Auto');
+        cy.get('[data-testId="line-machine-Auto"]').should('have.class', 'active');
 
-        cy.machineModalSwitchTab('[data-testid="line-machine-Thread"]');
-        cy.get('[data-testid="line-machine-Thread"]').should('have.class', 'active');
+        cy.machineModalSwitchTab('line-machine-Thread');
+        cy.get('[data-testId="line-machine-Thread"]').should('have.class', 'active');
 
-        cy.machineModalSwitchTab('[data-testid="line-machine-Bend"]');
-        cy.get('[data-testid="line-machine-Bend"]').should('have.class', 'active');
+        cy.machineModalSwitchTab('line-machine-Bend');
+        cy.get('[data-testId="line-machine-Bend"]').should('have.class', 'active');
 
-        cy.machineModalSwitchTab('[data-testid="line-machine-Tolerance"]');
-        cy.get('[data-testid="line-machine-Tolerance"]').should('have.class', 'active');
+        cy.machineModalSwitchTab('line-machine-Tolerance');
+        cy.get('[data-testId="line-machine-Tolerance"]').should('have.class', 'active');
 
-        cy.machineModalSwitchTab('[data-testid="line-machine-Comment/Construction"]');
-        cy.get('[data-testid="line-machine-Comment/Construction"]').should('have.class', 'active');
+        cy.machineModalSwitchTab('line-machine-Comment/Construction');
+        cy.get('[data-testId="line-machine-Comment/Construction"]').should('have.class', 'active');
 
-        cy.machineModalSwitchTab('[data-testid="line-machine-Comment to Machinist"]');
-        cy.get('[data-testid="line-machine-Comment to Machinist"]').should('have.class', 'active');
-    })
-
-    it('Switch between left tabs works correctly', () => {
-        cy.openFile('./SimpleRectangle.emsx');
-        cy.selectAll();
-        cy.openMachineModal();
+        cy.machineModalSwitchTab('line-machine-Comment to Machinist');
+        cy.get('[data-testId="line-machine-Comment to Machinist"]').should('have.class', 'active');
     })
 
 })

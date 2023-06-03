@@ -11,7 +11,7 @@ describe('TR #199763 | Bug | Job | Settings | Summary', () => {
         cy.openSettings();
         cy.get(':nth-child(3) > .settingTab').click();
 
-        cy.get('tbody > :nth-child(8) > :nth-child(2)').should('have.text', '0.000"')
+        cy.get('tbody > :nth-child(8) > :nth-child(2)').should('have.text', '0.000"');
         cy.get(':nth-child(11) > :nth-child(2)').should('have.text', '6')
     })
 })

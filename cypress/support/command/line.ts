@@ -1,8 +1,8 @@
 
 interface nearEdge {
-    mode: string
-    input: string
-    inputValue: string
+    mode?: string
+    input?: string
+    inputValue?: string
 }
 
 export function openLineDropdown() : void {
@@ -142,17 +142,27 @@ export function openMachineModal() : void {
 
 
 export function machineModalSwitchTab(tab: string) : void {
-    cy.get(tab).click();
+    cy.get(`[data-testid="${tab}"]`).click();
 }
 
 
-export function setNearEdgeSettings(nearEdge? : nearEdge) : void {
-    if (nearEdge) {
+export function setNearEdgeSettings(nearEdge : nearEdge) : void {
+
+    if (nearEdge.mode) {
         cy.get(nearEdge.mode).click();
-        if (nearEdge.input) {
-            cy.get(nearEdge.input).clear().type(nearEdge.inputValue)
-        }
     }
+
+    if (nearEdge.input) {
+        cy.get(nearEdge.input).clear().type(nearEdge.inputValue)
+    }
+}
+
+export function setSideWallSettings(sideWall : string) : void {
+    cy.get('[data-testId="side-wall-angle"]').focus().clear().type(sideWall);
+}
+
+export function confirmMachine() : void {
+    cy.get('[data-testId="line-machine-ok"]').click();
 }
 
 // Machine Groove
@@ -165,6 +175,10 @@ export function addGroove(topDepth : string, width: string, horizontalDepth: str
     cy.get('[data-testid="groove-width"]').clear().type(width);
     cy.get('[data-testid="groove-horizontal-depth"]').clear().type(horizontalDepth);
     cy.get('[data-testid="groove-add"]').click();
+}
+
+export function confirmGroove() : void {
+    cy.get('[data-testid="groove-ok"]').click();
 }
 
 export function replaceGroove(topDepth : string, width: string, horizontalDepth: string) : void {

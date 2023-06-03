@@ -6,7 +6,7 @@ module.exports = defineConfig({
   projectId: 'kmrjht',
   e2e: {
     setupNodeEvents(on) {
-        on('task', verifyDownloadTasks)
+        on('task', verifyDownloadTasks);
         on('task', { removeDirectory })
     },
     video: false,

@@ -7,10 +7,10 @@ declare global {
 export function checkProjection(correctPoint : string) : void {
     cy.wait(50);
     cy.window().then( async win => {
-        const workspace = await win.app.workspace.projections;
+        const projections = await win.app.workspace.projections;
         const arrProjection: Array<string> = [];
-        for (let key in workspace) {
-            const extremes = workspace[key].shape.extremum;
+        for (let projection of projections) {
+            const extremes = projection.projectionShape.extremum;
             arrProjection.push(extremes.maxX.toFixed(5), extremes.maxY.toFixed(5), extremes.minX.toFixed(5), extremes.minY.toFixed(5));
         }
 
@@ -21,14 +21,17 @@ export function checkProjection(correctPoint : string) : void {
 
 export function checkProjectionFromAllView(correctPoints : Array<string> ) : void {
     const views: Array<string> = [
-        '.leftData > :nth-child(2)',
-        '.leftData > :nth-child(3)',
-        '.leftData > :nth-child(4)',
-        '.leftData > :nth-child(5)',
-        '.leftData > :nth-child(6)',
-        '.leftData > :nth-child(7)'
+        'bot-panel-Top-view',
+        'bot-panel-Right-view',
+        'bot-panel-Left-view',
+        'bot-panel-Front-view',
+        'bot-panel-Back-view',
+        'bot-panel-Bottom-view'
     ];
-    for (let i = 0; i <= correctPoints.length; i++) {
+    for (let i : number = 0; i < correctPoints.length; i++) {
+        if (correctPoints[i] === '') {
+            continue;
+        }
         cy.changeView(views[i]);
         checkProjection(correctPoints[i]);
     }

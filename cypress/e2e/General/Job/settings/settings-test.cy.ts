@@ -84,7 +84,7 @@ describe('Specifications: Bend', () => {
         cy.openFile('./Simple_Bend_Line.emsx');
         cy.openSettings();
         cy.openBendTab();
-        cy.get('[data-testid="settings-bend-specs-select"]').select('0.063"')
+        cy.get('[data-testid="settings-bend-specs-select"]').select('0.063"');
         cy.get('[data-testid="settings-bend-specs-select"]').should('have.value','1.5875');
     })
 
@@ -129,12 +129,12 @@ describe('Test Address', () => {
     })
 
     it('Save Address Data', () => {
-        cy.login()
+        cy.login();
         cy.openSettings();
         cy.openAddressTab();
 
         cy.get('[data-testid="settings-address-first-name"]').clear().type(String(Math.random()));
-        cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/me`).as('meResponse')
+        cy.intercept('POST', `${Cypress.env('BACK_URL')}/api/auth/me`).as('meResponse');
         cy.get('[data-testid="settings-ok"]').click();
         cy.wait('@meResponse')
 
@@ -153,7 +153,7 @@ describe('Test Address', () => {
 
         cy.openSummaryTab();
 
-        cy.get('[data-testid="setting-summary-value-1"]').contains('name lastname company')
+        cy.get('[data-testid="setting-summary-value-1"]').contains('name lastname company');
         cy.get('[data-testid="setting-summary-value-2"]').contains('email@qwe.qw')
 
     })

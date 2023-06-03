@@ -36,8 +36,8 @@ describe('Changing quantity', () => {
 
     it('Quantity changed without errors', () => {
         cy.openFile('SimpleRectangle.emsx');
-        cy.login()
-        cy.openPrice(true)
+        cy.login();
+        cy.openPrice(true);
         cy.changeQuantityInPrice('100');
         cy.get('.InputNumber > input').should('have.value', '100')
     })

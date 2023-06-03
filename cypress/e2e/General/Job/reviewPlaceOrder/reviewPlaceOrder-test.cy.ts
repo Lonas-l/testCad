@@ -5,7 +5,7 @@ describe('Test Review & Place Order', () => {
     })
 
     it("price modal is opened",  () => {
-        cy.openFile('SimpleRectangle.emsx')
+        cy.openFile('SimpleRectangle.emsx');
         cy.login();
         cy.get('[data-testid="desktop-show-dropdown-Job"]').contains('Job').click();
         cy.get('ul > :nth-child(4)').click();

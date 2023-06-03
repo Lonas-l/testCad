@@ -15,10 +15,8 @@ import * as rightTopButtons from './command/rightTopButtons';
 import * as job from './command/job';
 import * as file from './command/file';
 import * as dimensionFields from './command/dimensionFields';
+import * as tools from './command/tools';
 import 'cypress-file-upload';
-import {openSignInModal} from "./command/auth";
-import {openAddressTab, openSummaryTab} from "./command/job";
-import {openLineDropdown} from "./command/line";
 
 require('cypress-delete-downloads-folder').addCustomCommand();
 
@@ -75,6 +73,7 @@ declare global {
             openMachineModal: () => void
             machineModalSwitchTab: (tab: string) => void
             setNearEdgeSettings: (nearEdge? : object) => void
+            setSideWallSettings: (sideWall? : string) => void
             redo: () => void
             cut: () => void
             undo: () => void
@@ -105,6 +104,17 @@ declare global {
             openAddressTab: () => void;
             openSummaryTab: () => void;
             openLineDropdown: () => void;
+            openFileDropdown: () => void;
+            confirmGroove: () => void;
+            confirmMachine: () => void;
+            confirmRenameFile: () => void;
+            open3DPreview: () => void;
+            open3DPreviewViaShortcut: () => void;
+
+            openToolsDropdown: () => void;
+            openSheetMetalBoxModal: () => void;
+            openSpurGearModal: () => void;
+            confirmWizard: () => void;
         }
     }
 }
@@ -115,6 +125,7 @@ Cypress.Commands.add('checkDimensionInTheField', dimensionFields.checkDimensionI
 //File
 Cypress.Commands.add('exportFile', file.exportFile)
 Cypress.Commands.add('toSharedDesign', file.toSharedDesign)
+Cypress.Commands.add('openFileDropdown', file.openFileDropdown)
 
 //Job
 Cypress.Commands.add('openSettings', job.openSettings)
@@ -187,12 +198,21 @@ Cypress.Commands.add('confirmConvertSplineToArc', line.confirmConvertSplineToArc
 Cypress.Commands.add('openSimplifyModal', line.openSimplifyModal)
 
 Cypress.Commands.add('openMachineModal', line.openMachineModal)
+Cypress.Commands.add('confirmMachine', line.confirmMachine)
 Cypress.Commands.add('machineModalSwitchTab', line.machineModalSwitchTab)
 Cypress.Commands.add('setNearEdgeSettings', line.setNearEdgeSettings)
+Cypress.Commands.add('setSideWallSettings', line.setSideWallSettings)
 Cypress.Commands.add('removeSelectedGroove', line.removeSelectedGroove)
 Cypress.Commands.add('addGroove', line.addGroove)
 Cypress.Commands.add('replaceGroove', line.replaceGroove)
 Cypress.Commands.add('openGrooveModal', line.openGrooveModal)
+Cypress.Commands.add('confirmGroove', line.confirmGroove)
+
+//Tools
+Cypress.Commands.add('openToolsDropdown', tools.openToolsDropdown)
+Cypress.Commands.add('openSheetMetalBoxModal', tools.openSheetMetalBoxModal)
+Cypress.Commands.add('openSpurGearModal', tools.openSpurGearModal)
+Cypress.Commands.add('confirmWizard', tools.confirmWizard)
 
 //Right tools panel
 Cypress.Commands.add('enableRotateMode', rightToolsPanel.enableRotateMode)
@@ -209,10 +229,13 @@ Cypress.Commands.add('canvasClick', utils.canvasClick)
 Cypress.Commands.add('changeZ', utils.changeZ)
 Cypress.Commands.add('downloadDesign', utils.downloadDesign)
 Cypress.Commands.add('isPreviewOpened', utils.isPreviewOpened)
+Cypress.Commands.add('open3DPreview', utils.open3DPreview)
+Cypress.Commands.add('open3DPreviewViaShortcut', utils.open3DPreviewViaShortcut)
 Cypress.Commands.add('changeView', utils.changeView)
 Cypress.Commands.add('openFile', utils.openFile)
 Cypress.Commands.add('openFileAndUseSolution', utils.openFileAndUseSolution)
 Cypress.Commands.add('viewCompare', utils.viewCompare)
+Cypress.Commands.add('confirmRenameFile', utils.confirmRenameFile)
 
 //MyDesignsTab
 Cypress.Commands.add('saveDesign', myDesigns.saveDesign)

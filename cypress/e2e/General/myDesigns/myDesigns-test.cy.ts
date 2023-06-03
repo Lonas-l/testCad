@@ -10,10 +10,10 @@ describe('My Designs Tab Test', () => {
         let designCount = 0;
         cy.get('.Designs').find('.item').then(item => {
             designCount = item.length;
-        })
+        });
         cy.get('[data-testid="design-0-copy"] > .MuiIconButton-label').click();
 
-        cy.intercept('GET', `${Cypress.env('BACK_URL')}/api/user-designs`).as('getDesignsResponse')
+        cy.intercept('GET', `${Cypress.env('BACK_URL')}/api/user-designs`).as('getDesignsResponse');
         cy.get('[data-testid="confirmation-ok"]').click();
         cy.get('.MuiDialogActions-root > .MuiButtonBase-root').click();
         cy.wait('@getDesignsResponse')
@@ -27,10 +27,10 @@ describe('My Designs Tab Test', () => {
         let designCount = 0;
         cy.get('.Designs').find('.item').then(item => {
             designCount = item.length;
-        })
+        });
         cy.get('[data-testid="design-0-remove"] > .MuiIconButton-label').click();
 
-        cy.intercept('GET', `${Cypress.env('BACK_URL')}/api/user-designs`).as('getDesignsResponse')
+        cy.intercept('GET', `${Cypress.env('BACK_URL')}/api/user-designs`).as('getDesignsResponse');
         cy.get('[data-testid="confirmation-ok"]').click();
         cy.wait('@getDesignsResponse')
 
@@ -43,8 +43,8 @@ describe('My Designs Tab Test', () => {
         let designCount = 0;
         cy.get('.Designs').find('.item').then(item => {
             designCount = item.length;
-        })
-        cy.canvasDrawing('toolbar-Rectangle', [{x: 100, y: 100}, {x: 200, y: 200}])
+        });
+        cy.canvasDrawing('toolbar-Rectangle', [{x: 100, y: 100}, {x: 200, y: 200}]);
         cy.saveDesign();
         cy.get('.Designs').find('.item').then(item => {
             expect(designCount + 1).eq(item.length);
@@ -52,16 +52,16 @@ describe('My Designs Tab Test', () => {
     })
 
     it('Rename design modal is opened and we can change name\n', () => {
-        cy.canvasDrawing('toolbar-Rectangle', [{x: 100, y: 100}, {x: 200, y: 200}])
+        cy.canvasDrawing('toolbar-Rectangle', [{x: 100, y: 100}, {x: 200, y: 200}]);
         cy.saveDesign();
         cy.get('.Designs').find('.item').then(item => {
             cy.get(`[data-testid="design-${item.length-1}-file-name"]`).click();
-        })
+        });
         cy.get('[data-testid="save-file-input"]').clear().type('New file name');
         cy.get('[data-testid="save-file-ok"]').click();
 
         cy.get('.Designs').find('.item').then(item => {
-            cy.get(`[data-testid="design-${item.length-1}-file-name"]`).should('have.text', 'New file name')
+            cy.get(`[data-testid="design-${item.length-1}-file-name"]`).should('have.text', 'New file name');
         })
     })
 
@@ -71,7 +71,7 @@ describe('My Designs Tab Test', () => {
         cy.get('.MuiInputBase-input').focus().type(Math.random().toString());
 
         cy.get('.Designs').find('.item').then(item => {
-            expect(item.length).eq(1)
+            expect(item.length).eq(1);
         })
     })
 
@@ -79,7 +79,7 @@ describe('My Designs Tab Test', () => {
        let designCount = 0;
         cy.get('.Designs').find('.item').then(item => {
             designCount = item.length;
-        })
+        });
         cy.intercept('GET', `${Cypress.env('BACK_URL')}/api/user-designs`).as('getDesignsResponse');
         cy.get('[data-tetstid="designs-update"]').click();
         cy.wait('@getDesignsResponse');
@@ -102,7 +102,7 @@ describe('My Designs Tab Test', () => {
         cy.get('.Designs').find('.item').then(item => {
             console.log('item == ', item.length);
             cy.get(`[data-testid="design-${item.length - 1}-open"]`).click();
-        })
+        });
         cy.get('[data-testid="bot-panel-file-name"]').should('have.text', randomNumber);
     })
 

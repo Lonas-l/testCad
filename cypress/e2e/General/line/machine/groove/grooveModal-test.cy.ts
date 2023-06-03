@@ -57,7 +57,7 @@ describe('Groove modal tests', () => {
 
     it('Check add button with zero value', () => {
         cy.addGroove('0','0','0');
-        cy.get('[data-testid="info-message"]').should('have.text', 'Groove top depth must be larger than 0\nSpecify positive non-zero value.')
+        cy.get('[data-testid="info-message"]').should('have.text', 'Groove top depth must be larger than 0\nSpecify positive non-zero value.');
         cy.get('#info-modal > .MuiDialog-container > .MuiPaper-root > .MuiDialogActions-root > .MuiButtonBase-root').click();
 
         cy.get('[data-testid="groove-replace"]').should('be.disabled');

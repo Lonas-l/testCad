@@ -14,21 +14,21 @@ describe('Bottom Panel', () => {
         cy.get('[data-testid="bot-panel-file-name"]').should('have.text', 'New File Name');
     })
 
-    it('View switch between from bottom pane\n', () => {
-        cy.changeView('.leftData > :nth-child(3)')
-        cy.get('.leftData > :nth-child(3)').should('have.class', 'active');
+    it('View switch between from bottom panel', () => {
+        cy.changeView('bot-panel-Right-view');
+        cy.get('[data-testId="bot-panel-Right-view"]').should('have.class', 'active');
 
-        cy.changeView('.leftData > :nth-child(4)')
-        cy.get('.leftData > :nth-child(4)').should('have.class', 'active');
+        cy.changeView('bot-panel-Left-view');
+        cy.get('[data-testId="bot-panel-Left-view"]').should('have.class', 'active');
 
-        cy.changeView('.leftData > :nth-child(5)')
-        cy.get('.leftData > :nth-child(5)').should('have.class', 'active');
+        cy.changeView('bot-panel-Front-view');
+        cy.get('[data-testId="bot-panel-Front-view"]').should('have.class', 'active');
 
-        cy.changeView('.leftData > :nth-child(6)')
-        cy.get('.leftData > :nth-child(6)').should('have.class', 'active');
+        cy.changeView('bot-panel-Back-view');
+        cy.get('[data-testId="bot-panel-Back-view"]').should('have.class', 'active');
 
-        cy.changeView('.leftData > :nth-child(7)')
-        cy.get('.leftData > :nth-child(7)').should('have.class', 'active');
+        cy.changeView('bot-panel-Bottom-view');
+        cy.get('[data-testId="bot-panel-Bottom-view"]').should('have.class', 'active');
     })
 
 })
