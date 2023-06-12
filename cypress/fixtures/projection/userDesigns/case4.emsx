@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.23.74-c"/>
+	<View Type="Top">
+		<Region Id="112" 
+                                BaseHeight="0" 
+                                Z="60"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="70,180.828889" P2="70,120.828889"/>
+				<Straight Id="101" P1="40,120.828889" P2="70,120.828889"/>
+				<Straight Id="102" P1="70,180.828889" P2="0,180.828889"/>
+				<Straight Id="103" P1="0,-40" P2="0,180.828889"/>
+				<Straight Id="104" P1="60,-40" P2="0,-40"/>
+				<Straight Id="105" P1="60,-31.574229" P2="60,-40"/>
+				<Straight Id="106" P1="60,-31.574229" P2="50,-31.574229"/>
+				<Straight Id="107" P1="50,-31.574229" P2="50,-8.425771"/>
+				<Straight Id="108" P1="50,-8.425771" P2="60,-8.425771"/>
+				<Straight Id="109" P1="60,0" P2="60,-8.425771"/>
+				<Straight Id="110" P1="40,0" P2="60,0"/>
+				<Straight Id="111" P1="40,120.828889" P2="40,0"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Right">
+		<Region Id="113" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="113" Center="150.828889,30" Radius="20"/>
+			</Contour>
+		</Region>
+		<Region Id="118" 
+                                BaseHeight="-5" 
+                                Z="-5"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="114" P1="-34,60" P2="-28,60"/>
+				<Straight Id="115" P1="-28,60" P2="-28,0"/>
+				<Straight Id="116" P1="-28,0" P2="-34,0"/>
+				<Straight Id="117" P1="-34,0" P2="-34,60"/>
+			</Contour>
+		</Region>
+		<Region Id="123" 
+                                BaseHeight="-60" 
+                                Z="-60"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="119" P1="-19.171111,0" P2="150.828889,0"/>
+				<Spline Id="120" P1="124.842397,14.999927" P2="130.029549,6.032947" P3="139.724684,0" P4="150.828889,0"/>
+				<Straight Id="121" P1="-19.171111,0" P2="-19.171111,15"/>
+				<Straight Id="122" P1="124.842397,14.999927" P2="-19.171111,15"/>
+			</Contour>
+		</Region>
+		<Region Id="128" 
+                                BaseHeight="-60" 
+                                Z="-60"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="124" P1="-19.171111,60" P2="150.828889,60"/>
+				<Straight Id="125" P1="-19.171111,45" P2="-19.171111,60"/>
+				<Arc Id="126" Center="150.828889,30" Radius="30" StartAngle="90" IncAngle="60"/>
+				<Straight Id="127" P1="-19.171111,45" P2="124.848127,45"/>
+			</Contour>
+		</Region>
+		<Region Id="132" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Arc Id="129" Center="150.828889,30" Radius="30" StartAngle="270" IncAngle="90"/>
+				<Straight Id="130" P1="180.828889,30" P2="180.828889,0"/>
+				<Straight Id="131" P1="180.828889,0" P2="150.828889,0"/>
+			</Contour>
+		</Region>
+		<Region Id="136" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="133" P1="150.828889,60" P2="180.828889,60"/>
+				<Spline Id="134" P1="180.828889,30" P2="180.828889,46.568542" P3="167.397431,60" P4="150.828889,60"/>
+				<Straight Id="135" P1="180.828889,60" P2="180.828889,30"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="76.19999999999999" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

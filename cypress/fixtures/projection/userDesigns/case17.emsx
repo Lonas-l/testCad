@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="eMachineShop" Version="1.23.74-c"/>
+	<View Type="Top">
+		<Region Id="116" 
+                                BaseHeight="0" 
+                                Z="60"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="-6.37183,52.256338" P2="-49.369064,52.256338"/>
+				<Straight Id="101" P1="-49.369064,52.256338" P2="-49.369064,42.256338"/>
+				<Straight Id="102" P1="-6.37183,67.256338" P2="-6.37183,52.256338"/>
+				<Straight Id="103" P1="31.849373,67.256338" P2="-6.37183,67.256338"/>
+				<Arc Id="104" Center="33.635235,33.675623" Radius="33.628169" StartAngle="0.511483" IncAngle="92.532707"/>
+				<Spline Id="105" P1="67.256338,33.628163" P2="67.257976,33.797421" P3="67.260515,33.915081" P4="67.262062,33.975819"/>
+				<Spline Id="106" P1="67.256017,32.970937" P2="67.253962,33.238058" P3="67.2547,33.458908" P4="67.256338,33.628163"/>
+				<Arc Id="107" Center="33.635235,33.675623" Radius="33.628169" StartAngle="358.284361" IncAngle="0.514906"/>
+				<Spline Id="108" P1="85,3.628169" P2="68.309363,4.181148" P3="67.276369,27.603613" P4="67.248332,32.668826"/>
+				<Straight Id="109" P1="140,3.628169" P2="85,3.628169"/>
+				<Straight Id="110" P1="170,33.628169" P2="140,3.628169"/>
+				<Straight Id="111" P1="180,33.628169" P2="170,33.628169"/>
+				<Straight Id="112" P1="180,-26.371831" P2="180,33.628169"/>
+				<Straight Id="113" P1="86.65399706,-26.371831" P2="180,-26.371831"/>
+				<Spline Id="114" P1="0,33.280145" P2="0,3.454157" P3="0,-26.371831" P4="86.65399706,-26.371831"/>
+				<Straight Id="115" P1="-49.369064,42.256338" P2="0,33.280145"/>
+			</Contour>
+		</Region>
+		<Region Id="121" 
+                                BaseHeight="60" 
+                                Z="25"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Processing>
+				<NearEdge Type="Chamfer" Size="1" Angle="45"/>
+			</Processing>
+			<Contour>
+				<Straight Id="117" P1="86.65399706,-8.61511375" P2="155,-8.61511375"/>
+				<Straight Id="118" P1="155,-8.61511375" P2="155,-26.371831"/>
+				<Straight Id="119" P1="155,-26.371831" P2="86.65399706,-26.371831"/>
+				<Straight Id="120" P1="86.65399706,-26.371831" P2="86.65399706,-8.61511375"/>
+			</Contour>
+		</Region>
+		<Region Id="126" 
+                                BaseHeight="60" 
+                                Z="10"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="122" P1="31.849373,67.256338" P2="33.62817,67.256338"/>
+				<Arc Id="123" Center="33.635235,33.675623" Radius="33.628169" StartAngle="93.04419" IncAngle="265.240171"/>
+				<Spline Id="124" P1="67.256338,33.628168" P2="67.256311,33.627367" P3="67.244932,33.283079" P4="67.248332,32.668826"/>
+				<Arc Id="125" Center="33.628169,33.628169" Radius="33.628169" StartAngle="359.999998" IncAngle="90"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="46" Name="Tolerance"/>
+
+			<Processing>
+				<Tolerance Value="0.508"/>
+			</Processing>
+
+			<Contour>
+				<Straight Id="127" P1="180.00068444,3.9046585" P2="68.30867856,3.9046585"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Right">
+		<Region Id="132" 
+                                BaseHeight="0" 
+                                Z="45"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="128" P1="-26.371831,18.75" P2="33.675623,18.75"/>
+				<Straight Id="129" P1="33.675623,18.75" P2="33.675623,41.25"/>
+				<Straight Id="130" P1="33.675623,41.25" P2="-26.371831,41.25"/>
+				<Straight Id="131" P1="-26.371831,41.25" P2="-26.371831,18.75"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Front">
+		<Region Id="133" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="133" Center="98.94724743,-12.5" Radius="3.75"/>
+			</Contour>
+		</Region>
+		<Region Id="134" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="134" Center="98.94724743,72.5" Radius="3.75"/>
+			</Contour>
+		</Region>
+		<Region Id="138" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="135" P1="120.82699853,-25" P2="155,0"/>
+				<Straight Id="136" P1="120.82699853,-25" P2="155,-25"/>
+				<Straight Id="137" P1="155,-25" P2="155,0"/>
+			</Contour>
+		</Region>
+		<Region Id="143" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="139" P1="120.82699853,85" P2="154,85"/>
+				<Straight Id="140" P1="120.82699853,85" P2="155,60"/>
+				<Straight Id="141" P1="155,84" P2="155,60"/>
+				<Straight Id="142" P1="154,85" P2="155,84"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="46" Name="Tolerance"/>
+
+			<Processing>
+				<Tolerance Value="0.508"/>
+			</Processing>
+
+			<Contour>
+				<Straight Id="144" P1="180,60" P2="180,0"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="46" Name="Tolerance"/>
+
+			<Processing>
+				<Tolerance Value="0.508"/>
+			</Processing>
+
+			<Contour>
+				<Straight Id="145" P1="180,30" P2="68.30799412,30"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Back">
+		<Region Id="146" 
+                                BaseHeight="-70" 
+                                Z="-70"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="146" Center="109.15399706,30" Radius="22.5"/>
+			</Contour>
+		</Region>
+		<Region Id="147" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="147" Center="109.15399706,30" Radius="15"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Bottom">
+		<Region Id="148" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="148" Center="33.635235,33.675623" Radius="25"/>
+			</Contour>
+		</Region>
+		<Region Id="149" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="149" Center="202.5,18.6637595" Radius="5"/>
+			</Contour>
+		</Region>
+		<Region Id="150" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="150" Center="202.5,-11.3599675" Radius="5"/>
+			</Contour>
+		</Region>
+		<Region Id="155" 
+                                BaseHeight="0" 
+                                Z="25"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="151" P1="86.65399706,-8.61511375" P2="155,-8.61511375"/>
+				<Straight Id="152" P1="155,-8.61511375" P2="155,-26.371831"/>
+				<Straight Id="153" P1="155,-26.371831" P2="86.65399706,-26.371831"/>
+				<Straight Id="154" P1="86.65399706,-26.371831" P2="86.65399706,-8.61511375"/>
+			</Contour>
+		</Region>
+		<Region Id="160" 
+                                BaseHeight="0" 
+                                Z="10"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="156" P1="31.849373,67.256338" P2="33.62817,67.256338"/>
+				<Arc Id="157" Center="33.635235,33.675623" Radius="33.628169" StartAngle="93.04419" IncAngle="265.240171"/>
+				<Spline Id="158" P1="67.256338,33.628168" P2="67.256311,33.627367" P3="67.244932,33.283079" P4="67.248332,32.668826"/>
+				<Arc Id="159" Center="33.628169,33.628169" Radius="33.628169" StartAngle="359.999998" IncAngle="90"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="76.19999999999999" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>
