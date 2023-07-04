@@ -1,5 +1,3 @@
-import {cancelDivide} from "../../../../support/commands";
-
 describe('Divide test', () => {
     beforeEach(() => {
         cy.visit(Cypress.env('FRONT_URL'));
@@ -23,7 +21,7 @@ describe('Divide test', () => {
         cy.setDivideSettings('100');
         cy.confirmDivide();
         cy.openDivideModal();
-        cy.get('.Text > input').should('have.value', 100)
+        cy.get('[data-testid="divide-input"]').should('have.value', 100)
     });
 
     it("Value is not saved, when pressed cancel", () => {
@@ -36,6 +34,6 @@ describe('Divide test', () => {
         cy.setDivideSettings('100');
         cy.cancelDivide();
         cy.openDivideModal();
-        cy.get('.Text > input').should('have.value', 50)
+        cy.get('[data-testid="divide-input"]').should('have.value', 50)
     });
 })

@@ -96,15 +96,15 @@ export function openDivideModal() : void {
 }
 
 export function setDivideSettings(value : string) : void {
-    cy.get('.Text > input').clear().type(value);
+    cy.get('[data-testid="divide-input"]').clear().type(value);
 }
 
 export function confirmDivide() : void {
-    cy.get('[style="background-color: rgb(221, 218, 218); box-shadow: rgb(0, 0, 0) 2px 2px 1px; margin: 0px 5px 0px auto;"]').click();
+    cy.get('.Yes-No-buttons > :nth-child(1)').click();
 }
 
 export function cancelDivide() : void {
-    cy.get('[style="background-color: rgb(221, 218, 218); box-shadow: rgb(0, 0, 0) 2px 2px 1px; margin: 0px auto;"]').click();
+    cy.get('.Yes-No-buttons > :nth-child(2)').click();
 }
 
 // Convert Spline To Arc
