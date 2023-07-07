@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.24.3-c"/>
+	<View Type="Top">
+		<Region Id="100" 
+                                BaseHeight="0" 
+                                Z="44.42128422446807"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Circle Id="100" Center="-0.22833278,0" Radius="40.62860556"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Front">
+		<Region Id="109" 
+                                BaseHeight="0" 
+                                Z="0"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Processing>
+				<Boundary Type="Revolve"/>
+			</Processing>
+			<Contour>
+				<Straight Id="101" P1="10.2237425,27.35472092" P2="10.2237425,6.76086197"/>
+				<Straight Id="102" P1="40.40027278,6.76086197" P2="10.2237425,6.76086197"/>
+				<Straight Id="103" P1="40.40027278,0" P2="40.40027278,6.76086197"/>
+				<Straight Id="104" P1="10.2237425,0" P2="40.40027278,0"/>
+				<Straight Id="105" P1="10.2237425,0" P2="10.2237425,-3.13308238"/>
+				<Straight Id="106" P1="10.2237425,-3.13308238" P2="-0.22833278,-3.13308238"/>
+				<Straight Id="107" P1="-0.22833278,-3.13308238" P2="-0.22833278,33.96920895"/>
+				<Arc Id="108" Center="7.09066012,33.96920895" Radius="7.3189929" StartAngle="295.34549562042" IncAngle="244.65450437958"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="2.54" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>
