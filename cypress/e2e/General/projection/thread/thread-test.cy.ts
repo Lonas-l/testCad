@@ -101,7 +101,7 @@ describe('Check projection for thread designs', () => {
     })
 
     it('case 9 just 3 different negative threads with groove + chamfer near edge and drilled far edge', () => {
-        cy.openFile('./projection/thread/case8.emsx');
+        cy.openFile('./projection/thread/case9.emsx');
         cy.checkProjectionFromAllView([
             "",
             "20.00000100.000000.000000.0000012.13030100.000007.8697094.3474215.50063100.000004.4993783.5562617.12420100.000002.8758083.19624",

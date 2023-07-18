@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.20.20-c"/>
+	<View Type="Top">
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="100" P1="-7.72233527,-15.88458627" P2="-5.8882431,-21.45096504" P3="-3.10990586,-25" P4="0,-25"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="101" P1="-10,0" P2="-10,-3.97266955" P3="-9.62935286,-7.72891591" P4="-8.96979522,-11.06439748"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.5900000010000002">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="102" P1="-8.64540199,6.56061291" P2="-18.43633867,-0.02780391" P3="-24.14191261,-8.06060768" P4="-21.67156933,-12.33936775"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="103" P1="-21.67156933,-12.33936775" P2="-20.19876755,-14.89033526" P3="-16.1173256,-15.59172727" P4="-10.81470172,-14.64344474"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="104" Center="-8.57336684,-13.53408487" Radius="2.5" StartAngle="183.18636619399" IncAngle="23.14697221709"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="105" Center="-16.19415422,15.52150864" Radius="29.64091774" StartAngle="278.25477893152" IncAngle="1.70118037984"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="106" Center="-15.37783609,9.83798253" Radius="23.89907466" StartAngle="274.21589181926" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="107" Center="-14.99777148,4.56322534" Radius="18.61065198" StartAngle="269.47215887345" IncAngle="4.7706298792"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="108" Center="-15.04942834,-0.0662339" Radius="13.98091601" StartAngle="263.76999164599" IncAngle="5.73907544185"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="109" Center="-15.47364995,-3.87411795" Radius="10.14948701" StartAngle="256.7773842258" IncAngle="7.04050457358"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="110" Center="-16.1592255,-6.76272562" Radius="7.18064761" StartAngle="248.09170999011" IncAngle="8.73892713578"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="111" Center="-16.95050435,-8.72268363" Radius="5.06699052" StartAngle="237.34607088785" IncAngle="10.77765091341"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="112" Center="-17.65877138,-9.83375021" Radius="3.7493797" StartAngle="224.4796010261" IncAngle="12.81804091495"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="113" Center="-18.07537761,-10.25707344" Radius="3.15554382" StartAngle="210.09485143443" IncAngle="14.20056720981"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="114" Center="-18.0701537,-10.26612152" Radius="3.15554382" StartAngle="195.70458135575" IncAngle="14.20056720982"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="115" Center="-17.49524191,-10.11699156" Radius="3.7493797" StartAngle="182.69216116075" IncAngle="12.82823781314"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="116" Center="-16.17889651,-10.05914761" Radius="5.06699052" StartAngle="171.87627819874" IncAngle="10.77010559757"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="117" Center="-14.08588366,-10.35385903" Radius="7.18064761" StartAngle="163.17587249231" IncAngle="8.73241751758"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="118" Center="-11.24148827,-11.20443701" Radius="10.14948701" StartAngle="156.1864071066" IncAngle="7.04081414915"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="119" Center="-7.73165314,-12.74099235" Radius="13.98091601" StartAngle="150.49339659408" IncAngle="5.73973038551"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="120" Center="-3.6965954,-15.01098581" Radius="18.61065198" StartAngle="145.75721124735" IncAngle="4.77248067572"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="121" Center="0.68144602,-17.97751002" Radius="23.89907466" StartAngle="141.72567594114" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="122" Center="5.19536495,-21.52622531" Radius="29.64091774" StartAngle="138.21179681273" IncAngle="3.53342425575"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="123" Center="9.63327662,-25.48062036" Radius="35.58501014" StartAngle="135.07932473904" IncAngle="3.14677271432"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="124" Center="13.79872924,-29.62369276" Radius="41.46004152" StartAngle="132.22702374391" IncAngle="2.86293009428"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="125" Center="17.52806629,-33.72283986" Radius="47.00178522" StartAngle="129.57830105798" IncAngle="2.65678613492"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="126" Center="21.98908347,-39.17765771" Radius="54.04838101" StartAngle="124.61633185982" IncAngle="4.92265041794"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="127" Center="38.11844788,-1.74385579" Radius="47.00178522" StartAngle="189.57830105798" IncAngle="1.92328051712"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="128" P1="-8.76373961,12.050413" P2="-9.55166766,8.47662047" P3="-10,4.36920227" P4="-10,0"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="129" Center="-7.58375662,14.25398247" Radius="2.5" StartAngle="241.83152565952" IncAngle="23.13899836097"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="130" Center="32.70381383,2.92398287" Radius="41.46004152" StartAngle="167.68956615886" IncAngle="0.08341009723"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="131" Center="38.11844788,1.74385579" Radius="47.00178522" StartAngle="167.76491280711" IncAngle="2.65596479338"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="132" Center="45.0729673,0.60791051" Radius="54.04838101" StartAngle="170.46030346369" IncAngle="4.92396500902"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="133" Center="51.75927581,0.03293608" Radius="60.75928459" StartAngle="175.35122113698" IncAngle="4.68034036447"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="134" Center="51.75927581,-0.03293608" Radius="60.75928459" StartAngle="179.9694442938" IncAngle="4.67986859462"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="135" Center="45.0729673,-0.60791051" Radius="54.04838101" StartAngle="184.61633185982" IncAngle="4.92265041794"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="136" P1="0,-25" P2="5.5228475,-25" P3="10,-13.80711875" P4="10,0"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="137" P1="10,0" P2="10,13.80711875" P3="5.5228475,25" P4="0,25"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Spline Id="138" P1="0,25" P2="-2.94560356,25" P3="-5.59374783,21.8160636" P4="-7.42382301,16.74971534"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="139" Center="-7.58375662,14.25398247" Radius="2.5" StartAngle="63.18636619399" IncAngle="23.14697221709"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="140" Center="21.38951917,6.32598118" Radius="29.64091774" StartAngle="158.25477893152" IncAngle="1.70118037984"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="141" Center="16.05928211,8.460792" Radius="23.89907466" StartAngle="154.21589181926" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="142" Center="11.30117608,10.76902498" Radius="18.61065198" StartAngle="149.47215887345" IncAngle="4.7706298792"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="143" Center="7.3177752,13.12849076" Radius="13.98091601" StartAngle="143.76999164599" IncAngle="5.73907544185"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="144" Center="4.23216168,15.39981947" Radius="10.14948701" StartAngle="136.7773842258" IncAngle="7.04050457358"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="145" Center="2.07334184,17.43784915" Radius="7.18064761" StartAngle="128.09170999011" IncAngle="8.73892713578"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="146" Center="0.77160784,19.10309574" Radius="5.06699052" StartAngle="117.34607088785" IncAngle="10.77765091341"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="147" Center="0.16352947,20.27200627" Radius="3.7493797" StartAngle="104.4796010261" IncAngle="12.81804091495"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="148" Center="0.00522391,20.84445946" Radius="3.15554382" StartAngle="90.09485143443" IncAngle="14.20056720981"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="149" Center="-0.00522391,20.84445946" Radius="3.15554382" StartAngle="75.70458135575" IncAngle="14.20056720982"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="150" Center="-0.16352947,20.27200627" Radius="3.7493797" StartAngle="62.69216116075" IncAngle="12.82823781314"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="151" Center="-0.77160784,19.10309574" Radius="5.06699052" StartAngle="51.87627819874" IncAngle="10.77010559757"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="152" Center="-2.07334184,17.43784915" Radius="7.18064761" StartAngle="43.17587249231" IncAngle="8.73241751758"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="153" Center="-4.23216168,15.39981947" Radius="10.14948701" StartAngle="36.1864071066" IncAngle="7.04081414915"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="154" Center="-7.3177752,13.12849076" Radius="13.98091601" StartAngle="30.49339659408" IncAngle="5.73973038551"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="155" Center="-11.30117608,10.76902498" Radius="18.61065198" StartAngle="25.75721124735" IncAngle="4.77248067572"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="156" Center="-16.05928211,8.460792" Radius="23.89907466" StartAngle="21.72567594114" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="157" Center="-21.38951917,6.32598118" Radius="29.64091774" StartAngle="18.21179681273" IncAngle="3.53342425575"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="158" Center="-27.03308157,4.45983446" Radius="35.58501014" StartAngle="15.07932473904" IncAngle="3.14677271432"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="159" Center="-32.70381383,2.92398287" Radius="41.46004152" StartAngle="12.22702374391" IncAngle="2.86293009428"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="160" Center="-38.11844788,1.74385579" Radius="47.00178522" StartAngle="9.57830105798" IncAngle="2.65678613492"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="161" Center="-45.0729673,0.60791051" Radius="54.04838101" StartAngle="4.61633185982" IncAngle="4.92265041794"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="162" Center="-51.75927581,0.03293608" Radius="60.75928459" StartAngle="359.9694442938" IncAngle="4.67986859462"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="163" Center="-51.75927581,-0.03293608" Radius="60.75928459" StartAngle="355.35122113698" IncAngle="4.68034036447"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="164" Center="-45.0729673,-0.60791051" Radius="54.04838101" StartAngle="350.46030346369" IncAngle="4.92396500902"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="165" Center="-38.11844788,-1.74385579" Radius="47.00178522" StartAngle="347.76491280711" IncAngle="2.65596479338"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="166" Center="-32.70381383,-2.92398287" Radius="41.46004152" StartAngle="344.91004616181" IncAngle="2.86293009428"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="167" Center="-27.03308157,-4.45983446" Radius="35.58501014" StartAngle="341.77390254664" IncAngle="3.14677271432"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="168" Center="-21.38951917,-6.32598118" Radius="29.64091774" StartAngle="338.25477893152" IncAngle="3.53342425575"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="169" Center="-16.05928211,-8.460792" Radius="23.89907466" StartAngle="334.21589181926" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="170" Center="-11.30117608,-10.76902498" Radius="18.61065198" StartAngle="329.47215887345" IncAngle="4.7706298792"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="171" Center="-7.3177752,-13.12849076" Radius="13.98091601" StartAngle="323.76999164599" IncAngle="5.73907544185"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="172" Center="-4.23216168,-15.39981947" Radius="10.14948701" StartAngle="316.7773842258" IncAngle="7.04050457358"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="173" Center="-2.07334184,-17.43784915" Radius="7.18064761" StartAngle="308.09170999011" IncAngle="8.73892713578"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="174" Center="-0.77160784,-19.10309574" Radius="5.06699052" StartAngle="297.34607088785" IncAngle="10.77765091341"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="175" Center="-0.16352947,-20.27200627" Radius="3.7493797" StartAngle="284.4796010261" IncAngle="12.81804091495"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="176" Center="-0.00522391,-20.84445946" Radius="3.15554382" StartAngle="270.09485143443" IncAngle="14.20056720981"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="177" Center="0.00522391,-20.84445946" Radius="3.15554382" StartAngle="255.70458135575" IncAngle="14.20056720982"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="178" Center="0.16352947,-20.27200627" Radius="3.7493797" StartAngle="242.69216116075" IncAngle="12.82823781314"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="179" Center="0.77160784,-19.10309574" Radius="5.06699052" StartAngle="231.87627819874" IncAngle="10.77010559757"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="180" Center="2.07334184,-17.43784915" Radius="7.18064761" StartAngle="223.17587249231" IncAngle="8.73241751758"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="181" Center="4.23216168,-15.39981947" Radius="10.14948701" StartAngle="216.1864071066" IncAngle="7.04081414915"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="182" Center="7.3177752,-13.12849076" Radius="13.98091601" StartAngle="210.49339659408" IncAngle="5.73973038551"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="183" Center="11.30117608,-10.76902498" Radius="18.61065198" StartAngle="205.75721124735" IncAngle="4.77248067572"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="184" Center="16.05928211,-8.460792" Radius="23.89907466" StartAngle="201.72567594114" IncAngle="4.0584322396"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="185" Center="21.38951917,-6.32598118" Radius="29.64091774" StartAngle="198.21179681273" IncAngle="3.53342425575"/>
+			</Contour>
+		</Region>
+		<Region BaseHeight="0" Z="1.59">
+			<Machine Id="41" Name="Auto"/>
+
+			<Contour>
+				<Arc Id="186" Center="27.03308157,-4.45983446" Radius="35.58501014" StartAngle="197.80735935754" IncAngle="0.41873809582"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="1"/>
+	<Material Id="5" Name="Aluminum 6061 T6" />
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.762" />
+		<Specification MachineId="41" Name="Flatness" Value="76.19999999999999" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="50.8" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+	</Specifications>
+</eMachineShop3DObjects>

@@ -19,8 +19,21 @@ export function canvasClick (coordinates: Array<CoordinateType>) : void {
     }
 }
 
-export function changeZ(zValue : string) : void {
-    cy.get('[data-testid="numeric-Z"]').clear().type(zValue);
+export function changeZ(zValue : string, isSelectViaDropdown? : boolean) : void {
+    if (isSelectViaDropdown) {
+        cy.get('[data-testid="numeric-Z"]').click();
+        cy.get(`[data-testid=${zValue}]`).click();
+    } else {
+        cy.get('[data-testid="numeric-Z"]').clear().type(zValue);
+    }
+}
+
+export function changeDiameter(diameter : string) : void {
+    cy.get('[data-testid="diameter"]').focus().clear().type(diameter);
+}
+
+export function changeLength(length : string) : void {
+    cy.get('[data-testid="line-length"]').focus().clear().type(length);
 }
 
 export function confirmRenameFile() : void {

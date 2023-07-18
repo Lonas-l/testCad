@@ -38,6 +38,11 @@ export function selectConnected() : void {
     cy.get('[data-testid="desktop-menu-item-select-connected"]').click();
 }
 
+export function intersect() : void {
+    cy.openLineDropdown();
+    cy.get('[data-testid="desktop-menu-item-intersect"]').click();
+}
+
 //Scale
 export function scaleElement(horizontally: string, vertically: string, isProportional? : boolean, isPreserveArcs? : boolean) : void {
     cy.openLineDropdown();

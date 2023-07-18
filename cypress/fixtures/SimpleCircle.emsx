@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <eMachineShop3DObjects VersionId="1.8">
-	<Creator Name="Web CAD" Version="1.24.15-c"/>
+	<Creator Name="Web CAD" Version="1.24.11-c"/>
 	<View Type="Top">
-		<Region Id="100"
-                                BaseHeight="0"
-                                Z="1.59"
-
+		<Region Id="100" 
+                                BaseHeight="0" 
+                                Z="10"
+                                
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="100" P1="0,0" P2="113.73555556,-3.10444444"/>
+				<Circle Id="100" Center="0,0" Radius="25"/>
 			</Contour>
 		</Region>
 	</View>

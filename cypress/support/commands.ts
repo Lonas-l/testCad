@@ -17,6 +17,7 @@ import * as file from './command/file';
 import * as dimensionFields from './command/dimensionFields';
 import * as tools from './command/tools';
 import 'cypress-file-upload';
+import {changeLength} from "./command/utils";
 
 require('cypress-delete-downloads-folder').addCustomCommand();
 
@@ -51,8 +52,9 @@ declare global {
             checkProjectionFromAllView: (correctPoints : Array<string>) => void
             openFeedbackModal: () => void
             openTechSupportModal: () => void
-            changeZ: (zValue : string) => void
+            changeZ: (zValue : string, isSelectViaDropdown? : boolean) => void
             selectConnected: () => void
+            intersect: () => void
             setContourSettings: (value: string, isOutside : boolean, isInside: boolean, isRound: boolean) => void
             confirmContour : (isWait: boolean) => void
             openDivideModal : () => void
@@ -108,6 +110,8 @@ declare global {
             confirmGroove: () => void;
             confirmMachine: () => void;
             confirmRenameFile: () => void;
+            changeDiameter: (diameter : string) => void;
+            changeLength: (length : string) => void;
             open3DPreview: () => void;
             open3DPreviewViaShortcut: () => void;
 
@@ -179,6 +183,7 @@ Cypress.Commands.add('openLineDropdown', line.openLineDropdown)
 Cypress.Commands.add('mirror', line.mirror)
 Cypress.Commands.add('tangent', line.tangent)
 Cypress.Commands.add('selectConnected', line.selectConnected)
+Cypress.Commands.add('intersect', line.intersect)
 
 Cypress.Commands.add('scaleElement', line.scaleElement)
 
@@ -236,6 +241,8 @@ Cypress.Commands.add('openFile', utils.openFile)
 Cypress.Commands.add('openFileAndUseSolution', utils.openFileAndUseSolution)
 Cypress.Commands.add('viewCompare', utils.viewCompare)
 Cypress.Commands.add('confirmRenameFile', utils.confirmRenameFile)
+Cypress.Commands.add('changeDiameter', utils.changeDiameter)
+Cypress.Commands.add('changeLength', utils.changeLength)
 
 //MyDesignsTab
 Cypress.Commands.add('saveDesign', myDesigns.saveDesign)

@@ -36,4 +36,31 @@ describe('Divide test', () => {
         cy.openDivideModal();
         cy.get('[data-testid="divide-input"]').should('have.value', 50)
     });
+
+    it("After divide projection, need popup with error", () => {
+        cy.openFile('SimpleCircle.emsx');
+        cy.changeView('bot-panel-Bottom-view');
+        cy.selectAll();
+        cy.openDivideModal();
+        cy.get('[data-testid="info-message"]').should('have.text', 'This action is not permitted for a projection.')
+    });
+
+    it("After divide two or more lines, need popup with error", () => {
+        cy.openFile('SimpleRectangle.emsx');
+        cy.selectAll();
+        cy.openDivideModal();
+        cy.get('[data-testid="info-message"]').should('have.text', 'Please select only one line to perform this command.')
+    });
+
+    it("Enter negative or zero value in divide field, error should appear", () => {
+        cy.openFile('Simple_Line.emsx');
+        cy.selectAll();
+        cy.openDivideModal();
+        cy.setDivideSettings('0');
+        cy.confirmDivide();
+        cy.get('.error').should('have.text', 'You have specified zero or negative value. Please enter a positive value.');
+        cy.setDivideSettings('-5');
+        cy.confirmDivide();
+        cy.get('.error').should('have.text', 'You have specified zero or negative value. Please enter a positive value.');
+    });
 })

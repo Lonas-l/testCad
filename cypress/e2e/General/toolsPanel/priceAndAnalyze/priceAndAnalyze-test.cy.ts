@@ -38,7 +38,9 @@ describe('Changing quantity', () => {
         cy.openFile('SimpleRectangle.emsx');
         cy.login();
         cy.openPrice(true);
+        cy.intercept('POST', `${Cypress.env('BACK_URL')}/price`).as('priceResponse')
         cy.changeQuantityInPrice('100');
+        cy.wait('@priceResponse')
         cy.get('.InputNumber > input').should('have.value', '100')
     })
 
@@ -50,5 +52,13 @@ describe('Changing quantity', () => {
         cy.get('.InputNumber > input').should('have.value', '1');
     })
 
+    it('If the calculated price more than 10000$ modal window should appear', () => {
+        cy.openFile('SimpleRectangleForPrice.emsx');
+        cy.login();
+        cy.openQuantityModal();
+        cy.changeQuantityInModal('999999');
+        cy.openPrice(true);
+        cy.get('.PriceTooBig').should('be.visible');
+    })
 })
 

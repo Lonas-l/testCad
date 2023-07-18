@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.1">
+ <View Type="Top">
+  <Region Id="18" BaseHeight="0" Z="1.5875"(null)(null)>
+   <Machine Id="41" Name="Auto"/>
+   <Contour>
+    <Arc Id="2" Center="904.518945,-302.599822" Radius="953.793046" StartAngle="161.502733" IncAngle="-1.243302"/>
+    <Arc Id="3" Center="513.172123,-161.954407" Radius="537.940429" StartAngle="160.28051" IncAngle="-2.02214"/>
+    <Arc Id="4" Center="321.704231,-85.438752" Radius="331.749831" StartAngle="158.284059" IncAngle="-3.000704"/>
+    <Arc Id="5" Center="216.986523,-37.119959" Radius="216.422094" StartAngle="155.311531" IncAngle="-4.208219"/>
+    <Arc Id="6" Center="157.456129,-4.192406" Radius="148.392056" StartAngle="151.126805" IncAngle="-5.63636"/>
+    <Arc Id="7" Center="124.227089,18.661459" Radius="108.06256" StartAngle="145.493948" IncAngle="-7.184292"/>
+    <Arc Id="8" Center="107.384562,33.588265" Radius="85.55753" StartAngle="138.272526" IncAngle="-8.598071"/>
+    <Arc Id="11" Center="105.32566,29.237351" Radius="88.321573" StartAngle="110.35695" IncAngle="-8.768215"/>
+    <Arc Id="12" Center="110.239751,4.942318" Radius="113.108535" StartAngle="101.554998" IncAngle="-7.473405"/>
+    <Arc Id="13" Center="113.286228,-37.493729" Radius="155.653791" StartAngle="94.088322" IncAngle="-6.046912"/>
+    <Arc Id="14" Center="111.074092,-105.149968" Radius="223.346132" StartAngle="88.067437" IncAngle="-4.7388"/>
+    <Arc Id="15" Center="99.169513,-208.401377" Radius="327.28146" StartAngle="83.358607" IncAngle="-3.646735"/>
+    <Arc Id="16" Center="71.405302,-362.62813" Radius="483.987261" StartAngle="79.738724" IncAngle="-2.777006"/>
+    <Arc Id="17" Center="18.771651,-591.125086" Radius="718.467773" StartAngle="76.983461" IncAngle="-2.099116"/>
+    <Arc Id="10" Center="101.374688,40.207021" Radius="76.662695" StartAngle="119.988309" IncAngle="-9.547814"/>
+    <Arc Id="9" Center="101.067388,41.026276" Radius="75.799655" StartAngle="129.588572" IncAngle="-9.491929"/>
+   </Contour>
+  </Region>
+ </View>
+ <QuantityOfParts Value="1"/>
+ <Specifications>
+  <Specification MachineId="41" Name="Tolerance" Value="0.762" />
+  <Specification MachineId="41" Name="Flatness" Value="76.2" />
+  <Specification MachineId="41" Name="EdgeDraft" Value="10" />
+  <Specification MachineId="41" Name="SurfaceRoughness" Value="12.5" />
+  <Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+  <Specification MachineId="41" Name="MaterialThicknessTolerance" Value="20" />
+ </Specifications>
+</eMachineShop3DObjects>

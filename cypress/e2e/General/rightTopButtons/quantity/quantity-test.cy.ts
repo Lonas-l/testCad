@@ -17,7 +17,7 @@ describe('Quantity', () => {
         cy.changeQuantityInModal('100');
         cy.get(':nth-child(4) > .btn-Material').should('have.text', 'Quantity: 100');
         cy.downloadDesign();
-        cy.openPrice(false);
+        cy.openPrice(true);
         cy.get('.InputNumber > input').should('have.value', '100');
     });
 
