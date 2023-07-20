@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <eMachineShop3DObjects VersionId="1.8">
-	<Creator Name="Web CAD" Version="1.24.3-c"/>
+	<Creator Name="Web CAD" Version="1.24.24-c"/>
 	<View Type="Top">
 		<Region Id="100"
                                 BaseHeight="80.518"
@@ -19,7 +19,7 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Circle Id="101" Center="178.36444444,-56.16222222" Radius="22.6021618"/>
+				<Circle Id="101" Center="178.36444444,-56.16222222" Radius="43.0021618"/>
 			</Contour>
 		</Region>
 		<Region Id="102"
@@ -29,7 +29,7 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Circle Id="102" Center="93.69777778,1.69333333" Radius="17.7"/>
+				<Circle Id="102" Center="93.69777778,1.69333333" Radius="38.1"/>
 			</Contour>
 		</Region>
 		<Region Id="103"
@@ -69,39 +69,39 @@
 			</Contour>
 		</Region>
 		<Region Id="106"
-                                BaseHeight="-9.519999999"
+                                BaseHeight="-11.11"
                                 Z="-12.7"
-                                BottomType="Drill"
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Circle Id="106" Center="-116.84,-73.37777778" Radius="8.8386372"/>
+				<Circle Id="106" Center="-116.84,-73.37777778" Radius="29.2386372"/>
 			</Contour>
 		</Region>
 		<Region Id="107"
-                                BaseHeight="-9.519999999"
+                                BaseHeight="-11.11"
                                 Z="-12.7"
-                                BottomType="Drill"
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Processing>
 				<NearEdge Type="Chamfer" Size="1" Angle="45"/>
 			</Processing>
 			<Contour>
-				<Circle Id="107" Center="-78.74,-73.37777778" Radius="8.8386372"/>
+				<Circle Id="107" Center="-78.74,-73.37777778" Radius="29.2386372"/>
 			</Contour>
 		</Region>
 		<Region Id="108"
-                                BaseHeight="-9.519999999"
+                                BaseHeight="-11.11"
                                 Z="-12.7"
-                                BottomType="Drill"
+
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Processing>
 				<NearEdge Type="Rounding" Radius="0.51"/>
 			</Processing>
 			<Contour>
-				<Circle Id="108" Center="-116.84,-111.47777778" Radius="8.8386372"/>
+				<Circle Id="108" Center="-116.84,-111.47777778" Radius="29.2386372"/>
 			</Contour>
 		</Region>
 		<Region Id="110"
@@ -178,14 +178,14 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="122" P1="-15.72444444,-22.57777778" P2="-15.72444444,-73.37777778"/>
-				<Arc Id="123" Center="-10.72444444,-73.37777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="124" P1="-10.72444444,-78.37777778" P2="40.07555556,-78.37777778"/>
-				<Arc Id="125" Center="40.07555556,-73.37777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="126" P1="45.07555556,-73.37777778" P2="45.07555556,-22.57777778"/>
-				<Arc Id="127" Center="40.07555556,-22.57777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="128" P1="40.07555556,-17.57777778" P2="-10.72444444,-17.57777778"/>
-				<Arc Id="129" Center="-10.72444444,-22.57777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="122" P1="-36.12444444,-22.57777778" P2="-36.12444444,-73.37777778"/>
+				<Arc Id="123" Center="-10.72444444,-73.37777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="124" P1="-10.72444444,-98.77777778" P2="40.07555556,-98.77777778"/>
+				<Arc Id="125" Center="40.07555556,-73.37777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="126" P1="65.47555556,-73.37777778" P2="65.47555556,-22.57777778"/>
+				<Arc Id="127" Center="40.07555556,-22.57777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="128" P1="40.07555556,2.82222222" P2="-10.72444444,2.82222222"/>
+				<Arc Id="129" Center="-10.72444444,-22.57777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="135"
@@ -222,7 +222,7 @@
 			</Contour>
 		</Region>
 		<Region Id="145"
-                                BaseHeight="1.59"
+                                BaseHeight="-11.11"
                                 Z="1.5900000010000002"
 
                       >
@@ -235,7 +235,7 @@
 			</Contour>
 		</Region>
 		<Region Id="150"
-                                BaseHeight="1.59"
+                                BaseHeight="-11.11"
                                 Z="1.5900000010000002"
 
                       >
@@ -248,7 +248,7 @@
 			</Contour>
 		</Region>
 		<Region Id="155"
-                                BaseHeight="1.59"
+                                BaseHeight="-11.11"
                                 Z="1.5900000010000002"
 
                       >
@@ -316,10 +316,10 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="171" P1="-12.41777778,-3.58888889" P2="38.38222222,-3.58888889"/>
-				<Arc Id="172" Center="38.38222222,1.41111111" Radius="5" StartAngle="270" IncAngle="180"/>
-				<Straight Id="173" P1="38.38222222,6.41111111" P2="-12.41777778,6.41111111"/>
-				<Arc Id="174" Center="-12.41777778,1.41111111" Radius="5" StartAngle="90" IncAngle="180"/>
+				<Straight Id="171" P1="-12.41777778,-23.98888889" P2="38.38222222,-23.98888889"/>
+				<Arc Id="172" Center="38.38222222,1.41111111" Radius="25.4" StartAngle="270" IncAngle="180"/>
+				<Straight Id="173" P1="38.38222222,26.81111111" P2="-12.41777778,26.81111111"/>
+				<Arc Id="174" Center="-12.41777778,1.41111111" Radius="25.4" StartAngle="90" IncAngle="180"/>
 			</Contour>
 		</Region>
 		<Region Id="184"
@@ -332,14 +332,14 @@
 				<NearEdge Type="Rounding" Radius="0.51"/>
 			</Processing>
 			<Contour>
-				<Straight Id="176" P1="-96.44,15.52222222" P2="-96.44,-9.87777778"/>
-				<Arc Id="177" Center="-91.44,-9.87777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="178" P1="-91.44,-14.87777778" P2="-66.04,-14.87777778"/>
-				<Arc Id="179" Center="-66.04,-9.87777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="180" P1="-61.04,-9.87777778" P2="-61.04,15.52222222"/>
-				<Arc Id="181" Center="-66.04,15.52222222" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="182" P1="-66.04,20.52222222" P2="-91.44,20.52222222"/>
-				<Arc Id="183" Center="-91.44,15.52222222" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="176" P1="-116.84,15.52222222" P2="-116.84,-9.87777778"/>
+				<Arc Id="177" Center="-91.44,-9.87777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="178" P1="-91.44,-35.27777778" P2="-66.04,-35.27777778"/>
+				<Arc Id="179" Center="-66.04,-9.87777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="180" P1="-40.64,-9.87777778" P2="-40.64,15.52222222"/>
+				<Arc Id="181" Center="-66.04,15.52222222" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="182" P1="-66.04,40.92222222" P2="-91.44,40.92222222"/>
+				<Arc Id="183" Center="-91.44,15.52222222" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="193"
@@ -353,14 +353,14 @@
 				<FarEdge Type="Rounding" Radius="0.51"/>
 			</Processing>
 			<Contour>
-				<Straight Id="185" P1="-96.44,-22.57777778" P2="-96.44,-47.97777778"/>
-				<Arc Id="186" Center="-91.44,-47.97777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="187" P1="-91.44,-52.97777778" P2="-66.04,-52.97777778"/>
-				<Arc Id="188" Center="-66.04,-47.97777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="189" P1="-61.04,-47.97777778" P2="-61.04,-22.57777778"/>
-				<Arc Id="190" Center="-66.04,-22.57777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="191" P1="-66.04,-17.57777778" P2="-91.44,-17.57777778"/>
-				<Arc Id="192" Center="-91.44,-22.57777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="185" P1="-116.84,-22.57777778" P2="-116.84,-47.97777778"/>
+				<Arc Id="186" Center="-91.44,-47.97777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="187" P1="-91.44,-73.37777778" P2="-66.04,-73.37777778"/>
+				<Arc Id="188" Center="-66.04,-47.97777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="189" P1="-40.64,-47.97777778" P2="-40.64,-22.57777778"/>
+				<Arc Id="190" Center="-66.04,-22.57777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="191" P1="-66.04,2.82222222" P2="-91.44,2.82222222"/>
+				<Arc Id="192" Center="-91.44,-22.57777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="202"
@@ -370,14 +370,14 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="194" P1="-96.44,-60.67777778" P2="-96.44,-86.07777778"/>
-				<Arc Id="195" Center="-91.44,-86.07777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="196" P1="-91.44,-91.07777778" P2="-66.04,-91.07777778"/>
-				<Arc Id="197" Center="-66.04,-86.07777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="198" P1="-61.04,-86.07777778" P2="-61.04,-60.67777778"/>
-				<Arc Id="199" Center="-66.04,-60.67777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="200" P1="-66.04,-55.67777778" P2="-91.44,-55.67777778"/>
-				<Arc Id="201" Center="-91.44,-60.67777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="194" P1="-116.84,-60.67777778" P2="-116.84,-86.07777778"/>
+				<Arc Id="195" Center="-91.44,-86.07777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="196" P1="-91.44,-111.47777778" P2="-66.04,-111.47777778"/>
+				<Arc Id="197" Center="-66.04,-86.07777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="198" P1="-40.64,-86.07777778" P2="-40.64,-60.67777778"/>
+				<Arc Id="199" Center="-66.04,-60.67777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="200" P1="-66.04,-35.27777778" P2="-91.44,-35.27777778"/>
+				<Arc Id="201" Center="-91.44,-60.67777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="211"
@@ -387,14 +387,14 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="203" P1="-134.54,-98.77777778" P2="-134.54,-124.17777778"/>
-				<Arc Id="204" Center="-129.54,-124.17777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="205" P1="-129.54,-129.17777778" P2="-104.14,-129.17777778"/>
-				<Arc Id="206" Center="-104.14,-124.17777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="207" P1="-99.14,-124.17777778" P2="-99.14,-98.77777778"/>
-				<Arc Id="208" Center="-104.14,-98.77777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="209" P1="-104.14,-93.77777778" P2="-129.54,-93.77777778"/>
-				<Arc Id="210" Center="-129.54,-98.77777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="203" P1="-154.94,-98.77777778" P2="-154.94,-124.17777778"/>
+				<Arc Id="204" Center="-129.54,-124.17777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="205" P1="-129.54,-149.57777778" P2="-104.14,-149.57777778"/>
+				<Arc Id="206" Center="-104.14,-124.17777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="207" P1="-78.74,-124.17777778" P2="-78.74,-98.77777778"/>
+				<Arc Id="208" Center="-104.14,-98.77777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="209" P1="-104.14,-73.37777778" P2="-129.54,-73.37777778"/>
+				<Arc Id="210" Center="-129.54,-98.77777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="220"
@@ -404,14 +404,14 @@
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="212" P1="-134.54,-60.67777778" P2="-134.54,-86.07777778"/>
-				<Arc Id="213" Center="-129.54,-86.07777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="214" P1="-129.54,-91.07777778" P2="-104.14,-91.07777778"/>
-				<Arc Id="215" Center="-104.14,-86.07777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="216" P1="-99.14,-86.07777778" P2="-99.14,-60.67777778"/>
-				<Arc Id="217" Center="-104.14,-60.67777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="218" P1="-104.14,-55.67777778" P2="-129.54,-55.67777778"/>
-				<Arc Id="219" Center="-129.54,-60.67777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="212" P1="-154.94,-60.67777778" P2="-154.94,-86.07777778"/>
+				<Arc Id="213" Center="-129.54,-86.07777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="214" P1="-129.54,-111.47777778" P2="-104.14,-111.47777778"/>
+				<Arc Id="215" Center="-104.14,-86.07777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="216" P1="-78.74,-86.07777778" P2="-78.74,-60.67777778"/>
+				<Arc Id="217" Center="-104.14,-60.67777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="218" P1="-104.14,-35.27777778" P2="-129.54,-35.27777778"/>
+				<Arc Id="219" Center="-129.54,-60.67777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="229"
@@ -425,14 +425,14 @@
 				<FarEdge Type="Rounding" Radius="0.51"/>
 			</Processing>
 			<Contour>
-				<Straight Id="221" P1="-134.54,-22.57777778" P2="-134.54,-47.97777778"/>
-				<Arc Id="222" Center="-129.54,-47.97777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="223" P1="-129.54,-52.97777778" P2="-104.14,-52.97777778"/>
-				<Arc Id="224" Center="-104.14,-47.97777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="225" P1="-99.14,-47.97777778" P2="-99.14,-22.57777778"/>
-				<Arc Id="226" Center="-104.14,-22.57777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="227" P1="-104.14,-17.57777778" P2="-129.54,-17.57777778"/>
-				<Arc Id="228" Center="-129.54,-22.57777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="221" P1="-154.94,-22.57777778" P2="-154.94,-47.97777778"/>
+				<Arc Id="222" Center="-129.54,-47.97777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="223" P1="-129.54,-73.37777778" P2="-104.14,-73.37777778"/>
+				<Arc Id="224" Center="-104.14,-47.97777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="225" P1="-78.74,-47.97777778" P2="-78.74,-22.57777778"/>
+				<Arc Id="226" Center="-104.14,-22.57777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="227" P1="-104.14,2.82222222" P2="-129.54,2.82222222"/>
+				<Arc Id="228" Center="-129.54,-22.57777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="238"
@@ -445,14 +445,14 @@
 				<NearEdge Type="Chamfer" Size="1" Angle="45"/>
 			</Processing>
 			<Contour>
-				<Straight Id="230" P1="-134.54,15.52222222" P2="-134.54,-9.87777778"/>
-				<Arc Id="231" Center="-129.54,-9.87777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="232" P1="-129.54,-14.87777778" P2="-104.14,-14.87777778"/>
-				<Arc Id="233" Center="-104.14,-9.87777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="234" P1="-99.14,-9.87777778" P2="-99.14,15.52222222"/>
-				<Arc Id="235" Center="-104.14,15.52222222" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="236" P1="-104.14,20.52222222" P2="-129.54,20.52222222"/>
-				<Arc Id="237" Center="-129.54,15.52222222" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="230" P1="-154.94,15.52222222" P2="-154.94,-9.87777778"/>
+				<Arc Id="231" Center="-129.54,-9.87777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="232" P1="-129.54,-35.27777778" P2="-104.14,-35.27777778"/>
+				<Arc Id="233" Center="-104.14,-9.87777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="234" P1="-78.74,-9.87777778" P2="-78.74,15.52222222"/>
+				<Arc Id="235" Center="-104.14,15.52222222" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="236" P1="-104.14,40.92222222" P2="-129.54,40.92222222"/>
+				<Arc Id="237" Center="-129.54,15.52222222" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
 		<Region Id="247"
@@ -465,204 +465,169 @@
 				<Groove Dist="2.54" Height="2.54" Deep="2.54"/>
 			</Processing>
 			<Contour>
-				<Straight Id="239" P1="-58.34,-22.57777778" P2="-58.34,-47.97777778"/>
-				<Arc Id="240" Center="-53.34,-47.97777778" Radius="5" StartAngle="180" IncAngle="90"/>
-				<Straight Id="241" P1="-53.34,-52.97777778" P2="-27.94,-52.97777778"/>
-				<Arc Id="242" Center="-27.94,-47.97777778" Radius="5" StartAngle="270" IncAngle="90"/>
-				<Straight Id="243" P1="-22.94,-47.97777778" P2="-22.94,-22.57777778"/>
-				<Arc Id="244" Center="-27.94,-22.57777778" Radius="5" StartAngle="0" IncAngle="90"/>
-				<Straight Id="245" P1="-27.94,-17.57777778" P2="-53.34,-17.57777778"/>
-				<Arc Id="246" Center="-53.34,-22.57777778" Radius="5" StartAngle="90" IncAngle="90"/>
+				<Straight Id="239" P1="-78.74,-22.57777778" P2="-78.74,-47.97777778"/>
+				<Arc Id="240" Center="-53.34,-47.97777778" Radius="25.4" StartAngle="180" IncAngle="90"/>
+				<Straight Id="241" P1="-53.34,-73.37777778" P2="-27.94,-73.37777778"/>
+				<Arc Id="242" Center="-27.94,-47.97777778" Radius="25.4" StartAngle="270" IncAngle="90"/>
+				<Straight Id="243" P1="-2.54,-47.97777778" P2="-2.54,-22.57777778"/>
+				<Arc Id="244" Center="-27.94,-22.57777778" Radius="25.4" StartAngle="0" IncAngle="90"/>
+				<Straight Id="245" P1="-27.94,2.82222222" P2="-53.34,2.82222222"/>
+				<Arc Id="246" Center="-53.34,-22.57777778" Radius="25.4" StartAngle="90" IncAngle="90"/>
 			</Contour>
 		</Region>
-		<Region Id="252"
+		<Region Id="251"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Arc Id="248" Center="170.18,2.82222222" Radius="18.2764485" StartAngle="272.43664824681" IncAngle="166.25341927917"/>
-				<Arc Id="249" Center="172.78372577,15.84085106" Radius="5" StartAngle="78.69006752598" IncAngle="180"/>
-				<Arc Id="250" Center="170.18,2.82222222" Radius="8.2764485" StartAngle="272.43664824681" IncAngle="166.25341927917"/>
-				<Arc Id="251" Center="170.74444445,-10.44222226" Radius="5" StartAngle="92.43664824681" IncAngle="180"/>
+				<Arc Id="248" Center="170.18,2.82222222" Radius="38.6764485" StartAngle="272.43664824681" IncAngle="166.25341927917"/>
+				<Arc Id="249" Center="172.78372577,15.84085106" Radius="25.4" StartAngle="78.69006752598" IncAngle="128.13435469663"/>
+				<Arc Id="250" Center="170.74444445,-10.44222226" Radius="25.4" StartAngle="144.30229355018" IncAngle="128.13435469663"/>
 			</Contour>
 		</Region>
-		<Region Id="339"
+		<Region Id="304"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Arc Id="253" Center="34.59018245,-145.67781803" Radius="108.15631112" StartAngle="58.18005441715" IncAngle="1.49964054342"/>
-				<Arc Id="254" Center="-9.87921749,-217.38461733" Radius="192.53280274" StartAngle="57.31583623526" IncAngle="0.87060689941"/>
-				<Arc Id="255" Center="53.59350767,-113.15903814" Radius="70.49204188" StartAngle="59.66946659987" IncAngle="2.19776731922"/>
-				<Arc Id="256" Center="63.83115247,-93.98606126" Radius="48.75699637" StartAngle="61.85286427431" IncAngle="2.9973667044"/>
-				<Arc Id="257" Center="86.67711633,-45.32522903" Radius="5" StartAngle="244.83423019521" IncAngle="0.0160007835"/>
-				<Arc Id="258" Center="69.82945316,-81.18392733" Radius="34.61931346" StartAngle="64.83423019521" IncAngle="3.92598050863"/>
-				<Arc Id="259" Center="84.18241867,-44.25585698" Radius="5" StartAngle="248.7433413927" IncAngle="0.01686931114"/>
-				<Arc Id="260" Center="73.33963655,-72.12843525" Radius="24.90729916" StartAngle="68.7433413927" IncAngle="5.00654258285"/>
-				<Arc Id="261" Center="75.2250175,-65.64198457" Radius="18.1523994" StartAngle="73.73394088922" IncAngle="6.23108705567"/>
-				<Arc Id="262" Center="76.02243604,-61.13854707" Radius="13.57890782" StartAngle="79.96713215224" IncAngle="7.51264870142"/>
-				<Arc Id="263" Center="76.15448483,-58.30793208" Radius="10.74522684" StartAngle="87.51952411861" IncAngle="8.67677918699"/>
-				<Arc Id="264" Center="76.04410851,-57.02351902" Radius="9.45644808" StartAngle="96.37141767917" IncAngle="19.30217817446"/>
-				<Arc Id="265" Center="76.78632875,-58.50247962" Radius="11.110999" StartAngle="115.81899029587" IncAngle="9.3787781226"/>
-				<Arc Id="266" Center="67.49994104,-45.33709728" Radius="5" StartAngle="305.11717876759" IncAngle="0.08058965088"/>
-				<Arc Id="267" Center="78.10511727,-60.41712374" Radius="13.43575225" StartAngle="125.11717876759" IncAngle="4.37997581693"/>
-				<Arc Id="268" Center="79.52440945,-62.13728503" Radius="15.66585181" StartAngle="129.50123018771" IncAngle="4.10917144121"/>
-				<Arc Id="269" Center="81.47715534,-64.18649322" Radius="18.49648258" StartAngle="133.61175136779" IncAngle="3.81213568345"/>
-				<Arc Id="270" Center="84.06390067,-66.5630022" Radius="22.00918045" StartAngle="137.42414723521" IncAngle="3.52532194028"/>
-				<Arc Id="271" Center="87.3929981,-69.26495527" Radius="26.29677177" StartAngle="140.94737388109" IncAngle="3.22666721082"/>
-				<Arc Id="272" Center="91.58095487,-72.29025507" Radius="31.46314561" StartAngle="144.17114011114" IncAngle="2.94556563716"/>
-				<Arc Id="273" Center="60.96,-52.49333333" Radius="5" StartAngle="147.1167057483" IncAngle="180"/>
-				<Arc Id="274" Center="91.58095487,-72.29025507" Radius="41.46314561" StartAngle="144.17148528801" IncAngle="2.94522046029"/>
-				<Arc Id="275" Center="87.3929981,-69.26495527" Radius="36.29677177" StartAngle="140.94765809207" IncAngle="3.22597806882"/>
-				<Arc Id="276" Center="84.06390067,-66.5630022" Radius="32.00918045" StartAngle="137.42410717404" IncAngle="3.52502969045"/>
-				<Arc Id="277" Center="81.47715534,-64.18649322" Radius="28.49648258" StartAngle="133.6115181837" IncAngle="3.81241517201"/>
-				<Arc Id="278" Center="79.52440945,-62.13728503" Radius="25.66585181" StartAngle="129.50045184247" IncAngle="4.11021677398"/>
-				<Arc Id="279" Center="78.10511727,-60.41712374" Radius="23.43575225" StartAngle="125.12571047369" IncAngle="4.37233075351"/>
-				<Arc Id="280" Center="76.78632875,-58.50247962" Radius="21.110999" StartAngle="115.79672715266" IncAngle="9.39142536135"/>
-				<Arc Id="281" Center="69.77514951,-43.99704428" Radius="5" StartAngle="115.69907174854" IncAngle="0.09765540412"/>
-				<Arc Id="282" Center="76.04410851,-57.02351902" Radius="19.45644808" StartAngle="96.34081382765" IncAngle="19.35825792089"/>
-				<Arc Id="283" Center="74.44750489,-42.65550775" Radius="5" StartAngle="96.22381318281" IncAngle="0.11700064484"/>
-				<Arc Id="284" Center="76.15448483,-58.30793208" Radius="20.74522684" StartAngle="87.51310559218" IncAngle="8.71070759063"/>
-				<Arc Id="285" Center="76.83768389,-42.57753453" Radius="5" StartAngle="87.4850370924" IncAngle="0.02806849979"/>
-				<Arc Id="286" Center="76.02243604,-61.13854707" Radius="23.57890782" StartAngle="79.9666702884" IncAngle="7.518366804"/>
-				<Arc Id="287" Center="75.2250175,-65.64198457" Radius="28.1523994" StartAngle="73.73850535545" IncAngle="6.22688319205"/>
-				<Arc Id="288" Center="73.33963655,-72.12843525" Radius="34.90729916" StartAngle="68.74456033885" IncAngle="5.00443757026"/>
-				<Arc Id="289" Center="69.82945316,-81.18392733" Radius="44.61931346" StartAngle="64.83513341629" IncAngle="3.92414055332"/>
-				<Arc Id="290" Center="63.83115247,-93.98606126" Radius="58.75699637" StartAngle="61.85475878458" IncAngle="2.99479648203"/>
-				<Arc Id="291" Center="53.59350767,-113.15903814" Radius="80.49204188" StartAngle="59.67014404616" IncAngle="2.19668758827"/>
-				<Arc Id="292" Center="34.59018245,-145.67781803" Radius="118.15631112" StartAngle="58.1803274106" IncAngle="1.4989633856"/>
-				<Arc Id="293" Center="-9.87921749,-217.38461733" Radius="202.53280274" StartAngle="57.31402829116" IncAngle="0.87225866497"/>
-				<Arc Id="294" Center="96.79526522,-51.13251088" Radius="5" StartAngle="57.17389476611" IncAngle="0.14013352504"/>
-				<Straight Id="295" P1="104.59446384,-50.21366587" P2="99.50572089,-46.93091237"/>
-				<Arc Id="296" Center="208.56366193,111.83350622" Radius="192.53280274" StartAngle="237.31583623526" IncAngle="0.87060689941"/>
-				<Arc Id="297" Center="164.09426199,40.12670692" Radius="108.15631112" StartAngle="238.18005441715" IncAngle="1.49964054342"/>
-				<Arc Id="298" Center="145.09093677,7.60792703" Radius="70.49204188" StartAngle="239.66946659987" IncAngle="2.19776731922"/>
-				<Arc Id="299" Center="134.85329197,-11.56504985" Radius="48.75699637" StartAngle="241.85286427431" IncAngle="2.9973667044"/>
-				<Arc Id="300" Center="112.00732811,-60.22588208" Radius="5" StartAngle="64.83423019521" IncAngle="0.0160007835"/>
-				<Arc Id="301" Center="128.85499128,-24.36718378" Radius="34.61931346" StartAngle="244.83423019521" IncAngle="3.92598050863"/>
-				<Arc Id="302" Center="114.50202577,-61.29525413" Radius="5" StartAngle="68.7433413927" IncAngle="0.01686931114"/>
-				<Arc Id="303" Center="125.34480789,-33.42267586" Radius="24.90729916" StartAngle="248.7433413927" IncAngle="5.00654258285"/>
-				<Arc Id="304" Center="123.45942694,-39.90912654" Radius="18.1523994" StartAngle="253.73394088922" IncAngle="6.23108705567"/>
-				<Arc Id="305" Center="122.6620084,-44.41256404" Radius="13.57890782" StartAngle="259.96713215224" IncAngle="7.51264870143"/>
-				<Arc Id="306" Center="122.52995961,-47.24317903" Radius="10.74522684" StartAngle="267.51952411863" IncAngle="8.67677918697"/>
-				<Arc Id="307" Center="122.64033593,-48.52759209" Radius="9.45644808" StartAngle="276.37141767918" IncAngle="19.30217817444"/>
-				<Arc Id="308" Center="121.89811569,-47.04863149" Radius="11.110999" StartAngle="295.81899029586" IncAngle="9.37877812261"/>
-				<Arc Id="309" Center="131.1845034,-60.21401383" Radius="5" StartAngle="125.11717876759" IncAngle="0.08058965088"/>
-				<Arc Id="310" Center="120.57932717,-45.13398737" Radius="13.43575225" StartAngle="305.11717876759" IncAngle="4.37997581693"/>
-				<Arc Id="311" Center="119.16003499,-43.41382608" Radius="15.66585181" StartAngle="309.50123018771" IncAngle="4.12681092419"/>
-				<Arc Id="312" Center="117.2072891,-41.36461789" Radius="18.49648258" StartAngle="313.62669137192" IncAngle="3.80045612423"/>
-				<Arc Id="313" Center="114.62054377,-38.98810891" Radius="22.00918045" StartAngle="317.42688730827" IncAngle="3.52258186722"/>
-				<Arc Id="314" Center="111.29144634,-36.28615584" Radius="26.29677177" StartAngle="320.94737388109" IncAngle="3.22666721082"/>
-				<Arc Id="315" Center="107.10348957,-33.26085604" Radius="31.46314561" StartAngle="324.17114011114" IncAngle="2.94556563716"/>
-				<Arc Id="316" Center="137.72444444,-53.05777778" Radius="5" StartAngle="327.1167057483" IncAngle="180"/>
-				<Arc Id="317" Center="107.10348957,-33.26085604" Radius="41.46314561" StartAngle="324.17148528801" IncAngle="2.94522046029"/>
-				<Arc Id="318" Center="111.29144634,-36.28615584" Radius="36.29677177" StartAngle="320.94765809207" IncAngle="3.22597806882"/>
-				<Arc Id="319" Center="114.62054377,-38.98810891" Radius="32.00918045" StartAngle="317.42692734505" IncAngle="3.52220951944"/>
-				<Arc Id="320" Center="117.2072891,-41.36461789" Radius="28.49648258" StartAngle="313.62692455339" IncAngle="3.80017660953"/>
-				<Arc Id="321" Center="119.16003499,-43.41382608" Radius="25.66585181" StartAngle="309.50045184247" IncAngle="4.12732227856"/>
-				<Arc Id="322" Center="120.57932717,-45.13398737" Radius="23.43575225" StartAngle="305.1257104737" IncAngle="4.3723307535"/>
-				<Arc Id="323" Center="121.89811569,-47.04863149" Radius="21.110999" StartAngle="295.79672715266" IncAngle="9.39142536136"/>
-				<Arc Id="324" Center="128.90929493,-61.55406683" Radius="5" StartAngle="295.69907174854" IncAngle="0.09765540412"/>
-				<Arc Id="325" Center="122.64033593,-48.52759209" Radius="19.45644808" StartAngle="276.34081382765" IncAngle="19.35825792089"/>
-				<Arc Id="326" Center="124.23693955,-62.89560336" Radius="5" StartAngle="276.22381318281" IncAngle="0.11700064484"/>
-				<Arc Id="327" Center="122.52995961,-47.24317903" Radius="20.74522684" StartAngle="267.51310559218" IncAngle="8.71070759063"/>
-				<Arc Id="328" Center="121.84676055,-62.97357658" Radius="5" StartAngle="267.4850370924" IncAngle="0.02806849979"/>
-				<Arc Id="329" Center="122.6620084,-44.41256404" Radius="23.57890782" StartAngle="259.9666702884" IncAngle="7.518366804"/>
-				<Arc Id="330" Center="123.45942694,-39.90912654" Radius="28.1523994" StartAngle="253.73850535526" IncAngle="6.22688319224"/>
-				<Arc Id="331" Center="125.34480789,-33.42267586" Radius="34.90729916" StartAngle="248.74456033894" IncAngle="5.00443757002"/>
-				<Arc Id="332" Center="128.85499128,-24.36718378" Radius="44.61931346" StartAngle="244.83513341633" IncAngle="3.92414055335"/>
-				<Arc Id="333" Center="134.85329197,-11.56504985" Radius="58.75699637" StartAngle="241.85475878454" IncAngle="2.99479648209"/>
-				<Arc Id="334" Center="145.09093677,7.60792703" Radius="80.49204188" StartAngle="239.67014404616" IncAngle="2.19668758825"/>
-				<Arc Id="335" Center="164.09426199,40.12670692" Radius="118.15631112" StartAngle="238.1803274106" IncAngle="1.4989633856"/>
-				<Arc Id="336" Center="208.56366193,111.83350622" Radius="202.53280274" StartAngle="237.31402829116" IncAngle="0.87225866497"/>
-				<Arc Id="337" Center="101.88917922,-54.41860023" Radius="5" StartAngle="237.17389476611" IncAngle="0.14013352504"/>
-				<Straight Id="338" P1="94.0899806,-55.33744524" P2="99.17872355,-58.62019874"/>
+				<Straight Id="252" P1="80.8596546,-71.11035804" P2="80.86197738,-71.11179916"/>
+				<Arc Id="253" Center="-9.87921749,-217.38461733" Radius="172.13280274" StartAngle="57.32401175881" IncAngle="0.86235130997"/>
+				<Arc Id="254" Center="34.59018245,-145.67781803" Radius="87.75631112" StartAngle="58.18019694521" IncAngle="1.23670680086"/>
+				<Arc Id="255" Center="60.96,-52.49333333" Radius="25.4" StartAngle="147.1167057483" IncAngle="168.91012797802"/>
+				<Arc Id="256" Center="91.58095487,-72.29025507" Radius="61.86314561" StartAngle="144.17133636572" IncAngle="2.94536938257"/>
+				<Arc Id="257" Center="87.3929981,-69.26495527" Radius="56.69677177" StartAngle="140.94753868948" IncAngle="3.22516107581"/>
+				<Arc Id="258" Center="84.06390067,-66.5630022" Radius="52.40918045" StartAngle="137.42955632876" IncAngle="3.51887576037"/>
+				<Arc Id="259" Center="81.47715534,-64.18649322" Radius="48.89648258" StartAngle="133.61151421933" IncAngle="3.81833227145"/>
+				<Arc Id="260" Center="79.52440945,-62.13728503" Radius="46.06585181" StartAngle="129.50074685671" IncAngle="4.11029378187"/>
+				<Arc Id="261" Center="78.10511727,-60.41712374" Radius="43.83575225" StartAngle="125.14005838569" IncAngle="4.35941470091"/>
+				<Arc Id="262" Center="76.78632875,-58.50247962" Radius="41.510999" StartAngle="115.79672715266" IncAngle="9.3758905351"/>
+				<Arc Id="263" Center="69.77514951,-43.99704428" Radius="25.4" StartAngle="115.69907174854" IncAngle="0.09765540412"/>
+				<Arc Id="264" Center="76.04410851,-57.02351902" Radius="39.85644808" StartAngle="96.34081382765" IncAngle="19.35825792089"/>
+				<Arc Id="265" Center="74.44750489,-42.65550775" Radius="25.4" StartAngle="96.22381318281" IncAngle="0.11700064484"/>
+				<Arc Id="266" Center="76.15448483,-58.30793208" Radius="41.14522684" StartAngle="87.51310559218" IncAngle="8.71070759063"/>
+				<Arc Id="267" Center="76.83768389,-42.57753453" Radius="25.4" StartAngle="87.4850370924" IncAngle="0.02806849979"/>
+				<Arc Id="268" Center="76.02243604,-61.13854707" Radius="43.97890782" StartAngle="79.96683907137" IncAngle="7.51819802102"/>
+				<Arc Id="269" Center="75.2250175,-65.64198457" Radius="48.5523994" StartAngle="73.74075638055" IncAngle="6.22532359324"/>
+				<Arc Id="270" Center="73.33963655,-72.12843525" Radius="55.30729916" StartAngle="68.74733065419" IncAngle="4.99977319343"/>
+				<Arc Id="271" Center="69.82945316,-81.18392733" Radius="65.01931346" StartAngle="64.83744025703" IncAngle="3.91957377778"/>
+				<Arc Id="272" Center="63.83115247,-93.98606126" Radius="79.15699637" StartAngle="61.8563425158" IncAngle="2.99139084557"/>
+				<Arc Id="273" Center="53.59350767,-113.15903814" Radius="100.89204188" StartAngle="59.67137258789" IncAngle="2.19426051067"/>
+				<Arc Id="274" Center="34.59018245,-145.67781803" Radius="138.55631112" StartAngle="58.18077364866" IncAngle="1.49806503087"/>
+				<Arc Id="275" Center="-9.87921749,-217.38461733" Radius="222.93280274" StartAngle="57.31402829116" IncAngle="0.8719906666"/>
+				<Arc Id="276" Center="96.79526522,-51.13251088" Radius="25.4" StartAngle="57.17389476611" IncAngle="0.14013352504"/>
+				<Straight Id="277" P1="115.63129461,-33.05706243" P2="110.56438005,-29.78839045"/>
+				<Arc Id="278" Center="208.56366193,111.83350622" Radius="172.13280274" StartAngle="237.32401175881" IncAngle="0.86235130997"/>
+				<Straight Id="279" P1="117.82478984,-34.44075307" P2="117.82246706,-34.43931195"/>
+				<Arc Id="280" Center="164.09426199,40.12670692" Radius="87.75631112" StartAngle="238.18019694521" IncAngle="1.23670680086"/>
+				<Arc Id="281" Center="137.72444444,-53.05777778" Radius="25.4" StartAngle="327.1167057483" IncAngle="168.91012797802"/>
+				<Arc Id="282" Center="107.10348957,-33.26085604" Radius="61.86314561" StartAngle="324.17133636573" IncAngle="2.94536938257"/>
+				<Arc Id="283" Center="111.29144634,-36.28615584" Radius="56.69677177" StartAngle="320.94753868948" IncAngle="3.22516107581"/>
+				<Arc Id="284" Center="114.62054377,-38.98810891" Radius="52.40918045" StartAngle="317.42955632876" IncAngle="3.51887576037"/>
+				<Arc Id="285" Center="117.2072891,-41.36461789" Radius="48.89648258" StartAngle="313.61151421933" IncAngle="3.81833227145"/>
+				<Arc Id="286" Center="119.16003499,-43.41382608" Radius="46.06585181" StartAngle="309.50074685671" IncAngle="4.11029378187"/>
+				<Arc Id="287" Center="120.57932717,-45.13398737" Radius="43.83575225" StartAngle="305.1400583857" IncAngle="4.3594147009"/>
+				<Arc Id="288" Center="121.89811569,-47.04863149" Radius="41.510999" StartAngle="295.79672715266" IncAngle="9.37589053512"/>
+				<Arc Id="289" Center="128.90929493,-61.55406683" Radius="25.4" StartAngle="295.69907174854" IncAngle="0.09765540412"/>
+				<Arc Id="290" Center="122.64033593,-48.52759209" Radius="39.85644808" StartAngle="276.34081382765" IncAngle="19.35825792089"/>
+				<Arc Id="291" Center="124.23693955,-62.89560336" Radius="25.4" StartAngle="276.22381318281" IncAngle="0.11700064484"/>
+				<Arc Id="292" Center="122.52995961,-47.24317903" Radius="41.14522684" StartAngle="267.51310559218" IncAngle="8.71070759063"/>
+				<Arc Id="293" Center="121.84676055,-62.97357658" Radius="25.4" StartAngle="267.4850370924" IncAngle="0.02806849979"/>
+				<Arc Id="294" Center="122.6620084,-44.41256404" Radius="43.97890782" StartAngle="259.96683907137" IncAngle="7.51819802102"/>
+				<Arc Id="295" Center="123.45942694,-39.90912654" Radius="48.5523994" StartAngle="253.74075638044" IncAngle="6.22532359334"/>
+				<Arc Id="296" Center="125.34480789,-33.42267586" Radius="55.30729916" StartAngle="248.74733065423" IncAngle="4.9997731933"/>
+				<Arc Id="297" Center="128.85499128,-24.36718378" Radius="65.01931346" StartAngle="244.83744025703" IncAngle="3.91957377781"/>
+				<Arc Id="298" Center="134.85329197,-11.56504985" Radius="79.15699637" StartAngle="241.85634251587" IncAngle="2.9913908455"/>
+				<Arc Id="299" Center="145.09093677,7.60792703" Radius="100.89204188" StartAngle="239.67137258773" IncAngle="2.19426051088"/>
+				<Arc Id="300" Center="164.09426199,40.12670692" Radius="138.55631112" StartAngle="238.18077364879" IncAngle="1.49806503062"/>
+				<Arc Id="301" Center="208.56366193,111.83350622" Radius="222.93280274" StartAngle="237.31402829116" IncAngle="0.87199066668"/>
+				<Arc Id="302" Center="101.88917922,-54.41860023" Radius="25.4" StartAngle="237.17389476611" IncAngle="0.14013352504"/>
+				<Straight Id="303" P1="83.05314983,-72.49404868" P2="88.12006439,-75.76272066"/>
 			</Contour>
 		</Region>
-		<Region Id="344"
+		<Region Id="309"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="41" Name="Auto"/>
 			<Contour>
-				<Straight Id="340" P1="90.31111111,-101.80222222" P2="128.69333333,-101.80222222"/>
-				<Arc Id="341" Center="90.31111111,-96.80222222" Radius="5" StartAngle="90" IncAngle="180"/>
-				<Arc Id="342" Center="128.69333333,-96.80222222" Radius="5" StartAngle="270" IncAngle="180"/>
-				<Straight Id="343" P1="90.31111111,-91.80222222" P2="128.69333333,-91.80222222"/>
+				<Straight Id="305" P1="90.31111111,-122.20222222" P2="128.69333333,-122.20222222"/>
+				<Arc Id="306" Center="90.31111111,-96.80222222" Radius="25.4" StartAngle="90" IncAngle="180"/>
+				<Arc Id="307" Center="128.69333333,-96.80222222" Radius="25.4" StartAngle="270" IncAngle="180"/>
+				<Straight Id="308" P1="90.31111111,-71.40222222" P2="128.69333333,-71.40222222"/>
 			</Contour>
 		</Region>
-		<Region Id="345"
+		<Region Id="310"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Machinist" CTM="1" LineType="Solid"/>
 			<Contour>
-				<Straight Id="345" P1="51.64666666,-94.82666667" P2="51.64666666,-145.62666667"/>
+				<Straight Id="310" P1="51.64666666,-94.82666667" P2="51.64666666,-145.62666667"/>
 			</Contour>
 		</Region>
-		<Region Id="346"
+		<Region Id="311"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
 			<Contour>
-				<Straight Id="346" P1="38.94666666,-94.82666667" P2="38.94666666,-145.62666667"/>
+				<Straight Id="311" P1="38.94666666,-94.82666667" P2="38.94666666,-145.62666667"/>
 			</Contour>
 		</Region>
-		<Region Id="347"
+		<Region Id="312"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Dimension"/>
 			<Contour>
-				<Straight Id="347" P1="-22.01333333,-94.54444444" P2="-22.01333333,-141.11111111"/>
+				<Straight Id="312" P1="-22.01333333,-94.54444444" P2="-22.01333333,-141.11111111"/>
 			</Contour>
 		</Region>
-		<Region Id="352"
+		<Region Id="317"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Machinist" CTM="1" LineType="Solid"/>
 			<Contour>
-				<Straight Id="348" P1="46.64666666,-94.82666667" P2="46.64666666,-145.62666667"/>
-				<Arc Id="349" Center="51.64666666,-145.62666667" Radius="5" StartAngle="180" IncAngle="180"/>
-				<Straight Id="350" P1="56.64666666,-145.62666667" P2="56.64666666,-94.82666667"/>
-				<Arc Id="351" Center="51.64666666,-94.82666667" Radius="5" StartAngle="0" IncAngle="180"/>
+				<Straight Id="313" P1="26.24666666,-94.82666667" P2="26.24666666,-145.62666667"/>
+				<Arc Id="314" Center="51.64666666,-145.62666667" Radius="25.4" StartAngle="180" IncAngle="180"/>
+				<Straight Id="315" P1="77.04666666,-145.62666667" P2="77.04666666,-94.82666667"/>
+				<Arc Id="316" Center="51.64666666,-94.82666667" Radius="25.4" StartAngle="0" IncAngle="180"/>
 			</Contour>
 		</Region>
-		<Region Id="357"
+		<Region Id="322"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
 			<Contour>
-				<Straight Id="353" P1="33.94666666,-94.82666667" P2="33.94666666,-145.62666667"/>
-				<Arc Id="354" Center="38.94666666,-145.62666667" Radius="5" StartAngle="180" IncAngle="180"/>
-				<Straight Id="355" P1="43.94666666,-145.62666667" P2="43.94666666,-94.82666667"/>
-				<Arc Id="356" Center="38.94666666,-94.82666667" Radius="5" StartAngle="0" IncAngle="180"/>
+				<Straight Id="318" P1="13.54666666,-94.82666667" P2="13.54666666,-145.62666667"/>
+				<Arc Id="319" Center="38.94666666,-145.62666667" Radius="25.4" StartAngle="180" IncAngle="180"/>
+				<Straight Id="320" P1="64.34666666,-145.62666667" P2="64.34666666,-94.82666667"/>
+				<Arc Id="321" Center="38.94666666,-94.82666667" Radius="25.4" StartAngle="0" IncAngle="180"/>
 			</Contour>
 		</Region>
-		<Region Id="362"
+		<Region Id="327"
                                 BaseHeight="0"
                                 Z="0"
 
                       >
 			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Dimension"/>
 			<Contour>
-				<Straight Id="358" P1="-27.01333333,-94.54444444" P2="-27.01333333,-141.11111111"/>
-				<Arc Id="359" Center="-22.01333333,-141.11111111" Radius="5" StartAngle="180" IncAngle="180"/>
-				<Straight Id="360" P1="-17.01333333,-141.11111111" P2="-17.01333333,-94.54444444"/>
-				<Arc Id="361" Center="-22.01333333,-94.54444444" Radius="5" StartAngle="0" IncAngle="180"/>
+				<Straight Id="323" P1="-47.41333333,-94.54444444" P2="-47.41333333,-141.11111111"/>
+				<Arc Id="324" Center="-22.01333333,-141.11111111" Radius="25.4" StartAngle="180" IncAngle="180"/>
+				<Straight Id="325" P1="3.38666667,-141.11111111" P2="3.38666667,-94.54444444"/>
+				<Arc Id="326" Center="-22.01333333,-94.54444444" Radius="25.4" StartAngle="0" IncAngle="180"/>
 			</Contour>
 		</Region>
 		<Region BaseHeight="0" Z="1.5900000010000002">
@@ -673,7 +638,7 @@
 			</Processing>
 
 			<Contour>
-				<Straight Id="363" P1="13.54666666,-94.82666667" P2="13.54666666,-145.62666667"/>
+				<Straight Id="328" P1="13.54666666,-94.82666667" P2="13.54666666,-145.62666667"/>
 			</Contour>
 		</Region>
 		<Region BaseHeight="0" Z="1.59">
@@ -684,7 +649,7 @@
 			</Processing>
 
 			<Contour>
-				<Straight Id="364" P1="8.54666666,-94.82666667" P2="8.54666666,-145.62666667"/>
+				<Straight Id="329" P1="-11.85333334,-94.82666667" P2="-11.85333334,-145.62666667"/>
 			</Contour>
 		</Region>
 		<Region BaseHeight="0" Z="1.59">
@@ -695,7 +660,7 @@
 			</Processing>
 
 			<Contour>
-				<Arc Id="365" Center="13.54666666,-145.62666667" Radius="5" StartAngle="180" IncAngle="180"/>
+				<Arc Id="330" Center="13.54666666,-145.62666667" Radius="25.4" StartAngle="180" IncAngle="180"/>
 			</Contour>
 		</Region>
 		<Region BaseHeight="0" Z="1.59">
@@ -706,7 +671,7 @@
 			</Processing>
 
 			<Contour>
-				<Straight Id="366" P1="18.54666666,-145.62666667" P2="18.54666666,-94.82666667"/>
+				<Straight Id="331" P1="38.94666666,-145.62666667" P2="38.94666666,-94.82666667"/>
 			</Contour>
 		</Region>
 		<Region BaseHeight="0" Z="1.59">
@@ -717,7 +682,7 @@
 			</Processing>
 
 			<Contour>
-				<Arc Id="367" Center="13.54666666,-94.82666667" Radius="5" StartAngle="0" IncAngle="180"/>
+				<Arc Id="332" Center="13.54666666,-94.82666667" Radius="25.4" StartAngle="0" IncAngle="180"/>
 			</Contour>
 		</Region>
 	</View>

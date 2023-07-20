@@ -1,4 +1,4 @@
-describe('Tangent test', () => {
+describe('Tangents test', () => {
     beforeEach(() => {
         cy.visit(Cypress.env('FRONT_URL'));
         cy.deleteDownloadsFolder();

@@ -38,9 +38,9 @@ export function selectConnected() : void {
     cy.get('[data-testid="desktop-menu-item-select-connected"]').click();
 }
 
-export function intersect() : void {
+export function group() : void {
     cy.openLineDropdown();
-    cy.get('[data-testid="desktop-menu-item-intersect"]').click();
+    cy.get('[data-testid="desktop-menu-item-group"]').click();
 }
 
 //Scale
@@ -124,11 +124,12 @@ export function setConvertSplineToArcSettings(value: string) : void {
     cy.get('.Text > div > input').clear().type(value);
 }
 
-export function confirmConvertSplineToArc() : void {
+export function confirmConvertSplineToArc(isWait : boolean = true) : void {
     cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/spline-to-arcs`).as('splineToArcResponse')
     cy.get('.Yes-No-buttons > :nth-child(1)').click();
-    cy.wait('@splineToArcResponse')
-
+    if (isWait) {
+        cy.wait('@splineToArcResponse')
+    }
 }
 
 // Simplify
@@ -136,6 +137,15 @@ export function confirmConvertSplineToArc() : void {
 export function openSimplifyModal() : void {
     cy.openLineDropdown();
     cy.get('a').contains('Simplify...').click();
+}
+
+export function confirmSimplify(isWait? : boolean) : void {
+    cy.intercept('POST', `${Cypress.env('BACK_URL')}/line/simplify`).as('simplifyResponse')
+    cy.get('.Yes-No-buttons > :nth-child(1) > .MuiButton-label').click();
+
+    if (isWait) {
+        cy.wait('@simplifyResponse')
+    }
 }
 
 // Machine

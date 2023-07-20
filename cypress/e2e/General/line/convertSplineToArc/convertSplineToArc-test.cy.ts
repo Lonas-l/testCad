@@ -22,4 +22,13 @@ describe('Convert Spline To Arc test', () => {
         cy.downloadDesign();
         cy.viewCompare('cypress/downloads/SimpleSpline.emsx', 'cypress/fixtures/line/convertSpline/Convert_Spline_To_Arc_Correct.emsx')
     })
+
+    it('Test with negative value, should appears error', () => {
+        cy.openFile('./SimpleSpline.emsx');
+        cy.selectAll();
+        cy.openConvertSplineToArcModal();
+        cy.setConvertSplineToArcSettings('-5');
+        cy.confirmConvertSplineToArc(false);
+        cy.get('[data-testid="tech-support-input-error"]').should('be.visible');
+    })
  })

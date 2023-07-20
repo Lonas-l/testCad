@@ -31,7 +31,7 @@ describe('TR #199824 | Bug | Revolve Projection', () => {
     it('We can change revolve projection', () => {
         cy.openFile('../e2e/v_1.22/canvas/designs/TR199824/Changing_Revolve_Projection.emsx');
         cy.get('canvas').click(210,225);
-        cy.changeZ('2');
+        cy.changeZ('2', false);
         cy.realPress('Enter');
         cy.get('.logoBlock').click();
         cy.get('canvas').click(400,251);

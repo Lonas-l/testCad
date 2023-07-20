@@ -58,9 +58,19 @@ describe('Divide test', () => {
         cy.openDivideModal();
         cy.setDivideSettings('0');
         cy.confirmDivide();
-        cy.get('.error').should('have.text', 'You have specified zero or negative value. Please enter a positive value.');
+        cy.get('[data-testid="divide-input-error"]').should('be.visible');
         cy.setDivideSettings('-5');
         cy.confirmDivide();
-        cy.get('.error').should('have.text', 'You have specified zero or negative value. Please enter a positive value.');
+        cy.get('[data-testid="divide-input-error"]').should('be.visible');
     });
+
+    it("Enter negative or zero value in divide field, error should appear", () => {
+        cy.openFile('Simple_Line.emsx');
+        cy.selectAll();
+        cy.openDivideModal();
+        cy.setDivideSettings('5.999999999999999999');
+        cy.confirmDivide();
+        cy.get('[data-testid="divide-input-error"]').should('be.visible');
+    });
+
 })

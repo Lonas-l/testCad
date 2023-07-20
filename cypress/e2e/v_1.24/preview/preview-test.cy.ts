@@ -43,3 +43,17 @@ describe('TR #200864 | Bug | Auto Correct Solution', () => {
         cy.isPreviewOpened();
     })
 })
+
+describe('TR #202386 | Bug | 3D preview', () => {
+
+    beforeEach(() => {
+        cy.deleteDownloadsFolder();
+        cy.visit(`${Cypress.env('FRONT_URL')}`);
+    })
+
+    it('After open 3D preview, i get an error from expert notice', () => {
+        cy.openFile('../e2e/v_1.24/preview/designs/TR202386/TR202386_Preview.emsx');
+        cy.open3DPreview();
+        cy.isPreviewOpened();
+    })
+})

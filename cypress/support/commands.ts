@@ -18,7 +18,6 @@ import * as dimensionFields from './command/dimensionFields';
 import * as tools from './command/tools';
 import 'cypress-file-upload';
 import {changeLength} from "./command/utils";
-
 require('cypress-delete-downloads-folder').addCustomCommand();
 
 declare global {
@@ -41,6 +40,7 @@ declare global {
             openFileAndUseSolution: (solution: string, initialDesignUrl: string, fixedDesignUrl: string, downloadedDesignUrl: string) => void,
             changeView: (view : string) => void,
             openSimplifyModal: () => void,
+            confirmSimplify: (isWait? : boolean) => void,
             openConvertSplineToArcModal: () => void,
             openContourModal: () => void,
             openGrooveModal: () => void,
@@ -63,10 +63,11 @@ declare global {
             cancelDivide : () => void
             tangent : () => void
             setConvertSplineToArcSettings : (value: string) => void
-            confirmConvertSplineToArc : () => void
+            confirmConvertSplineToArc : (isWait ?: boolean) => void
             mirror : (mode: string) => void
             deleteSelected : () => void
             intersectSelected : () => void
+            group : () => void
             changeDimension : () => void
             checkDimensionInTheField : (field: string, dimension: string) => void
             changeQuantityInPrice: (quantity: string) => void
@@ -183,7 +184,7 @@ Cypress.Commands.add('openLineDropdown', line.openLineDropdown)
 Cypress.Commands.add('mirror', line.mirror)
 Cypress.Commands.add('tangent', line.tangent)
 Cypress.Commands.add('selectConnected', line.selectConnected)
-Cypress.Commands.add('intersect', line.intersect)
+Cypress.Commands.add('group', line.group)
 
 Cypress.Commands.add('scaleElement', line.scaleElement)
 
@@ -201,6 +202,7 @@ Cypress.Commands.add('setConvertSplineToArcSettings', line.setConvertSplineToArc
 Cypress.Commands.add('confirmConvertSplineToArc', line.confirmConvertSplineToArc)
 
 Cypress.Commands.add('openSimplifyModal', line.openSimplifyModal)
+Cypress.Commands.add('confirmSimplify', line.confirmSimplify)
 
 Cypress.Commands.add('openMachineModal', line.openMachineModal)
 Cypress.Commands.add('confirmMachine', line.confirmMachine)

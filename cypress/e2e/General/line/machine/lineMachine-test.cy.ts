@@ -34,4 +34,21 @@ describe('Line Machine', () => {
         cy.get('[data-testId="line-machine-Comment to Machinist"]').should('have.class', 'active');
     })
 
+    it('Selected line should highlight in line machine modal', () => {
+        cy.openFile('./All_Line_Types.emsx');
+        cy.selectAll();
+        cy.openMachineModal();
+
+        cy.get('[data-testId="line-machine-Auto"]').should('have.attr', 'style', 'font-weight: bold;');
+        cy.get('[data-testId="line-machine-Thread"]').should('have.attr', 'style', 'font-weight: bold;');
+        cy.get('[data-testId="line-machine-Tolerance"]').should('have.attr', 'style', 'font-weight: bold;');
+        cy.get('[data-testId="line-machine-Comment/Construction"]').should('have.attr', 'style', 'font-weight: bold;');
+        cy.get('[data-testId="line-machine-Comment to Machinist"]').should('have.attr', 'style', 'font-weight: bold;');
+
+        cy.openFile('./Simple_Bend_Line.emsx');
+        cy.selectAll();
+        cy.openMachineModal();
+        cy.get('[data-testId="line-machine-Bend"]').should('have.attr', 'style', 'font-weight: bold;');
+    })
+
 })

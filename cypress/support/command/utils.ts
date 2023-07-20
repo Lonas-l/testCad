@@ -25,6 +25,7 @@ export function changeZ(zValue : string, isSelectViaDropdown? : boolean) : void 
         cy.get(`[data-testid=${zValue}]`).click();
     } else {
         cy.get('[data-testid="numeric-Z"]').clear().type(zValue);
+        cy.get('body').type('{enter}');
     }
 }
 

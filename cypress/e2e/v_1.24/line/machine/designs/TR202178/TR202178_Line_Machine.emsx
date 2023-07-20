@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.8">
+	<Creator Name="Web CAD" Version="1.24.24-c"/>
+	<View Type="Top">
+		<Region Id="104" 
+                                BaseHeight="0" 
+                                Z="50.8"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Straight Id="100" P1="-268.21666404,321.36849584" P2="-2.78666404,321.36849584"/>
+				<Straight Id="101" P1="-2.78666404,321.36849584" P2="-2.78666404,-69.79150416"/>
+				<Straight Id="102" P1="-2.78666404,-69.79150416" P2="-268.21666404,-69.79150416"/>
+				<Straight Id="103" P1="-268.21666404,-69.79150416" P2="-268.21666404,321.36849584"/>
+			</Contour>
+		</Region>
+		<Region Id="105" 
+                                BaseHeight="0" 
+                                Z="0"
+                                
+                      >
+			<Machine Id="14" Name="Comment to Self" CTM="0" LineType="Solid"/>
+			<Contour>
+				<Straight Id="105" P1="-323.14396336,-91.65127605" P2="-323.14396336,-90.85752605"/>
+			</Contour>
+		</Region>
+	</View>
+	<View Type="Right">
+		<Region Id="114" 
+                                BaseHeight="-50000000" 
+                                Z="AirInside"
+                                
+                      >
+			<Machine Id="41" Name="Auto"/>
+			<Contour>
+				<Arc Id="106" Center="125.78849584,25.4" Radius="9.4869" StartAngle="212.293885" IncAngle="115.41223"/>
+				<Arc Id="107" Center="133.70059584,20.39936" Radius="0.127" StartAngle="327.706115" IncAngle="32.293885"/>
+				<Straight Id="108" P1="133.82759584,20.39936" P2="133.82759584,30.40064"/>
+				<Arc Id="109" Center="133.70059584,30.40064" Radius="0.127" StartAngle="0" IncAngle="32.293885"/>
+				<Arc Id="110" Center="125.78849584,25.4" Radius="9.4869" StartAngle="32.293885" IncAngle="115.41223"/>
+				<Arc Id="111" Center="117.87639584,30.40064" Radius="0.127" StartAngle="147.706115" IncAngle="32.293885"/>
+				<Straight Id="112" P1="117.74939584,30.40064" P2="117.74939584,20.39936"/>
+				<Arc Id="113" Center="117.87639584,20.39936" Radius="0.127" StartAngle="180" IncAngle="32.293885"/>
+			</Contour>
+		</Region>
+	</View>
+	<QuantityOfParts Value="200"/>
+	<Material Id="276" Name="Acetal For Molding" RALColor="Black"/>
+	<Specifications>
+		<Specification MachineId="41" Name="Tolerance" Value="0.508" />
+		<Specification MachineId="41" Name="Flatness" Value="5.08" />
+		<Specification MachineId="41" Name="EdgeDraft" Value="5" />
+		<Specification MachineId="41" Name="SurfaceRoughness" Value="3.2" />
+		<Specification MachineId="41" Name="EdgeRoughness" Value="25" />
+		<Specification MachineId="41" Name="MaterialThicknessTolerance" Value="10" />
+	</Specifications>
+</eMachineShop3DObjects>
